@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import ServicesTabs from "../../components/Service/ServicesTabs";
 
 const index = () => {
   return (
     <>
-      <div className="min-h-screen">
-        <section className="h-[80vh] w-full relative">
+      <div className="min-h-screen ">
+        <section className="h-[80vh] w-full relative mb-16">
           <Image
             src="/bannerService.jpg"
             alt="banner image"
@@ -31,6 +32,7 @@ const index = () => {
             </div>
           </div>
         </section>
+        <ServicesTabs />
       </div>
     </>
   );
