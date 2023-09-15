@@ -10,7 +10,7 @@ const ServicesTabs = () => {
   return (
     <>
       <div className=" max-w-5xl mx-auto mt-16">
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center px-5 gap-2">
           <button
             onClick={() => setTab("marketing")}
             className="flex items-center justify-center gap-2"
@@ -19,8 +19,8 @@ const ServicesTabs = () => {
             <span
               className={
                 tabs === "marketing"
-                  ? `underline underline-offset-4 font-bold text-lg`
-                  : "font-medium text-lg"
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  : "font-medium text-sm sm:text-lg"
               }
             >
               marketing
@@ -31,12 +31,12 @@ const ServicesTabs = () => {
             onClick={() => setTab("events")}
             className="flex items-center justify-center gap-2"
           >
-            <small className="text-sm -mt-4 text-gray-500">02</small>
+            <small className="text-sm sm:text-lg -mt-4 text-gray-500">02</small>
             <span
               className={
                 tabs === "events"
-                  ? `underline underline-offset-4 font-bold text-lg`
-                  : "font-medium text-lg"
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  : "font-medium text-sm sm:text-lg"
               }
             >
               events & exhibitions
@@ -47,12 +47,12 @@ const ServicesTabs = () => {
             onClick={() => setTab("digitalMarketing")}
             className="flex items-center justify-center gap-2"
           >
-            <small className="text-sm -mt-4 text-gray-500">03</small>
+            <small className="text-sm sm:text-lg -mt-4 text-gray-500">03</small>
             <span
               className={
                 tabs === "digitalMarketing"
-                  ? `underline underline-offset-4 font-bold text-lg`
-                  : "font-medium text-lg"
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  : "font-medium text-sm sm:text-lg"
               }
             >
               digital marketing
@@ -67,8 +67,8 @@ const ServicesTabs = () => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? `underline underline-offset-4 font-bold text-lg`
-                  : "font-medium text-lg"
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  : "font-medium text-sm sm:text-lg"
               }
             >
               content production
