@@ -2,11 +2,11 @@ import React from "react";
 
 const ContentProduction = () => {
   return (
-    <div className="mt-16">
-      <h5 className="text-gray-600 text-xl my-8">04</h5>
+    <div className="mt-16 px-5">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
-        <div className="grid gap-y-8 h-min max-w-lg">
-          <h5 className="text-black text-5xl ">content production</h5>
+        <div className="grid h-min max-w-lg">
+          <h5 className="text-gray-600 text-xl">04</h5>
+          <h5 className="text-black text-5xl py-8">content production</h5>
           <div className="grid gap-y-6  h-min">
             <p className="text-gray-600 h-min">
               We're more than a marketing agency we're your strategic partner
@@ -22,8 +22,9 @@ const ContentProduction = () => {
           </div>
         </div>
 
-        <div>
-          <div className="grid gap-y-8">
+        <div className="grid gap-y-8 h-min max-w-lg mx-auto">
+          <div className="mt-8 invisible"></div>
+          <div className="grid gap-y-8 max-w-lg mx-auto">
             <h3 className="text-xl text-gray-800 font-medium">
               brand ambassadors
             </h3>

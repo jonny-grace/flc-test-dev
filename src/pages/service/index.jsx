@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import ServicesTabs from "../../components/Service/ServicesTabs";
+import Carousel from "../../components/BottomCarousel/Carousel";
 
 const index = () => {
   return (
     <>
-      <div className="min-h-screen ">
+      <div className="min-h-screen overflow-x-hidden">
         <section className="h-[90vh] w-full relative mb-16">
           <Image
             src="/bannerService.jpg"
@@ -32,7 +33,11 @@ const index = () => {
             </div>
           </div>
         </section>
+
         <ServicesTabs />
+        <section className="my-16 max-w-5xl mx-auto">
+          <Carousel />
+        </section>
       </div>
     </>
   );
