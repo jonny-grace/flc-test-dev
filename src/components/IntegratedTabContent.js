@@ -1,67 +1,56 @@
 import React from 'react';
-import Image from 'next/image';
 
-import img from '../../public/assets/bg.jpg';
-
-function IntegratedTabContent() {
+const BoxComponent = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-screen overflow-hidden">
-      <div className="mt-10">
-        <div className="relative h-72 sm:h-[calc(100vh - 20rem)]">
-          <Image
-            src={img}
-            alt="Image"
-            className="absolute inset-0 w-full h-full object-cover"
+    <div className=" mt-5  flex md:flex-row md:w-[1200px] md:h-[650px] flex-col">
+      {/* the first image box  Width 766.26px Height 1118.91px */}
+      <div className="flex-grow md:w-[300px]">
+  <div className="relative flex h-full">
+    <img 
+      src="/assets/DPOufH.png"
+      alt="Your Image"
+      className="object-cover hover:cursor-pointer w-full"
+    />
+    <div className="absolute inset-0 flex  bg-gray-500 bg-opacity-50 text-white p-4">
+      <div>
+        <p className='text-xl font-semibold text-left'>featured // events</p>
+        <h2 className="text-4xl font-bold mt-10">Honor Magic Pro Launch</h2>
+        <p className='mt-3 font-semibold'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla</p>
+        <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+          Learn more
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+      <div className="flex-grow flex flex-col">
+        <div className="flex-grow">
+          <img
+            src="bulk-image2.jpeg"
+            alt="Image for Column b2"
+            className="object-cover hover:cursor-pointer w-full h-full"
           />
         </div>
-        <div className="p-5 sm:p-8 bg-[#042f2e] text-white">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold">Undiz Influencers</h2>
+        <div className="flex-grow pt-80 bg-green-400 hover:cursor-pointer">
+          <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10">Undiz Influencers</h2>
         </div>
       </div>
-      <div className="mt-10">
-        <div className="p-5 sm:p-8 bg-[#78350f] text-white">
-          <div className="pb-10">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold">Ajmal Perfumes</h2>
-            <p className="mt-6 text-base sm:text-xl font-semibold">
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
-            </p>
-            <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-white underline font-medium">
-              Learn more
-            </span>
-          </div>
+      <div className="flex-grow flex flex-col">
+        <div className="flex-grow pt-72 bg-purple-400 hover:cursor-pointer">
+          <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">Ajmal Perfumes</h2>
+          <p className=' w-96 px-10'>you can modify the code to display all the tabs horizontally instead of wrapping them.</p>
+          <a ><span className=' w-96 px-10 mt-20 '>Learn More</span> </a>
         </div>
-
-        <div className="relative h-56 sm:h-[calc(100vh - 20rem)]">
-          <Image
-            src={img}
-            alt="Image"
-            className="absolute inset-0 w-full h-full object-cover"
+        <div className="flex-grow">
+          <img
+            src="bulk-image2.jpeg"
+            alt="Image for Column C2"
+            className="object-cover hover:cursor-pointer w-full h-full"
           />
-        </div>
-      </div>
-      <div className="mt-10">
-        <div className="col-span-2 sm:col-span-1 h-[calc(100vh - 20rem)] bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat">
-          <div className="relative h-0 pb-[56.25%] sm:pb-[75%]">
-            <Image
-              src={img}
-              alt="Image"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-5 sm:p-8 text-white">
-            <p className="text-base sm:text-xl font-semibold">featured // events</p>
-            <h2 className="text-3xl sm:text-5xl font-bold mt-3">Honor Magic Pro Launch</h2>
-            <p className="mt-3 text-base sm:text-xl font-semibold">
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
-            </p>
-            <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-white underline font-medium">
-              Learn more
-            </span>
-          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default IntegratedTabContent;
+export default BoxComponent;

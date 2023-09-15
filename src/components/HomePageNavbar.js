@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png';
 import Image from 'next/image';
 
-const Navbar = () => {
+const HomePageNavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-black fixed top-0 left-0 right-0 z-50 ${
-        isScrolled ? 'bg-white' : 'bg-transparent'
+      className={` fixed top-0 left-0 right-0 z-50 ${
+        isScrolled ? 'bg-gray-100 text-black' : 'bg-transparent text-white'
       }`}
     >
       <div className="flex items-center justify-between p-4">
@@ -107,4 +107,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HomePageNavBar;

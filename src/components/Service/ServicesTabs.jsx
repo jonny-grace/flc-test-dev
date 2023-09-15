@@ -10,10 +10,10 @@ const ServicesTabs = () => {
   return (
     <>
       <div className=" max-w-5xl mx-auto mt-16">
-        <div className="flex justify-between items-center px-5 gap-2">
+        <div className="flex justify-between items-center mx-4 gap-2">
           <button
             onClick={() => setTab("marketing")}
-            className="flex items-center justify-center gap-2"
+            className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm -mt-4 text-gray-500">01</small>
             <span
@@ -29,7 +29,7 @@ const ServicesTabs = () => {
 
           <button
             onClick={() => setTab("events")}
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm sm:text-lg -mt-4 text-gray-500">02</small>
             <span
@@ -45,7 +45,7 @@ const ServicesTabs = () => {
 
           <button
             onClick={() => setTab("digitalMarketing")}
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm sm:text-lg -mt-4 text-gray-500">03</small>
             <span
@@ -61,7 +61,7 @@ const ServicesTabs = () => {
 
           <button
             onClick={() => setTab("contentProduction")}
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm -mt-4 text-gray-500">04</small>
             <span

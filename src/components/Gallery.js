@@ -6,6 +6,7 @@ import Image from 'next/image';
 import img from '../../public/assets/bg.jpg';
 import IntegratedTabContent from './IntegratedTabContent';
 import GridView from './tabfiletest';
+import BoxComponent from './tabfiletest';
 
 const GaleryTab = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -15,7 +16,7 @@ const GaleryTab = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className=" flex flex-col items-center">
       <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
         <TabList className="flex justify-center flex-wrap">
           {['Integrated', 'FMCG', 'Electronics', 'Fashion & Lifestyle', 'Food & Beverage'].map((tab, index) => (
@@ -28,19 +29,19 @@ const GaleryTab = () => {
 
         {/* TabPanel components */}
         <TabPanel>
-          <div className="bg-green-200 h-screen"><IntegratedTabContent /></div>
+          <div className="min-h-screen md:min-h-0"><IntegratedTabContent /></div>
         </TabPanel>
         <TabPanel>
-          <div className="bg-green-200 h-screen"><IntegratedTabContent /></div>
+          <div className="min-h-screen md:min-h-0"><IntegratedTabContent /></div>
         </TabPanel>
         <TabPanel>
-          <div className="bg-yellow-200 h-screen"><IntegratedTabContent /></div>
+          <div className="min-h-screen md:min-h-0"><IntegratedTabContent /></div>
         </TabPanel>
         <TabPanel>
-          <div className="bg-purple-200 h-screen"><IntegratedTabContent /></div>
+          <div className="min-h-screen md:min-h-0"><IntegratedTabContent /></div>
         </TabPanel>
         <TabPanel>
-          <div className="bg-red-200 h-screen"><IntegratedTabContent /></div>
+          <div className="min-h-screen md:min-h-0"><IntegratedTabContent /></div>
         </TabPanel>
       </Tabs>
     </div>

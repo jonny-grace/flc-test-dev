@@ -2,18 +2,21 @@ import Image from "next/image";
 import React from "react";
 import ServicesTabs from "../../components/Service/ServicesTabs";
 import Carousel from "../../components/BottomCarousel/Carousel";
+import Navbar from "../../components/Navbar";
 
 const index = () => {
   return (
     <>
       <div className="min-h-screen overflow-x-hidden">
         <section className="h-[90vh] w-full relative mb-16">
+         <Navbar />
+         
           <Image
-            src="/bannerService.jpg"
+            src="/assets/service_rectangle.png"
             alt="banner image"
             width={1000}
             height={1000}
-            className="h-[90vh] w-full object-cover"
+            className="h-[90vh] w-full object-cover mt-20"
           />
           <div className="absolute bottom-1/4  w-full ">
             <div className="grid grid-cols-1 sm:grid-cols-2  mx-auto ">

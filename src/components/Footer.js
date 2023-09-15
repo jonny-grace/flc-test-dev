@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="p-4">
+          <div className="p-4 md:ml-9">
             <h2 className="font-bold text-start md:text-start mb-4 text-[28px]">
               Quick Links
             </h2>
@@ -109,13 +109,13 @@ const Footer = () => {
                   Service
                 </p>
               </a>
-              <a href="/link3" className="block mt-2">
+              <a href="/joinOurTeam" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                   JOin our Team
                 </p>
               </a>
             </div>
-            <p className="mt-8 text-center md:mt-44">
+            <p className="mt-8 md:pr-20 md:ml-[-150px]  text-center md:mt-44">
               &copy; 2023 FLC Group all Rights Reserved.
             </p>
           </div>
