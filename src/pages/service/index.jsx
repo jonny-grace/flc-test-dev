@@ -6,13 +6,13 @@ const index = () => {
   return (
     <>
       <div className="min-h-screen ">
-        <section className="h-[80vh] w-full relative mb-16">
+        <section className="h-[90vh] w-full relative mb-16">
           <Image
             src="/bannerService.jpg"
             alt="banner image"
             width={1000}
             height={1000}
-            className="h-[80vh] w-full object-cover"
+            className="h-[90vh] w-full object-cover"
           />
           <div className="absolute bottom-1/4  w-full ">
             <div className="grid grid-cols-1 sm:grid-cols-2  mx-auto ">

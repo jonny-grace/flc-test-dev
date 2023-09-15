@@ -9,52 +9,75 @@ const ServicesTabs = () => {
   const [tabs, setTab] = useState("marketing");
   return (
     <>
-      <div className=" max-w-6xl mx-auto mt-16">
-        <div className="flex justify-evenly items-center text-lg  text-gray-900 capitalize">
+      <div className=" max-w-5xl mx-auto mt-16">
+        <div className="flex justify-between items-center ">
           <button
             onClick={() => setTab("marketing")}
-            className={
-              tabs === "marketing"
-                ? `underline underline-offset-4 font-semibold`
-                : "font-medium"
-            }
+            className="flex items-center justify-center gap-2"
           >
-            marketing
+            <small className="text-sm -mt-4 text-gray-500">01</small>
+            <span
+              className={
+                tabs === "marketing"
+                  ? `underline underline-offset-4 font-bold text-lg`
+                  : "font-medium text-lg"
+              }
+            >
+              marketing
+            </span>
           </button>
+
           <button
             onClick={() => setTab("events")}
-            className={
-              tabs === "events"
-                ? `underline underline-offset-4 font-semibold`
-                : "font-medium"
-            }
+            className="flex items-center justify-center gap-2"
           >
-            events & exhibitions
+            <small className="text-sm -mt-4 text-gray-500">02</small>
+            <span
+              className={
+                tabs === "events"
+                  ? `underline underline-offset-4 font-bold text-lg`
+                  : "font-medium text-lg"
+              }
+            >
+              events & exhibitions
+            </span>
           </button>
+
           <button
             onClick={() => setTab("digitalMarketing")}
-            className={
-              tabs === "digitalMarketing"
-                ? `underline underline-offset-4 font-semibold`
-                : "font-medium"
-            }
+            className="flex items-center justify-center gap-2"
           >
-            digital marketing
+            <small className="text-sm -mt-4 text-gray-500">03</small>
+            <span
+              className={
+                tabs === "digitalMarketing"
+                  ? `underline underline-offset-4 font-bold text-lg`
+                  : "font-medium text-lg"
+              }
+            >
+              digital marketing
+            </span>
           </button>
+
           <button
             onClick={() => setTab("contentProduction")}
-            className={
-              tabs === "contentProduction"
-                ? `underline underline-offset-4 font-semibold`
-                : "font-medium"
-            }
+            className="flex items-center justify-center gap-2"
           >
-            content production
+            <small className="text-sm -mt-4 text-gray-500">04</small>
+            <span
+              className={
+                tabs === "contentProduction"
+                  ? `underline underline-offset-4 font-bold text-lg`
+                  : "font-medium text-lg"
+              }
+            >
+              content production
+            </span>
           </button>
         </div>
       </div>
       <hr class="border-t-1 border-gray-800"></hr>
-      <section className="max-w-6xl mx-auto">
+      <section className="max-w-5xl mx-auto">
         <div>{tabs === "marketing" ? <Marketing /> : null}</div>
         <div>{tabs === "events" ? <EventsAndExhibitions /> : null}</div>
         <div>{tabs === "digitalMarketing" ? <DigitalMarketing /> : null}</div>
