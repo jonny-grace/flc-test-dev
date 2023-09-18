@@ -3,6 +3,7 @@ import React from "react";
 import ServicesTabs from "../../components/Service/ServicesTabs";
 import Carousel from "../../components/BottomCarousel/Carousel";
 import Navbar from "../../components/Navbar";
+import Timeline from "../../components/AboutUsTimeline";
 
 const index = () => {
   return (
@@ -37,7 +38,7 @@ const index = () => {
           </div>
         </section>
 
-        <ServicesTabs />
+        <Timeline />
         <section className="my-16 max-w-5xl mx-auto">
           <Carousel />
         </section>

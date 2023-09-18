@@ -31,12 +31,12 @@ const BoxComponent = () => {
             className="object-cover hover:cursor-pointer w-full h-full"
           />
         </div>
-        <div className="flex-grow pt-80 bg-green-400 hover:cursor-pointer">
-          <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10">Undiz Influencers</h2>
+        <div className="flex-grow pt-80 bg-green-900 hover:cursor-pointer">
+          <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">Undiz Influencers</h2>
         </div>
       </div>
       <div className="flex-grow flex flex-col">
-        <div className="flex-grow pt-72 bg-purple-400 hover:cursor-pointer">
+        <div className="flex-grow pt-72 bg-red-950 hover:cursor-pointer text-white">
           <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">Ajmal Perfumes</h2>
           <p className=' w-96 px-10'>you can modify the code to display all the tabs horizontally instead of wrapping them.</p>
           <a ><span className=' w-96 px-10 mt-20 '>Learn More</span> </a>
