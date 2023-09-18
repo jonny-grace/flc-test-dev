@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import Awards from "../../components/awards";
+import Awards from "../../components/Awards";
 import OurValues from "../../components/OurValues";
 import Image from "next/image";
 import AboutUsTimeline from "../../components/AboutUsTimeline";
