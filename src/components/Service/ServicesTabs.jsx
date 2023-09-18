@@ -5,6 +5,7 @@ import DigitalMarketing from "./Tabs/DigitalMarketing";
 import EventsAndExhibitions from "./Tabs/EventsAndExhibitions";
 import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
+// import Marketing from "./Tabs/Marketing";
 const ServicesTabs = () => {
   const [tabs, setTab] = useState("marketing");
   return (
