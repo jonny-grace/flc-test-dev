@@ -12,7 +12,7 @@ const index = () => {
         <section className="h-[90vh] w-full relative mb-16">
          <Navbar />
          <img
-         src="/assets/service_rectangle.png"
+         src="/assets/service_banner.png"
          alt="banner image"
          width={1000}
          height={1000}
