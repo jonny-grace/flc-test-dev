@@ -11,14 +11,21 @@ const index = () => {
       <div className="min-h-screen overflow-x-hidden">
         <section className="h-[90vh] w-full relative mb-16">
          <Navbar />
+         <img
+         src="/assets/service_rectangle.png"
+         alt="banner image"
+         width={1000}
+         height={1000}
+         className="h-[90vh] w-full object-cover mt-20"
          
-          <Image
+         />
+          {/* <Image
             src="/assets/service_rectangle.png"
             alt="banner image"
             width={1000}
             height={1000}
             className="h-[90vh] w-full object-cover mt-20"
-          />
+          /> */}
           <div className="absolute bottom-1/4  w-full ">
             <div className="grid grid-cols-1 sm:grid-cols-2  mx-auto ">
               <div className="px-8 max-w-xl mx-auto">
