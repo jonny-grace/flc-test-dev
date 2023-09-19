@@ -1,54 +1,96 @@
-import React from 'react';
+import Image from "next/image";
+import React from "react";
+import phoneImage from "../../public/assets/DPOufH.png";
+import TheGirl from "../../public/assets/the girl.png";
 
 const BoxComponent = () => {
   return (
-    <div className=" mt-5  flex md:flex-row md:w-[1200px] md:h-[650px] flex-col">
-      {/* the first image box  Width 766.26px Height 1118.91px */}
-      <div className="flex-grow md:w-[300px]">
-  <div className="relative flex h-full">
-    <img 
-      src="/assets/DPOufH.png"
-      alt="Your Image"
-      className="object-cover hover:cursor-pointer w-full"
-    />
-    <div className="absolute inset-0 flex  bg-gray-500 bg-opacity-50 text-white p-4">
-      <div>
-        <p className='text-xl font-semibold text-left'>featured // events</p>
-        <h2 className="text-4xl font-bold mt-10">Honor Magic Pro Launch</h2>
-        <p className='mt-3 font-semibold'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla</p>
-        <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
-          Learn more
-        </span>
+    // general box
+    <div className=" mt-5  md:w-[1200px] bg-gray-500 md:h-[670px]">
+      <div className=" flex md:flex-row h-full">
+        <div className=" md:w-[40%] bg-blue-300 h-full">
+          <div className="relative md:w-[500px] flex h-full">
+            <Image
+              src={phoneImage}
+              alt="Your Image"
+              className="object-cover hover:cursor-pointer w-full"
+            />
+
+            <div className="absolute inset-0 flex  bg-gray-500 bg-opacity-50 text-white p-4">
+              <div>
+                <p className="text-xl font-semibold text-left">
+                  featured // events
+                </p>
+                <h2 className="text-4xl font-bold mt-10">
+                  Honor Magic Pro Launch
+                </h2>
+                <p className="mt-3 font-semibold">
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate
+                  velit esse molestie consequat, vel illum dolore eu feugiat
+                  nulla
+                </p>
+                <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                  Learn more
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-orange-200 w-[60%] h-full">
+          <div className="w-full h-full bg-red-500 overflow-hidden flex">
+            <div className="bg-blue-500 flex-grow">
+            <div className="h-full">
+                <div className="h-1/2 bg-orange-500">aa</div>
+                <div className="h-1/2 bg-blue-200">bb</div>
+              </div>
+            </div>
+            <div className="bg-green-500 flex-grow">
+              <div className="h-full">
+                <div className="h-1/2 bg-yellow-500"></div>
+                <div className="h-1/2 bg-black">cd</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-      <div className="flex-grow flex flex-col">
-        <div className="flex-grow">
-          <img
-            src="bulk-image2.jpeg"
-            alt="Image for Column b2"
-            className="object-cover hover:cursor-pointer w-full h-full"
+      {/* the first box  */}
+      {/* <div className="md:w-40">
+        <div className="relative md:w-[500px] flex h-full">
+          <Image
+            src={phoneImage}
+            alt="Your Image"
+            className="object-cover hover:cursor-pointer w-full"
           />
+      
+          <div className="absolute inset-0 flex  bg-gray-500 bg-opacity-50 text-white p-4">
+            <div>
+              <p className="text-xl font-semibold text-left">
+                featured // events
+              </p>
+              <h2 className="text-4xl font-bold mt-10">
+                Honor Magic Pro Launch
+              </h2>
+              <p className="mt-3 font-semibold">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+              </p>
+              <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                Learn more
+              </span>
+            </div>
+          </div>
         </div>
-        <div className="flex-grow pt-80 bg-green-900 hover:cursor-pointer">
-          <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">Undiz Influencers</h2>
+      </div> */}
+      {/* the second box  */}
+      {/* <div className="flex h-full w-full ">
+        <div className="w-40 bg-blue-500"></div>
+        <div className="w-60 bg-green-500 overflow-hidden">
+          <div className="h-full">
+            <div className="h-1/2 bg-yellow-500"></div>
+            <div className="h-1/2 bg-red-500"></div>
+          </div>
         </div>
-      </div>
-      <div className="flex-grow flex flex-col">
-        <div className="flex-grow pt-72 bg-red-950 hover:cursor-pointer text-white">
-          <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">Ajmal Perfumes</h2>
-          <p className=' w-96 px-10'>you can modify the code to display all the tabs horizontally instead of wrapping them.</p>
-          <a ><span className=' w-96 px-10 mt-20 '>Learn More</span> </a>
-        </div>
-        <div className="flex-grow">
-          <img
-            src="bulk-image2.jpeg"
-            alt="Image for Column C2"
-            className="object-cover hover:cursor-pointer w-full h-full"
-          />
-        </div>
-      </div>
+      </div> */}
     </div>
   );
 };

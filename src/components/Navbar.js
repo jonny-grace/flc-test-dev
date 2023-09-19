@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import logo from '../../public/logo.png';
+import logo from '../../public/Frame.png';
 import Image from 'next/image';
 
 const Navbar = () => {

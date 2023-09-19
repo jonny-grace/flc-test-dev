@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import logo from '../../public/logo.png';
+import logo from '../../public/Frame.png';
+import logoBlack from '../../public/Frame-black.png';
+
 import Image from 'next/image';
 
 const HomePageNavBar = () => {
@@ -32,11 +34,16 @@ const HomePageNavBar = () => {
     >
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
-          <Link href="/" legacyBehavior>
+        <Link href="/" legacyBehavior>
             <a className="flex items-center space-x-2">
-              <Image src={logo} alt="Logo" className="h-12 w-12" />
+              <Image
+                src={isScrolled ? logoBlack : logo} // Use the black logo when isScrolled is true
+                alt="Logo"
+                className="h-12 w-12"
+              />
             </a>
           </Link>
+
         </div>
         <div className="relative md:hidden">
           <button

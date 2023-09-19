@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
 
             <img
-              src="/logo.png"
+              src="/Frame.png"
               alt="Logo"
               className="ml-4 mt-4 md:mt-0"
               width={100}
