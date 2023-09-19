@@ -8,7 +8,7 @@ const Marketing = () => {
           <h5 className="text-gray-600 text-xl">01</h5>
           <h5 className="text-black text-5xl py-8">Marketing </h5>
           <div className="grid gap-y-6  h-min">
-            <p className="text-gray-600 h-min">
+            <p className="text-gray-600 h-min ">
               We are more than a marketing agency we are your strategic partner
               for the results.
             </p>

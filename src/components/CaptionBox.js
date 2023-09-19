@@ -4,10 +4,10 @@ const CaptionComponent = () => {
   return (
     <div className="bg-slate-300 mt-24">
       <div className="mx-5 py-16">
-        <div className="bg-white p-8 rounded-lg mx-16 pt-5 mt-[-100px] border border-spacing-1">
+        <div className="bg-white p-8 rounded-lg mx-16 pt-5 mt-[-100px] border border-spacing-1 ">
           <div className="flex items-center mb-4">
             <div>
-              <p className="text-lg font-semibold">
+              <p className="text-lg font-semibold font-sans">
               &quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum reprehenderit accusamus quidem quis.&quot;
               </p>
               <p className="text-gray-600">- John Doe</p>

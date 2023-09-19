@@ -76,7 +76,7 @@ const index = () => {
     </div>
     <JoinUs/>
     </>
-  );
+  ); 
 };
 
 export default index;

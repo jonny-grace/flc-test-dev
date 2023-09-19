@@ -10,7 +10,7 @@ import Service from "../components/Service";
 
 export default function HomePage() {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden  font-inter">
       <HomePageNavBar />
     <Hero />
     <Service />
