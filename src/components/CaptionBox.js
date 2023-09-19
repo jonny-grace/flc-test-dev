@@ -8,7 +8,7 @@ const CaptionComponent = () => {
           <div className="flex items-center mb-4">
             <div>
               <p className="text-lg font-semibold">
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum reprehenderit accusamus quidem quis."
+              &quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum reprehenderit accusamus quidem quis.&quot;
               </p>
               <p className="text-gray-600">- John Doe</p>
             </div>
