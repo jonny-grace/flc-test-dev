@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import phoneImage from "../../public/assets/DPOufH.png";
-import TheGirl from "../../public/assets/the-girl.png";
+import TheGirl from "../../public/assets/The-Girl.png";
 
 import Perfume from "../../public/assets/perfume.png";
 
@@ -48,9 +48,9 @@ const BoxComponent = () => {
                   </div>
                 </div>
                 <div className="h-[55%] bg-green-900 pt-10 relative">
-                <div className=" absolute w-60 ml-5 text-white">
+                  <div className=" absolute w-60 ml-5 text-white">
                     <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
-                    
+
                     <span className=" underline mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                       Learn more
                     </span>
