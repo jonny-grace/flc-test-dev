@@ -9,7 +9,7 @@ const BoxComponent = () => {
   return (
     // general box
     <div className=" mt-5  md:w-[1200px] bg-gray-500 md:h-[670px]">
-      <div className=" flex md:flex-row h-full">
+      <div className=" flex flex-col md:flex-row h-full">
         <div className=" md:w-[40%] bg-blue-300 h-full">
           <div className="relative md:w-[500px] flex h-full">
             <Image
@@ -38,15 +38,61 @@ const BoxComponent = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-orange-200 w-[60%] h-full ml-5">
-          <div className="w-full h-full bg-red-500 overflow-hidden flex">
-            <div className="bg-blue-500 flex-grow">
+
+        {/* Mobile view  */}
+        <div className=" md:hidden">
+          <div className="w-full h-full bg-red-500 overflow-hidden flex flex-col md:flex-row">
+            <div className="bg-blue-500 md:flex-grow">
+              <div className="h-full">
+                <div className="h-[45%] bg-orange-500 relative">
+                  <div className=" w-full h-full">
+                    <Image src={TheGirl} alt="The Girl" />
+                  </div>
+                </div>
+
+                <div className="flex-grow pt-80 bg-green-900 hover:cursor-pointer">
+                  <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">
+                    Undiz Influencers
+                  </h2>
+                  
+                </div>
+              </div>
+            </div>
+            <div className=" flex-grow">
+              <div className="h-full">
+              <div className="flex-grow pt-72 bg-red-950 hover:cursor-pointer text-white">
+          <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">
+            Ajmal Perfumes
+          </h2>
+          <p className=" w-96 px-10">
+            you can modify the code to display all the tabs horizontally instead
+            of wrapping them.
+          </p>
+          <a>
+            <span className=" w-96 px-10 mt-20 ">Learn More</span>{" "}
+          </a>
+        </div>
+                <div className="h-[45%] bg-black relative">
+                  <div className="w-full ">
+                    <Image src={Perfume} alt="The Girl" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* desktop view  */}
+        <div className=" hidden md:block bg-orange-200 w-[60%] h-full ml-5">
+          <div className="w-full h-full bg-red-500 overflow-hidden flex flex-col md:flex-row">
+            <div className="bg-blue-500 md:flex-grow">
               <div className="h-full">
                 <div className="h-[45%] bg-orange-500 relative">
                   <div className=" w-full h-full">
                     <Image src={TheGirl} alt="The Girl" layout="fill" />
                   </div>
                 </div>
+
                 <div className="h-[55%] bg-green-900 pt-10 relative">
                   <div className=" absolute w-60 ml-5 text-white">
                     <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
