@@ -20,20 +20,14 @@ const index = () => {
                     </p>
                 </div>
                 <div>
-                    <img 
-                     src="/assets/about.png"
-                     alt="banner image"
-                     width={1000}
-                     height={1000}
-                     className=" w-full h-48 md:h-96 object-cover mt-10"
-                    />
-                    {/* <Image
-                        src="/assets/service_rectangle.png"
+                   
+                    <Image
+                        src="/assets/about.png"
                         alt="banner image"
                         width={1000}
                         height={1000}
                         className=" w-full h-48 md:h-96 object-cover mt-10"
-                    /> */}
+                    />
                 </div>
                 <div>
                 <p className="text-lg mb-8 mt-5">

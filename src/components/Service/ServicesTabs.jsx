@@ -5,12 +5,13 @@ import DigitalMarketing from "./Tabs/DigitalMarketing";
 import EventsAndExhibitions from "./Tabs/EventsAndExhibitions";
 import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
+import CaptionComponent from "../CaptionBox";
 // import Marketing from "./Tabs/Marketing";
 const ServicesTabs = () => {
   const [tabs, setTab] = useState("marketing");
   return (
     <>
-      <div className=" max-w-5xl mx-auto mt-16">
+      <div className=" max-w-5xl mx-auto md:mt-20">
         <div className="flex justify-between items-center mx-4 gap-2">
           <button
             onClick={() => setTab("marketing")}
@@ -84,6 +85,7 @@ const ServicesTabs = () => {
         <div>{tabs === "digitalMarketing" ? <DigitalMarketing /> : null}</div>
         <div>{tabs === "contentProduction" ? <ContentProduction /> : null}</div>
       </section>
+      
     </>
   );
 };

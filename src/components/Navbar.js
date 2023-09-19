@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import logo from '../../public/Frame.png';
+import logo from '../../public/Frame-black.png';
 import Image from 'next/image';
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
             </a>
           </Link>
         </div>
-        <div className="relative md:hidden">
+        <div className=" md:hidden">
           <button
             className={`text-gray-400 hover:text-white focus:outline-none focus:text-white ${
               isScrolled ? 'text-white' : 'text-gray-400'
@@ -79,7 +79,7 @@ const Navbar = () => {
               <Link href="/contact" legacyBehavior>
                 <a className="block py-1 hover:text-gray-300">Contact Us</a>
               </Link>
-              <Link href="/about" legacyBehavior>
+              <Link href="/blogpage" legacyBehavior>
                 <a className="block py-1 hover:text-gray-300">Blog</a>
               </Link>
             </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
           <Link href="/contact" legacyBehavior>
             <a className="hover:text-gray-300">Contact Us</a>
           </Link>
-          <Link href="/about" legacyBehavior>
+          <Link href="/blogpage" legacyBehavior>
             <a className="hover:text-gray-300">Blog</a>
           </Link>
         </div>
