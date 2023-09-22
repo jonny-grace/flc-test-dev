@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { useState } from "react";
 import DigitalMarketing from "./Tabs/DigitalMarketing";
@@ -6,13 +5,14 @@ import EventsAndExhibitions from "./Tabs/EventsAndExhibitions";
 import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
 import CaptionComponent from "../CaptionBox";
-// import Marketing from "./Tabs/Marketing";
+
 const ServicesTabs = () => {
   const [tabs, setTab] = useState("marketing");
+
   return (
     <>
-      <div className=" max-w-5xl mx-auto md:mt-20 font-inter">
-        <div className="flex justify-between items-center mx-4 gap-2">
+      <div className="w-full mx-auto md:mt-20 font-inter">
+        <div className="flex justify-between items-center mx-32 gap-2">
           <button
             onClick={() => setTab("marketing")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -21,7 +21,7 @@ const ServicesTabs = () => {
             <span
               className={
                 tabs === "marketing"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -37,7 +37,7 @@ const ServicesTabs = () => {
             <span
               className={
                 tabs === "events"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -53,7 +53,7 @@ const ServicesTabs = () => {
             <span
               className={
                 tabs === "digitalMarketing"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -69,7 +69,7 @@ const ServicesTabs = () => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg`
+                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -77,15 +77,14 @@ const ServicesTabs = () => {
             </span>
           </button>
         </div>
+        <hr className="border-t-1 border-gray-800 mt-2"></hr>
       </div>
-      <hr class="border-t-1 border-gray-800"></hr>
       <section className="max-w-5xl mx-auto">
         <div>{tabs === "marketing" ? <Marketing /> : null}</div>
         <div>{tabs === "events" ? <EventsAndExhibitions /> : null}</div>
         <div>{tabs === "digitalMarketing" ? <DigitalMarketing /> : null}</div>
         <div>{tabs === "contentProduction" ? <ContentProduction /> : null}</div>
       </section>
-      
     </>
   );
 };

@@ -18,12 +18,12 @@ const BoxComponent = () => {
               className="object-cover hover:cursor-pointer w-full"
             />
 
-            <div className="absolute inset-0 flex  bg-gray-500 bg-opacity-50 text-white p-4">
+            <div className="absolute inset-0 flex  bg-slate-900 bg-opacity-50 text-white p-4">
               <div>
                 <p className="text-xl font-semibold text-left">
                   featured // events
                 </p>
-                <h2 className="text-4xl font-bold  mt-10">
+                <h2 className="text-4xl font-bold mt-10 px-4">
                   Honor Magic Pro Launch
                 </h2>
                 <p className="mt-3 font-semibold">
@@ -31,7 +31,7 @@ const BoxComponent = () => {
                   velit esse molestie consequat, vel illum dolore eu feugiat
                   nulla
                 </p>
-                <span className=" underline mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                <span className=" hover:cursor-pointer mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                   Learn more
                 </span>
               </div>
@@ -50,17 +50,19 @@ const BoxComponent = () => {
                   </div>
                 </div>
 
-                <div className="flex-grow pt-80 bg-green-900 hover:cursor-pointer">
+                <div className="flex-grow pt-80  hover:cursor-pointer" style={{backgroundColor: '#1B413E'}}>
                   <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">
                     Undiz Influencers
                   </h2>
-                  
+                  <a>
+            <span className=" w-96 px-2 hover:cursor-pointer  ">Learn More</span>{" "}
+          </a>
                 </div>
               </div>
             </div>
             <div className=" flex-grow">
               <div className="h-full">
-              <div className="flex-grow pt-72 bg-red-950 hover:cursor-pointer text-white">
+              <div className="flex-grow pt-72  hover:cursor-pointer text-white" style={{backgroundColor: '#964a2f'}}>
           <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">
             Ajmal Perfumes
           </h2>
@@ -69,7 +71,7 @@ const BoxComponent = () => {
             of wrapping them.
           </p>
           <a>
-            <span className=" w-96 px-10  ">Learn More</span>{" "}
+            <span className=" w-96 px-10 hover:cursor-pointer  ">Learn More</span>{" "}
           </a>
         </div>
                 <div className="h-[45%] bg-black relative">
@@ -93,20 +95,20 @@ const BoxComponent = () => {
                   </div>
                 </div>
 
-                <div className="h-[55%] bg-green-900 pt-10 relative">
+                <div className="h-[55%] pt-10 relative" style={{backgroundColor: '#1B413E'}}>
                   <div className=" absolute w-60 ml-5 text-white">
-                    <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
+                    <h2 className=" font-bold text-4xl  ">Undiz Influencers</h2>
 
-                    <span className=" underline mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
-                      Learn more
-                    </span>
+                    <a>
+            <span className=" w-96 px-2  py-4 hover:cursor-pointer  ">Learn More</span>{" "}
+          </a>
                   </div>
                 </div>
               </div>
             </div>
             <div className=" flex-grow">
               <div className="h-full">
-                <div className="h-[55%] bg-gray-700 pt-10 relative">
+                <div className="h-[55%]  pt-10 relative" style={{backgroundColor: '#964a2f'}}>
                   <div className=" absolute w-60 ml-5 text-white">
                     <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
                     <p className=" pt-4">
@@ -114,7 +116,7 @@ const BoxComponent = () => {
                       velit esse molestie consequat, vel illum dolore eu feugiat
                       nulla
                     </p>
-                    <span className=" underline mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                    <span className=" hover:cursor-pointer  mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                       Learn more
                     </span>
                   </div>

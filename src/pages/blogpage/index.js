@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const Index = () => {
   return (
-    <>
+    <div className=" mb-20">
       <Navbar />
-      <div className="p-4 md:mx-12 mt-20 mb-10 font-inter">
+      <div className="p-4 md:mx-12 mt-20 mb-20 font-inter">
         <h1 className="text-xl font-bold mb-4 mx-10">Featured Articles</h1>
 
-        <div className="flex flex-col sm:flex-row gap-5 sm:gap-32">
+        <div className="flex flex-col sm:flex-row">
           <div className="w-full  md:w-auto px-10">
             <img src="/assets/blog-banner.png" className="w-full" alt="Blog Banner" />
             <div>
@@ -25,7 +25,7 @@ const Index = () => {
               <h2 className="text-gray-500 mt-4">Nidhi Sehgal</h2>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 md:w-auto pl-4">
+          <div className="w-full sm:w-1/2 md:w-auto">
             <div className="mb-4 flex  sm:flex-row gap-5">
               <img src="/assets/blog1.png" className="w-[130px] h-[130px]" alt="Blog 1" />
               <div>
@@ -56,7 +56,7 @@ const Index = () => {
       <div className="flex justify-center">
         <div className="w-full flex flex-col  md:mx-16 mx-4 sm:flex-row justify-center gap-5 pl-4">
           <div className="mb-4 sm:w-1/3">
-            <img src="/assets/blog1.png" className="w-full" alt="Blog 1" />
+            <img src="/assets/blog1.png" className="w-full h-72" alt="Blog 1" />
             <div>
               <h2 className="text-gray-500 mt-4">Integrated Marketing</h2>
             </div>
@@ -66,7 +66,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mb-4 sm:w-1/3">
-            <img src="/assets/blog2.png" className="w-full" alt="Blog 2" />
+            <img src="/assets/blog2.png" className="w-full h-72" alt="Blog 2" />
             <div>
               <h2 className="text-gray-500 mt-4">Digital Marketing</h2>
             </div>
@@ -76,7 +76,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mb-4 sm:w-1/3">
-            <img src="/assets/blog 3.png" className="w-full" alt="Blog 3" />
+            <img src="/assets/blog 3.png" className="w-full h-72" alt="Blog 3" />
             <div>
               <h2 className="text-gray-500 mt-4">Influencer Marketing</h2>
             </div>
@@ -87,7 +87,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

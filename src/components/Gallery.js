@@ -21,7 +21,7 @@ const GaleryTab = () => {
         <TabList className="flex justify-center flex-wrap">
           {['Integrated', 'FMCG', 'Electronics', 'Fashion & Lifestyle', 'Food & Beverage'].map((tab, index) => (
             <React.Fragment key={tab}>
-              {index > 0 && <div className="border-l mx-2 h-6 hidden md:block" />} {/* Add horizontal line */}
+              {index > 0 && <div className="border-l mx-2 h-6 hidden md:block active:font-bold" />} {/* Add horizontal line */}
               <Tab>{tab}</Tab>
             </React.Fragment>
           ))}

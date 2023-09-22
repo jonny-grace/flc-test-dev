@@ -2,22 +2,18 @@ import React from "react";
 
 const Marketing = () => {
   return (
-    <div className="mt-16 px-5 font-inter">
+    <div className="mt-16  font-inter">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
         <div className="grid h-min max-w-lg">
           <h5 className="text-gray-600 text-xl">01</h5>
-          <h5 className="text-black text-5xl py-8">Marketing </h5>
+          <h5 className="text-black text-5xl py-8 font-bold">marketing </h5>
           <div className="grid gap-y-6  h-min">
             <p className="text-gray-600 h-min ">
               We are more than a marketing agency we are your strategic partner
               for the results.
             </p>
-            <p className="text-gray-600 h-min">
-              {/* Rooted in the shopper's journey, we craft narratives that tell
-              your brand's story with a passion. Our approach is result driven,
-              pushing brands towards increased market share and ROI. Consider us
-              a one stop shop for all your marketing needs. We bring your
-              campaign to life, turning your vision into reality. */}
+            <p className="text-gray-600 h-min ">
+             
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               laborum reprehenderit accusamus quidem quis. Totam corrupti
               suscipit temporibus voluptatum culpa, voluptates praesentium
@@ -32,33 +28,28 @@ const Marketing = () => {
             <h3 className="text-xl text-gray-800 font-medium">
               brand ambassadors
             </h3>
-            <p className="text-gray-600">
-              {/* We build a connect with your target audience by strategically
-              employing experiential activities across multiple touch points,
-              from in store and outdoor settings to vibrant malls, beaches,
-              schools, parks, and more */}
+            <p className="text-gray-600 ">
+             
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               laborum reprehenderit accusamus quidem quis. Totam corrupti
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            
           </div>
+          <hr className="border-t-1 border-gray-800 mt-2"></hr>
           <div className="grid gap-y-8">
             <h3 className="text-xl text-gray-800 font-medium mt-8">
               shopper & trade marketing
             </h3>
             <p className="text-gray-600">
-              {/* We design our strategy based on shopper insights to create
-              successful brand campaigns. From creating impactful P O S M to
-              category and shelf management, our focus is to bring your brand to
-              the forefront in the eyes of the consumer. */}
+             
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               laborum reprehenderit accusamus quidem quis. Totam corrupti
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800 mt-2"></hr>
           </div>
           <div className="grid gap-y-8">
             <h3 className="text-xl text-gray-800 font-medium mt-8">
@@ -74,7 +65,7 @@ const Marketing = () => {
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800 mt-2"></hr>
           </div>
           <div className="grid gap-y-8">
             <h3 className="text-xl text-gray-800 font-medium mt-8">
@@ -89,7 +80,7 @@ const Marketing = () => {
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800"></hr>
           </div>
         </div>
       </div>

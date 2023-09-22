@@ -8,12 +8,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white font-inter">
+    <footer className=" text-white font-inter" style={{backgroundColor:"#333333"}}>
       <div className="container mx-auto py-8 px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 pt-8">
           <div className="p-4 flex flex-col items-center md:gap-2 md:items-start">
             <div className="px-3 md:h-[190px] py-3 mb-4">
-              <p className="mb-4 text-start md:mr-8 text-[14px] w-[228px]">
+              <p className="mb-4 text-start md:mr-8 text-[14px]  md:w-[180px]">
                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit
                 esse molestie consequeat,vel illum dolore eu feuguat nulla
               </p>
@@ -22,7 +22,7 @@ const Footer = () => {
             <img
               src="/Frame.png"
               alt="Logo"
-              className="ml-4 mt-4 md:mt-0"
+              className="ml-4 mt-4 md:mt-16"
               width={100}
               height={100}
             />
@@ -78,19 +78,22 @@ const Footer = () => {
             <h2 className="font-bold text-start md:text-start mb-4 text-[28px]">
               Visit Us
             </h2>
-            <div className="text-start md:text-start flex flex-col gap-6 text-[14px] w-[304px]">
-              <p className="mb-2">
-                <strong>UAE Office:</strong> 1501, Concord Tower, Media City, PO
-                Box 283795, Dubai, UAE.
+            <div className="text-start md:text-start flex flex-col gap-6 text-[14px]  w-[240px]">
+              <div>
+              <strong>UAE Office:</strong>
+              <p className="">
+                1501, Concord Tower, Media City, PO Box 283795, Dubai, UAE.
               </p>
-              <p className="mb-2">
-                <strong>India Office:</strong> 401 B, Unitech Arcadia, South
-                City 2, Sec 49, Gurugram - 122018 India.
+              </div>
+              <div>
+              <strong>India Office:</strong>
+              <p className="">
+                401 B, Unitech Arcadia, South City 2, Sec 49, Gurugram - 122018
+                India.
               </p>
-              <p>
-                <strong>KSA Office:</strong> Al Tadamun Al Arabi Street,
-                Mishrifah Dist, Jeddah SA.
-              </p>
+              </div>
+              <div><strong>KSA Office:</strong>
+              <p>Al Tadamun Al Arabi Street, Mishrifah Dist, Jeddah SA.</p></div>
             </div>
           </div>
 
@@ -115,7 +118,7 @@ const Footer = () => {
                 </p>
               </a>
             </div>
-            <p className="mt-8 md:pr-20 md:ml-[-150px]  text-center md:mt-44">
+            <p className="mt-8 md:pr-20 md:ml-[-150px]  text-center md:mt-56">
               &copy; 2023 FLC Group all Rights Reserved.
             </p>
           </div>

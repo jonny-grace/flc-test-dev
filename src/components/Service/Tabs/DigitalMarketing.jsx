@@ -2,11 +2,11 @@ import React from "react";
 
 const DigitalMarketing = () => {
   return (
-    <div className="mt-16 px-5 font-inter">
+    <div className="mt-16 font-inter">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
         <div className="grid h-min max-w-lg">
           <h5 className="text-gray-600 text-xl">03</h5>
-          <h5 className="text-black text-5xl py-8">digital marketing </h5>
+          <h5 className="text-black text-5xl py-8 font-bold">digital marketing </h5>
           <div className="grid gap-y-6  h-min">
             <p className="text-gray-600 h-min">
               We are more than a marketing agency we are your strategic partner
@@ -42,7 +42,7 @@ const DigitalMarketing = () => {
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800"></hr>
           </div>
           <div className="grid gap-y-8">
             <h3 className="text-xl text-gray-800 font-medium mt-8">
@@ -58,7 +58,7 @@ const DigitalMarketing = () => {
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800"></hr>
           </div>
           <div className="grid gap-y-8">
             <h3 className="text-xl text-gray-800 font-medium mt-8">
@@ -74,7 +74,7 @@ const DigitalMarketing = () => {
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800"></hr>
           </div>
           <div className="grid gap-y-8">
             <h3 className="text-xl text-gray-800 font-medium mt-8">
@@ -89,7 +89,7 @@ const DigitalMarketing = () => {
               suscipit temporibus voluptatum culpa, voluptates praesentium
               cupiditate autem, odit explicabo delectus a dolore perspiciatis!
             </p>
-            <hr />
+            <hr className="border-t-1 border-gray-800"></hr>
           </div>
         </div>
       </div>

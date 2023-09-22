@@ -28,7 +28,7 @@ const HomePageNavBar = () => {
 
   return (
     <nav
-      className={` fixed top-0 left-0 right-0 z-50 font-inter ${
+      className={` fixed top-0 left-0 right-0 z-50 font-inter font-extrabold ${
         isScrolled ? 'bg-gray-100 text-black' : 'bg-transparent text-white'
       }`}
     >
