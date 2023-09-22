@@ -3,7 +3,7 @@ import React from 'react'
 const Service = () => {
   return (
 
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:py-14 mx-auto">
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:py-14 mx-auto font-inter">
       <div className="font-bold justify-center items-center text-center ">
         <h1 className="text-5xl lg:text-7xl md:pl-10 font-extrabold">
           beyond

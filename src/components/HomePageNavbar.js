@@ -28,7 +28,7 @@ const HomePageNavBar = () => {
 
   return (
     <nav
-      className={` fixed top-0 left-0 right-0 z-50 ${
+      className={` fixed top-0 left-0 right-0 z-50 font-inter ${
         isScrolled ? 'bg-gray-100 text-black' : 'bg-transparent text-white'
       }`}
     >
@@ -53,7 +53,10 @@ const HomePageNavBar = () => {
             onClick={toggleMenu}
           >
             <svg
-              className="h-6 w-6 fill-current"
+            className={` h-6 w-6 fill-current font-inter ${
+              isScrolled ? ' text-black' : 'bg-transparent text-white'
+            }`}
+
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

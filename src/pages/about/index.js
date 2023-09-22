@@ -9,7 +9,7 @@ const index = () => {
     return (
         <>
             <Navbar />
-            <div className="  p-4 md:mx-48 mt-20 mb-10">
+            <div className="  p-4 md:mx-48 mt-20 mb-10 font-inter">
                 <div>
                     <h1 className="text-4xl font-bold mb-4">Beyond Results!</h1>
                     <p className="text-lg mb-8">

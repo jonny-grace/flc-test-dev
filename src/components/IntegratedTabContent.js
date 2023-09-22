@@ -8,7 +8,7 @@ import Perfume from "../../public/assets/perfume.png";
 const BoxComponent = () => {
   return (
     // general box
-    <div className=" mt-5  md:w-[1200px] bg-gray-500 md:h-[670px]">
+    <div className=" mt-5  md:w-[1200px] bg-gray-500 md:h-[670px] font-inter">
       <div className=" flex flex-col md:flex-row h-full">
         <div className=" md:w-[40%] bg-blue-300 h-full">
           <div className="relative md:w-[500px] flex h-full">
@@ -23,7 +23,7 @@ const BoxComponent = () => {
                 <p className="text-xl font-semibold text-left">
                   featured // events
                 </p>
-                <h2 className="text-4xl font-bold mt-10">
+                <h2 className="text-4xl font-bold  mt-10">
                   Honor Magic Pro Launch
                 </h2>
                 <p className="mt-3 font-semibold">
@@ -64,12 +64,12 @@ const BoxComponent = () => {
           <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">
             Ajmal Perfumes
           </h2>
-          <p className=" w-96 px-10">
+          <p className=" w-96 px-10 pt-5">
             you can modify the code to display all the tabs horizontally instead
             of wrapping them.
           </p>
           <a>
-            <span className=" w-96 px-10 mt-20 ">Learn More</span>{" "}
+            <span className=" w-96 px-10  ">Learn More</span>{" "}
           </a>
         </div>
                 <div className="h-[45%] bg-black relative">

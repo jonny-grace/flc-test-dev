@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <section
-      className="relative w-full bg-cover bg-center bg-no-repeat"
+      className="relative w-full bg-cover bg-center bg-no-repeat font-inter"
       style={{ backgroundImage: "url(/assets/homeimage.png)" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -12,7 +12,7 @@ const Hero = () => {
         className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-center lg:h-screen lg:items-center lg:px-8"
       >
         <div className="max-w-xl text-center sm:text-left text-white">
-          <h1 className="text-5xl lg:text-7xl md:pl-10 font-extrabold">
+          <h1 className="text-5xl lg:text-7xl md:pl-10 font-inter font-extrabold">
             beyond
           </h1>
           <strong className="block font-extrabold text-5xl lg:text-7xl">

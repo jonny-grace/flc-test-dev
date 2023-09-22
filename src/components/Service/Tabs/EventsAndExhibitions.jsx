@@ -2,7 +2,7 @@ import React from "react";
 
 const EventsAndExhibitions = () => {
   return (
-    <div className="mt-16 px-5">
+    <div className="mt-16 px-5 font-inter">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
         <div className="grid h-min max-w-lg">
           <h5 className="text-gray-600 text-xl">02</h5>

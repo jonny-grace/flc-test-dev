@@ -2,7 +2,7 @@ import React from "react";
 
 const ContentProduction = () => {
   return (
-    <div className="mt-16 px-5">
+    <div className="mt-16 px-5 font-inter">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
         <div className="grid h-min max-w-lg">
           <h5 className="text-gray-600 text-xl">04</h5>
@@ -29,7 +29,7 @@ const ContentProduction = () => {
         <div className="grid gap-y-8 h-min max-w-lg mx-auto">
           <div className="mt-8 invisible"></div>
           <div className="grid gap-y-8 max-w-lg mx-auto">
-            <h3 className="text-xl text-gray-800 font-medium">
+            <h3 className="text-xl text-gray-800 font-inter font-medium">
               brand ambassadors
             </h3>
             <p className="text-gray-600">

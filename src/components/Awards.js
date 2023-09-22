@@ -55,7 +55,7 @@ function Awards() {
     // Add more items as needed
   ];
   return (
-    <div className="bg-gray-300 py-8">
+    <div className="bg-gray-300 py-8 font-inter">
       <div className=" mx-5 md:mx-8 gap-5  mb-10 ">
         <h1 className=" mt-5 pt-3 ml-20 md:ml-36 md:text-2xl text-4xl">
           Awards

@@ -64,7 +64,7 @@ const SmallCardList = () => {
   ];
 
   return (
-    <div className=" bg-red-400 mx-5 md:mx-8 gap-5  mb-10 ">
+    <div className=" bg-red-400 mx-5 md:mx-8 gap-5  mb-10 font-inter ">
         <h1 className=" mt-5 pt-3 ml-20 md:ml-36 md:text-2xl text-4xl">Our Values</h1>
         <div className=" flex justify-center items-center  flex-wrap">{items.map((item, index) => (
         <SmallCard

@@ -7,7 +7,7 @@ import CaptionComponent from "../../components/CaptionBox";
 const index = () => {
   return (
     <>
-      <div className="min-h-screen overflow-x-hidden">
+      <div className="min-h-screen overflow-x-hidden font-inter">
         <section className="md:h-[90vh]  w-full relative md:mb-16">
           <Navbar />
           <img

@@ -16,7 +16,7 @@ const GaleryTab = () => {
   };
 
   return (
-    <div className=" flex flex-col items-center">
+    <div className=" flex flex-col items-center font-inter">
       <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
         <TabList className="flex justify-center flex-wrap">
           {['Integrated', 'FMCG', 'Electronics', 'Fashion & Lifestyle', 'Food & Beverage'].map((tab, index) => (

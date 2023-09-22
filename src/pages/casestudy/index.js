@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const index = () => {
   return (
-    <div className=" w-full overflow-x-hidden mb-16">
+    <div className=" w-full overflow-x-hidden mb-16 font-inter">
       <Navbar />
       <div className=" w-screen relative bg-gray-50 ">
         {/* <div className="absolute inset-0 bg-gray-200 opacity-50"></div> */}

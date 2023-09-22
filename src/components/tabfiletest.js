@@ -2,7 +2,7 @@ import React from 'react';
 
 const BoxComponent = () => {
   return (
-    <div className="container mt-5 bg-orange-300 flex md:flex-row md:w-[1200px] md:h-[650px] flex-col">
+    <div className="container mt-5 bg-orange-300 flex md:flex-row md:w-[1200px] md:h-[650px] flex-col font-inter">
       {/* the first image box  Width 766.26px Height 1118.91px */}
       <div className="flex-grow bg-red-400 md:w-[300px]">
         <div className="relative flex h-full">

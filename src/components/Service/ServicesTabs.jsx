@@ -11,7 +11,7 @@ const ServicesTabs = () => {
   const [tabs, setTab] = useState("marketing");
   return (
     <>
-      <div className=" max-w-5xl mx-auto md:mt-20">
+      <div className=" max-w-5xl mx-auto md:mt-20 font-inter">
         <div className="flex justify-between items-center mx-4 gap-2">
           <button
             onClick={() => setTab("marketing")}

@@ -2,7 +2,7 @@ import { Chrono } from "react-chrono";
 
 const Timeline = () => {
   return (
-    <div className=" mt-10">
+    <div className=" mt-10 font-inter">
     <Chrono
       items={[
         {

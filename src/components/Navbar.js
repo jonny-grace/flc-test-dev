@@ -26,9 +26,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-black fixed top-0 left-0 right-0 z-50 ${
+      className={`text-black fixed top-0 left-0 right-0 z-50 font-inter ${
         isScrolled ? 'bg-white' : 'bg-transparent'
-      }`}
+      }`}API Gateway service
     >
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
@@ -46,7 +46,7 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             <svg
-              className="h-6 w-6 fill-current"
+              className="h-6 w-6 fill-current  text-black"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -66,7 +66,7 @@ const Navbar = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-full right-0 mt-2 w-48 bg-gray-500  shadow-lg rounded-md">
+            <div className="absolute top-full right-0 mt-2 w-48 bg-gray-500  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
                 <a className="block py-1 hover:text-gray-300">Case Studies</a>
               </Link>

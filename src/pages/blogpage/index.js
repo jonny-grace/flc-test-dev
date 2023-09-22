@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <div className="p-4 md:mx-12 mt-20 mb-10">
+      <div className="p-4 md:mx-12 mt-20 mb-10 font-inter">
         <h1 className="text-xl font-bold mb-4 mx-10">Featured Articles</h1>
 
         <div className="flex flex-col sm:flex-row gap-5 sm:gap-32">

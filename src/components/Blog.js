@@ -4,7 +4,7 @@ import img3 from '../../public/assets/Ellipse.png'
 const Blog = () => {
   return (
 
-    <div class="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto md:mx-10 mb-10 bg-gray-300">
+    <div class="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto md:mx-10 mb-10 bg-gray-300 font-inter">
 
       <div class="max-w-2xl mx-auto text-left ml-10 mb-10 lg:mb-14">
         <p class="mt-1 text-black text-2xl mb-4 ">from our blog</p>

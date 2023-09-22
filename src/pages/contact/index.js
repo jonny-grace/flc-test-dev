@@ -6,7 +6,7 @@ const index = () => {
   return (
     <>
     <Navbar />
-    <div className="  p-4 md:mx-48 mt-40 mb-10">
+    <div className="  p-4 md:mx-48 mt-40 mb-10 font-inter">
       <h1 className="text-4xl font-bold mb-4">happy to Partner!</h1>
       <p className="text-lg mb-8">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
