@@ -1,24 +1,11 @@
+'use client';
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar";
 import Image from "next/image";
 import axios from "axios";
 
 const index = () => {
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://flc-cms.onrender.com/api/products?populate=product_type"
-        );
-        console.log(response.data.data[0].attributes.name);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <div className=" w-full overflow-x-hidden mb-16 font-inter">
