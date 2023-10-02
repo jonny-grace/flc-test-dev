@@ -43,7 +43,7 @@ const Index = ({ blogs }) => {
             </div>
 
             <div>
-              <h2 className="text-gray-500 mt-4">Nidhi Sehgal</h2>
+              <h2 className="text-gray-500 mt-4">{feutured?.createdBy?.data?.attributes?.firstname} {feutured?.createdBy?.data?.attributes?.lastname}</h2>
             </div>
           </div>
           <div className="w-full sm:w-1/2 md:w-auto h-[40%]">
@@ -62,7 +62,7 @@ const Index = ({ blogs }) => {
                 <h1 className=" font-bold hover:cursor-pointer">
                   {blog.attributes.title}
                 </h1>
-                <h3>author</h3>
+                <h3>{feutured?.createdBy?.data?.attributes?.firstname}</h3>
               </div>
             </div>
               )

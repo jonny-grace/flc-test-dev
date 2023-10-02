@@ -3,7 +3,6 @@ import React from "react";
 import img3 from "../../public/assets/Ellipse.png";
 import Link from "next/link";
 const Blog = ({ blogSectionTop, blogs }) => {
-  
   return (
     <div
       className="max-w-full  px-4 py-16 sm:px-6 lg:px-8 lg:py-14 mx-auto md:mx-10 mb-14 font-inter"
@@ -33,9 +32,9 @@ const Blog = ({ blogSectionTop, blogs }) => {
               alt="Image Description"
             />
             <div className="mt-6 flex items-center justify-start  w-64">
-              <span className="mr-2">by Nidhi</span>
+              <span className="mr-2">{blog?.attributes?.createdBy?.data?.attributes?.firstname}</span>
               <div className="border-r border-gray-400 h-4 mr-2" />
-              <span className="mr-4"> {blog.attributes.blog_type.data.attributes.name}</span>
+              <span className="mr-4"> {blog?.attributes?.blog_type?.data?.attributes?.name}</span>
             </div>
           </div>
           <h3 className="mt-5 text-xl text-black font-bold">

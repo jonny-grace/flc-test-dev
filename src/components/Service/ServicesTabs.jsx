@@ -6,7 +6,30 @@ import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
 import CaptionComponent from "../CaptionBox";
 
-const ServicesTabs = () => {
+const ServicesTabs = ({services}) => {
+  // console.log('details sssssssssssssss of services',services)
+
+  var marketing = {}
+  var event= {}
+  var contentProduction={}
+  var digitalMarketing={}
+  
+services && services.map((service)=>{
+  if(service.attributes.name=='Marketing' || service.attributes.name=='marketing'){
+    marketing=service
+    
+  } else if(service.attributes.name=='events & exhibition' ||service.attributes.name=='Events & Exhibition'){
+event = service
+  } else if(service.attributes.name=='Content Production' ||service.attributes.name=='content production'){
+    contentProduction = service
+      }
+      else if(service.attributes.name=='Digital Marketing' ||service.attributes.name=='digital marketing' ||service.attributes.name=='digital'){
+        digitalMarketing = service
+          }
+})
+
+// console.log('event tab data ',digitalMarketing)
+
   const [tabs, setTab] = useState("marketing");
 
   return (
@@ -80,10 +103,10 @@ const ServicesTabs = () => {
         <hr className="border-t-1 border-gray-800 mt-2"></hr>
       </div>
       <section className="max-w-5xl mx-4 md:mx-auto">
-        <div>{tabs === "marketing" ? <Marketing /> : null}</div>
-        <div>{tabs === "events" ? <EventsAndExhibitions /> : null}</div>
-        <div>{tabs === "digitalMarketing" ? <DigitalMarketing /> : null}</div>
-        <div>{tabs === "contentProduction" ? <ContentProduction /> : null}</div>
+        <div>{tabs === "marketing" ? <Marketing  marketing={marketing}/> : null}</div>
+        <div>{tabs === "events" ? <EventsAndExhibitions events={event}/> : null}</div>
+        <div>{tabs === "digitalMarketing" ? <DigitalMarketing digitalMarketing={digitalMarketing}/> : null}</div>
+        <div>{tabs === "contentProduction" ? <ContentProduction contentProduction={contentProduction}/> : null}</div>
       </section>
     </>
   );

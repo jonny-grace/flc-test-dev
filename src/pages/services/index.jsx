@@ -6,8 +6,6 @@ import axios from "axios";
 import Image from "next/image";
 
 const index = ({ serviceStatic,services }) => {
-  // console.log('details sssssssssssssss of services',services)
-
   return (
     <>
       <div className="min-h-screen overflow-x-hidden font-inter">
@@ -16,7 +14,7 @@ const index = ({ serviceStatic,services }) => {
           <Image
            width={1000}
            height={1000}
-            src={serviceStatic.background.data.attributes.url}
+            src={serviceStatic?.background?.data?.attributes?.url}
             alt="banner image"
             className="md:h-[90vh]    w-full object-cover mt-20"
           />
@@ -25,10 +23,10 @@ const index = ({ serviceStatic,services }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:mt-28 md:ml-10 ">
               <div className="px-8 max-w-xl mt-24 mx-auto">
                 <h1 className="text-white md:text-2xl text-xl font-medium capitalize">
-                  {serviceStatic.title}
+                  {serviceStatic?.title}
                 </h1>
                 <p className="hidden md:block text-white mt-4  w-[400px]">
-                  {serviceStatic.description}
+                  {serviceStatic?.description}
                 </p>
               </div>
               <div className="invisible"></div>
@@ -37,7 +35,7 @@ const index = ({ serviceStatic,services }) => {
         </section>
 
         <div className=" mt-7">
-          <ServicesTabs />
+          <ServicesTabs services={services}/>
         </div>
         <section className="my-16 max-w-5xl mx-auto">
           {/* <Carousel /> */}

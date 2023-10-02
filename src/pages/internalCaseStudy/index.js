@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Carousel from "../../components/BottomCarousel/Carousel";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import axios from "axios";
 import Image from "next/image";
 
-const Index = ({caseStudyDetails}) => {
-
+const Index = ({ caseStudyDetails }) => {
+  
   return (
     <div className="mb-20 w-full font-inter">
       <div className="overflow-hidden ">
@@ -14,11 +14,18 @@ const Index = ({caseStudyDetails}) => {
         <div className="w-screen  relative bg-gray-50">
           <div className="absolute inset-0 bg-gray-200">
             <div className="w-screen relative">
-              <div className="absolute inset-0 md:mx-32 mt-48  h-full">
-                <h1 className=" text-[48px] mb-10 font-bold">{caseStudyDetails.name}</h1>
+              <div className="md:absolute inset-0 md:mx-32 mt-48  h-full">
+                <h1 className=" md:text-[48px] md:mb-10 font-bold">
+                  {caseStudyDetails?.name}
+                </h1>
                 <div>
-                  <Image  width={1000}
-              height={1000} src="/assets/hisence.png" alt="Hisense"  className="w-full md:w-auto"/>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src={caseStudyDetails?.thumbnail?.data?.attributes?.url}
+                    alt="Hisense"
+                    className="w-full "
+                  />
                 </div>
               </div>
             </div>
@@ -33,42 +40,26 @@ const Index = ({caseStudyDetails}) => {
             <div>
               <h2>Objectives:</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
+                {caseStudyDetails?.objective}
               </p>
             </div>
 
             <div>
               <h2>Idea:</h2>
               <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in
-                vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue
-                duis dolore te feugait nulla facilisi.
+                {caseStudyDetails?.idea}
               </p>
             </div>
 
             <div>
               <h2>Outcome:</h2>
               <p>
-                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-                consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                {caseStudyDetails?.outcome}
               </p>
             </div>
           </div>
           <div className="w-full sm:w-1/4 mt-10">
-            <h2 className="text-4xl">
+            <h2 className="text-2xl">
               Ut wisi enim ad minim veniam, quis nostrud exerci tation
               ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
             </h2>
@@ -96,10 +87,9 @@ export async function getServerSideProps(context) {
       console.log(err.message);
     });
 
-  
   return {
     props: {
       caseStudyDetails,
-    }
+    },
   };
 }
