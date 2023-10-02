@@ -1,30 +1,32 @@
+import Image from 'next/image'
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({hero}) => {
+ 
   return (
     <section
-      className="relative w-full bg-cover bg-center bg-no-repeat font-inter"
-      style={{ backgroundImage: "url(/assets/homeimage.png)" }}
+      className={`relative w-full bg-cover bg-center bg-no-repeat font-inter  bg-blue-400 h-[300px] md:h-[450px] lg:h-[660px]`}
     >
-      <div className="absolute inset-0 bg-black opacity-20"></div>
+      <div className="absolute inset-0 bg-black h-[300px] md:h-[450px] lg:h-[660px] opacity-90">
+      <Image src={hero.path} width={hero.width} height={1500} className=' h-[300px] md:h-[450px] lg:h-[660px] ' />
+
+      </div>
   
       <div
-        className="relative mx-auto max-w-screen-xl px-4 py-32 flex justify-center sm:px-6 lg:flex md:flex md:justify-center md:items-center lg:justify-center lg:h-screen lg:items-center lg:px-8"
+        className="relative mx-auto max-w-screen-xl pt-24 md:pt-40 flex justify-center sm:px-6 lg:flex md:flex md:justify-center md:items-center lg:justify-center lg:h-full lg:items-center lg:px-8"
       >
-        <div className="max-w-xl text-center  md:text-center lg:text-center text-white">
+        <div className=" w-56  text-center lg:w-96   text-white">
           <h1 className="text-5xl lg:text-7xl  font-inter font-extrabold">
-            beyond
+            {hero.title}
           </h1>
-          <strong className="block font-extrabold text-5xl lg:text-7xl">
-            experiance
-          </strong>
+         
        
           <div className="mt-8  flex flex-wrap   text-center ">
             <a
               href="#"
               className="block w-full    px-12 py-3 text-sm underline font-medium text-white shadow hover:font-bold focus:outline-none focus:ring active:font-bold"
             >
-              Learn More
+              {hero.moreButton}
             </a>
           </div>
         </div>

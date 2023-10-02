@@ -12,7 +12,7 @@ const ServicesTabs = () => {
   return (
     <>
       <div className="w-full mx-auto md:mt-20 font-inter">
-        <div className="flex justify-between items-center mx-32 gap-2">
+        <div className="flex justify-between items-center mx-3 md:mx-32 gap-2">
           <button
             onClick={() => setTab("marketing")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -79,7 +79,7 @@ const ServicesTabs = () => {
         </div>
         <hr className="border-t-1 border-gray-800 mt-2"></hr>
       </div>
-      <section className="max-w-5xl mx-auto">
+      <section className="max-w-5xl mx-4 md:mx-auto">
         <div>{tabs === "marketing" ? <Marketing /> : null}</div>
         <div>{tabs === "events" ? <EventsAndExhibitions /> : null}</div>
         <div>{tabs === "digitalMarketing" ? <DigitalMarketing /> : null}</div>

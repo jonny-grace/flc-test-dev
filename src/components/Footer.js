@@ -6,7 +6,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({footerData}) => {
   return (
     <footer className=" text-white font-inter" style={{backgroundColor:"#333333"}}>
       <div className="container mx-auto py-8 px-4 md:px-8">
@@ -14,13 +14,12 @@ const Footer = () => {
           <div className="p-4 flex flex-col items-center md:gap-2 md:items-start">
             <div className="px-3 md:h-[190px] py-3 mb-4">
               <p className="mb-4 text-start md:mr-8 text-[14px]  md:w-[180px]">
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-                esse molestie consequeat,vel illum dolore eu feuguat nulla
+               {footerData.description}
               </p>
             </div>
 
             <img
-              src="/Frame.png"
+              src={footerData.logo.data.attributes.url}
               alt="Logo"
               className="ml-4 mt-4 md:mt-16"
               width={100}
@@ -29,19 +28,19 @@ const Footer = () => {
           </div>
           <div className="p-4">
             <h2 className="font-bold text-start mb-4 text-[28px]">
-              Talk to us
+              {footerData.talk}
             </h2>
             <div className="w-[304px] h-[77px] text-[14px] text-start">
-              <p className="text-start mb-2">Phone: +971 4 4548684</p>
-              <p className="text-start">Email: talk2u@flc-me.com</p>
+              <p className="text-start mb-2">Phone: {footerData.phone}</p>
+              <p className="text-start">Email: {footerData.email}</p>
             </div>
             <div className="md:mt-16 mt-4">
               <h2 className="font-bold text-start mb-4 text-[28px]">
-                Follow Us
+                {footerData.follow}
               </h2>
               <div className="flex">
                 <a
-                  href="https://www.linkedin.com/"
+                  href={footerData.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
@@ -49,7 +48,7 @@ const Footer = () => {
                   <FaLinkedin size={24} />
                 </a>
                 <a
-                  href="https://www.facebook.com/"
+                  href={footerData.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
@@ -57,7 +56,7 @@ const Footer = () => {
                   <FaFacebook size={24} />
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href={footerData.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
@@ -65,7 +64,7 @@ const Footer = () => {
                   <FaInstagram size={24} />
                 </a>
                 <a
-                  href="https://www.whatsapp.com/"
+                  href={footerData.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -76,50 +75,49 @@ const Footer = () => {
           </div>
           <div className="p-4">
             <h2 className="font-bold text-start md:text-start mb-4 text-[28px]">
-              Visit Us
+            {footerData.visit}
             </h2>
             <div className="text-start md:text-start flex flex-col gap-6 text-[14px]  w-[240px]">
               <div>
-              <strong>UAE Office:</strong>
+              <strong>{footerData.usa}:</strong>
               <p className="">
-                1501, Concord Tower, Media City, PO Box 283795, Dubai, UAE.
+              {footerData.uaeAddress}
               </p>
               </div>
               <div>
-              <strong>India Office:</strong>
+              <strong>{footerData.india}:</strong>
               <p className="">
-                401 B, Unitech Arcadia, South City 2, Sec 49, Gurugram - 122018
-                India.
+              {footerData.indiaAddress}
               </p>
               </div>
-              <div><strong>KSA Office:</strong>
-              <p>Al Tadamun Al Arabi Street, Mishrifah Dist, Jeddah SA.</p></div>
+              <div><strong>{footerData.ksa}:</strong>
+              <p>{footerData.ksaAddress}</p></div>
             </div>
           </div>
 
           <div className="p-4 md:ml-9">
             <h2 className="font-bold text-start md:text-start mb-4 text-[28px]">
-              Quick Links
+            {footerData.links}
             </h2>
             <div className="text-start md:text-start">
               <a href="/link1" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
-                  About Us
+                {footerData.linkAbout}
                 </p>
               </a>
               <a href="/link2" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
-                  Service
+                {footerData.linkServices}
                 </p>
               </a>
               <a href="/joinOurTeam" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
-                  JOin our Team
+                {footerData.linkJoin}
                 </p>
               </a>
             </div>
             <p className="mt-8 md:pr-20 md:ml-[-150px]  text-center md:mt-56">
-              &copy; 2023 FLC Group all Rights Reserved.
+            {footerData.copyright}
             </p>
           </div>
         </div>

@@ -44,7 +44,7 @@ export default class Carousel extends Component {
     };
 
     return (
-      <div className="relative mx-24 font-inter ">
+      <div className="relative md:mx-24 font-inter ">
         <div className="left-2 transform -translate-y-1/2 flex gap-3 ml-5">
           <button
             className={`carousel-button  border border-black  rounded-full p-3 ${

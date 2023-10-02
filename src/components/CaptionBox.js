@@ -1,18 +1,18 @@
 import React from "react";
 
-const CaptionComponent = () => {
+const CaptionComponent = ({reviewerName,reviewerTitle,reviewerMessage}) => {
   return (
     <div className="bg-slate-300 mt-24 font-inter">
       <div className="mx-5 py-16">
-        <div className="bg-white p-8 rounded-lg mx-16 pt-5 mt-[-100px] border border-spacing-1 ">
+        <div className="bg-white p-8 rounded-lg md:mx-16 pt-5 mt-[-100px] border border-spacing-1 ">
           <div className="flex items-center mb-4">
             <div>
               <p className="text-lg">
-              &quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum reprehenderit accusamus quidem quis.&quot;
+              &quot;{reviewerMessage}.&quot;
               </p>
               
-              <p className="text-gray-600 font-bold">- John Doe</p>
-              <p className="mr-2 opacity-90">Marketing Manager</p>
+              <p className="text-gray-600 font-bold">- {reviewerName}</p>
+              <p className="mr-2 opacity-90">{reviewerTitle}</p>
             </div>
           </div>
           <div className="flex items-end justify-end">

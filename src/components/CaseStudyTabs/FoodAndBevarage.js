@@ -1,15 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import phoneImage from "../../public/assets/DPOufH.png";
-import TheGirl from "../../public/assets/The-Girl.png";
+import phoneImage from "../../../public/assets/DPOufH.png";
+import TheGirl from "../../../public/assets/The-Girl.png";
 
-import Perfume from "../../public/assets/perfume.png";
+import Perfume from "../../../public/assets/perfume.png";
 
 const BoxComponent = () => {
   return (
     // general box
-    <div className=" w-full bg-green-50">
-    <div className=" mt-5  md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
+    <div className=" mt-5  md:w-[1200px] bg-gray-500 md:h-[670px] font-inter">
       <div className=" flex flex-col md:flex-row h-full">
         <div className=" md:w-[40%] bg-blue-300 h-full">
           <div className="relative md:w-[500px] flex h-full">
@@ -47,7 +46,7 @@ const BoxComponent = () => {
               <div className="h-full">
                 <div className="h-[45%] bg-orange-500 relative">
                   <div className=" w-full h-full">
-                    <Image src={TheGirl} alt="The Girl" className=" w-full" />
+                    <Image src={TheGirl} alt="The Girl" />
                   </div>
                 </div>
 
@@ -77,7 +76,7 @@ const BoxComponent = () => {
         </div>
                 <div className="h-[45%] bg-black relative">
                   <div className="w-full ">
-                    <Image src={Perfume} alt="The Girl" className=" w-full" />
+                    <Image src={Perfume} alt="The Girl" />
                   </div>
                 </div>
               </div>
@@ -132,7 +131,6 @@ const BoxComponent = () => {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

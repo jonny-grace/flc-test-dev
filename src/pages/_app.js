@@ -2,9 +2,26 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import Head from 'next/head';
+import { fetchFooterData } from "./api";
+import { useEffect, useState } from "react";
+
 
 function MyApp({ Component, pageProps }) {
+  const [footerData, setFooterData] = useState(null);
 
+  useEffect(() => {
+    async function fetchData() {
+      // Fetch the data from the API
+      const data = await fetchFooterData();
+      
+      setFooterData(data.data);
+    }
+
+    fetchData();
+  }, []);
+
+ 
+ 
   return (
     <>
     <Head>
@@ -14,7 +31,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Navbar /> */}
       
       <Component {...pageProps} />
-      <Footer />
+      {footerData && footerData.attributes && <Footer footerData={footerData.attributes} />}
     </div></>
   );
 }

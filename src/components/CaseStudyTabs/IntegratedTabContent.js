@@ -1,20 +1,30 @@
 import Image from "next/image";
 import React from "react";
-import phoneImage from "../../public/assets/DPOufH.png";
-import TheGirl from "../../public/assets/The-Girl.png";
+// import phoneImage from "../../../public/assets/DPOufH.png";
 
-import Perfume from "../../public/assets/perfume.png";
+import TheGirl from "../../../public/assets/The-Girl.png";
+ 
+import Perfume from "../../../public/assets/perfume.png";
 
-const BoxComponent = () => {
+// import Perfume from "../../public/assets/perfume.png";
+
+const BoxComponent = ({integratedData}) => {
+  var firstBox=integratedData.data[1].attributes
+  var secondBox= integratedData.data[0].attributes
+  var thirdBox = integratedData.data[2].attributes
+
+
+
   return (
     // general box
-    <div className=" w-full bg-green-50">
-    <div className=" mt-5  md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
+    <div className=" mt-5  md:w-[1200px] bg-gray-500 md:h-[670px] font-inter">
       <div className=" flex flex-col md:flex-row h-full">
         <div className=" md:w-[40%] bg-blue-300 h-full">
           <div className="relative md:w-[500px] flex h-full">
             <Image
-              src={phoneImage}
+              src={firstBox.image.data.attributes.formats.large.url}
+              width={firstBox.image.data.attributes.width}
+              height={firstBox.image.data.attributes.height}
               alt="Your Image"
               className="object-cover hover:cursor-pointer w-full"
             />
@@ -24,13 +34,11 @@ const BoxComponent = () => {
                 <p className="text-xl font-semibold text-left">
                   featured // events
                 </p>
-                <h2 className="text-4xl font-bold mt-10 px-4">
-                  Honor Magic Pro Launch
+                <h2 className="text-5xl font-bold mt-10 px-4">
+                  {firstBox.name}
                 </h2>
                 <p className="mt-3 font-semibold">
-                  Duis autem vel eum iriure dolor in hendrerit in vulputate
-                  velit esse molestie consequat, vel illum dolore eu feugiat
-                  nulla
+                 {firstBox.description}
                 </p>
                 <span className=" hover:cursor-pointer mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                   Learn more
@@ -47,13 +55,13 @@ const BoxComponent = () => {
               <div className="h-full">
                 <div className="h-[45%] bg-orange-500 relative">
                   <div className=" w-full h-full">
-                    <Image src={TheGirl} alt="The Girl" className=" w-full" />
+                    <Image src={TheGirl} alt="The Girl" />
                   </div>
                 </div>
 
                 <div className="flex-grow pt-80  hover:cursor-pointer" style={{backgroundColor: '#1B413E'}}>
                   <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">
-                    Undiz Influencers
+                    {secondBox.name}
                   </h2>
                   <a>
             <span className=" w-96 px-2 hover:cursor-pointer  ">Learn More</span>{" "}
@@ -77,7 +85,7 @@ const BoxComponent = () => {
         </div>
                 <div className="h-[45%] bg-black relative">
                   <div className="w-full ">
-                    <Image src={Perfume} alt="The Girl" className=" w-full" />
+                    <Image src={Perfume} alt="The Girl" />
                   </div>
                 </div>
               </div>
@@ -92,13 +100,14 @@ const BoxComponent = () => {
               <div className="h-full">
                 <div className="h-[45%] bg-orange-500 relative">
                   <div className=" w-full h-full">
-                    <Image src={TheGirl} alt="The Girl" layout="fill" />
+                    <Image               src={thirdBox.image.data.attributes.formats.small.url}
+ alt="The Girl" layout="fill" />
                   </div>
                 </div>
 
                 <div className="h-[55%] pt-10 relative" style={{backgroundColor: '#1B413E'}}>
                   <div className=" absolute w-60 ml-5 text-white">
-                    <h2 className=" font-bold text-4xl  ">Undiz Influencers</h2>
+                    <h2 className=" font-bold text-4xl  ">{thirdBox.name}</h2>
 
                     <a>
             <span className=" w-96 px-2  py-4 hover:cursor-pointer  ">Learn More</span>{" "}
@@ -111,11 +120,9 @@ const BoxComponent = () => {
               <div className="h-full">
                 <div className="h-[55%]  pt-10 relative" style={{backgroundColor: '#964a2f'}}>
                   <div className=" absolute w-60 ml-5 text-white">
-                    <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
+                    <h2 className=" font-bold text-4xl  ">{secondBox.name}</h2>
                     <p className=" pt-4">
-                      Duis autem vel eum iriure dolor in hendrerit in vulputate
-                      velit esse molestie consequat, vel illum dolore eu feugiat
-                      nulla
+                      {secondBox.description}
                     </p>
                     <span className=" hover:cursor-pointer  mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                       Learn more
@@ -124,7 +131,7 @@ const BoxComponent = () => {
                 </div>
                 <div className="h-[45%] bg-black relative">
                   <div className="w-full ">
-                    <Image src={Perfume} alt="The Girl" layout="fill" />
+                    <Image src={secondBox.image.data.attributes.formats.small.url} alt="The Girl" layout="fill" />
                   </div>
                 </div>
               </div>
@@ -132,7 +139,6 @@ const BoxComponent = () => {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

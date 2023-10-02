@@ -1,17 +1,20 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Carousel from "../../components/BottomCarousel/Carousel";
+import { useRouter } from 'next/router';
+import axios from "axios";
 
-const Index = () => {
+const Index = ({caseStudyDetails}) => {
+
   return (
     <div className="mb-20 w-full font-inter">
-      <div className="overflow-x-hidden">
+      <div className="overflow-hidden ">
         <Navbar />
-        <div className="w-screen relative bg-gray-50">
+        <div className="w-screen  relative bg-gray-50">
           <div className="absolute inset-0 bg-gray-200">
             <div className="w-screen relative">
               <div className="absolute inset-0 md:mx-32 mt-48  h-full">
-                <h1 className=" text-[48px] mb-10 font-bold">Hisense FIFA 2022</h1>
+                <h1 className=" text-[48px] mb-10 font-bold">{caseStudyDetails.name}</h1>
                 <div>
                   <img src="/assets/hisence.png" alt="Hisense"  className="w-full md:w-auto"/>
                 </div>
@@ -70,9 +73,31 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <Carousel />
+      {/* <Carousel /> */}
     </div>
   );
 };
 
 export default Index;
+
+export async function getServerSideProps(context) {
+  const { caseStudyId } = context.query;
+
+  var caseStudyDetails = {};
+
+  await axios
+    .get(`https://flc-cms.onrender.com/api/products/${caseStudyId}?populate=*`)
+    .then((res) => {
+      caseStudyDetails = res.data.data.attributes;
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+
+  
+  return {
+    props: {
+      caseStudyDetails,
+    }
+  };
+}

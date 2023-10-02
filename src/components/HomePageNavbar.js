@@ -5,7 +5,9 @@ import logoBlack from '../../public/Frame-black.png';
 
 import Image from 'next/image';
 
-const HomePageNavBar = () => {
+const HomePageNavBar = ({logo}) => {
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -27,17 +29,17 @@ const HomePageNavBar = () => {
   }, []);
 
   return (
-    <nav
-      className={` fixed top-0 left-0 right-0 z-50 font-inter font-extrabold ${
-        isScrolled ? 'bg-gray-100 text-black' : 'bg-transparent text-white'
-      }`}
-    >
+    <nav className={`fixed top-0 left-0 right-0 z-50 font-inter font-extrabold ${
+      isScrolled ? 'bg-gray-100 text-black mt-0 transition ease-in-out duration-300 transform translate-y-0 px-12' : 'bg-transparent text-white md:ml-10 transition ease-in-out duration-500 transform md:translate-y-12'
+    }`}>
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
         <Link href="/" legacyBehavior>
             <a className="flex items-center space-x-2">
               <Image
-                src={isScrolled ? logoBlack : logo} // Use the black logo when isScrolled is true
+                src={isScrolled ? logoBlack : logo.path} 
+                width={logo.width}
+                height={logo.height}// Use the black logo when isScrolled is true
                 alt="Logo"
                 className="h-12 w-12"
               />
@@ -76,21 +78,22 @@ const HomePageNavBar = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-full right-0 mt-2 w-48 bg-gray-500  shadow-lg rounded-md">
+            <div className="absolute top-full right-0 w-48 bg-gray-100 text-black  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Case Studies</a>
+                <a className="block py-1 border border-top-black hover:font-bold ">Case Studies</a>
+                
               </Link>
               <Link href="/services" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Services</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">Services</a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">About Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">About Us</a>
               </Link>
               <Link href="/contact" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Contact Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">Contact Us</a>
               </Link>
-              <Link href="/about" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Blog</a>
+              <Link href="/blogpage" legacyBehavior>
+                <a className="block py-1  border border-top-black hover:text-gray-300">Blog</a>
               </Link>
             </div>
           )}

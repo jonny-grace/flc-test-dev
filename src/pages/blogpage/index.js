@@ -1,90 +1,100 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import JoinUs from "../../components/JoinUs";
-import Image from "next/image";
 
-const Index = () => {
+import axios from "axios";
+
+const Index = ({ blogs }) => {
+  var feutured = {};
+  var otherBlogs = [];
+
+  blogs.map((blog, index) => {
+    if (index == 0) {
+      feutured = blog.attributes;
+    } else {
+      otherBlogs.push(blog);
+    }
+  });
   return (
     <div className=" mb-20">
       <Navbar />
-      <div className="p-4 md:mx-12 mt-20 mb-20 font-inter">
-        <h1 className="text-xl font-bold mb-4 mx-10">Featured Articles</h1>
+      <div className="p-4 md:mx-12 mt-20 mb-5 font-inter">
+        <h1 className="text-xl font-bold mb-4 mx-6">Featured Articles</h1>
 
-        <div className="flex flex-col sm:flex-row">
-          <div className="w-full  md:w-auto px-10">
-            <img src="/assets/blog-banner.png" className="w-full" alt="Blog Banner" />
+        <div className="flex flex-col sm:flex-row ">
+          <div className="w-[120vw]  px-4">
+            <div className=" ">
+              <img
+                src={feutured.thumbnail.data.attributes.url}
+              
+                className="w-[100%] fit-content"
+                alt="Blog Banner"
+              />
+            </div>
             <div>
-              <h2 className="text-gray-500 mt-4">Shopper Marketing</h2>
+              <h2 className="text-gray-500 mt-4">
+                {feutured.blog_type.data.attributes.name}
+              </h2>
             </div>
 
             <div>
-              <h1 className="font-bold text-2xl">Gen-Z Shopping Behavior</h1>
+              <h1 className="font-bold text-2xl">{feutured.title}</h1>
             </div>
 
             <div>
               <h2 className="text-gray-500 mt-4">Nidhi Sehgal</h2>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 md:w-auto">
-            <div className="mb-4 flex  sm:flex-row gap-5">
-              <img src="/assets/blog1.png" className="w-[130px] h-[130px]" alt="Blog 1" />
+          <div className="w-full sm:w-1/2 md:w-auto h-[40%]">
+            {otherBlogs.map((blog,index)=>{
+              return(
+                <div key={index} className="mb-4 flex  sm:flex-row gap-5">
+              <img
+               src={blog.attributes.thumbnail.data.attributes.url}
+                className="w-[180px] h-[188px]"
+                alt="Blog 1"
+              />
               <div>
-                <h3>Events</h3>
-                <h1 className="text-lg font-bold hover:cursor-pointer">Technology in Events</h1>
-                <h3>Nas</h3>
+                <h5>{blog.attributes.blog_type.data.attributes.name}</h5>
+                <h1 className=" font-bold hover:cursor-pointer">
+                  {blog.attributes.title}
+                </h1>
+                <h3>author</h3>
               </div>
             </div>
-            <div className="mb-4 flex  sm:flex-row gap-5">
-              <img src="/assets/blog2.png" className="w-[130px] h-[130px]" alt="Blog 2" />
-              <div>
-                <h3>Events</h3>
-                <h1 className="text-lg font-bold hover:cursor-pointer">Technology in Events</h1>
-                <h3>Nas</h3>
-              </div>
-            </div>
-            <div className="mb-4 flex  sm:flex-row gap-5">
-              <img src="/assets/blog 3.png" className="w-[130px] h-[130px]" alt="Blog 3" />
-              <div>
-                <h3>Events</h3>
-                <h1 className="text-lg font-bold hover:cursor-pointer">Technology in Events</h1>
-                <h3>Nas</h3>
-              </div>
-            </div>
+              )
+            })}
+            
           </div>
         </div>
       </div>
+
       <div className="flex justify-center">
         <div className="w-full flex flex-col  md:mx-16 mx-4 sm:flex-row justify-center gap-5 pl-4">
-          <div className="mb-4 sm:w-1/3">
-            <img src="/assets/blog1.png" className="w-full h-72" alt="Blog 1" />
-            <div>
-              <h2 className="text-gray-500 mt-4">Integrated Marketing</h2>
-            </div>
+          {otherBlogs.map((blog, index) => {
+            return (
+              <div key={index} className="mb-4 sm:w-1/3">
+                <img
+                  src={blog.attributes.thumbnail.data.attributes.url}
+                  className="w-full h-72"
+                  alt="Blog 1"
+                />
+                <div>
+                  <h2 className="text-gray-500 mt-4">
+                    
+                    {blog.attributes.blog_type.data.attributes.name}
+                  </h2>
+                </div>
 
-            <div>
-              <h1 className="font-bold text-lg hover:cursor-pointer">Why Marketers are Focusing on Experiential Marketing?</h1>
-            </div>
-          </div>
-          <div className="mb-4 sm:w-1/3">
-            <img src="/assets/blog2.png" className="w-full h-72" alt="Blog 2" />
-            <div>
-              <h2 className="text-gray-500 mt-4">Digital Marketing</h2>
-            </div>
+                <div>
+                  <h1 className="font-bold text-lg hover:cursor-pointer">
+                    {blog.attributes.title}
+                  </h1>
+                </div>
+              </div>
+            );
+          })}
 
-            <div>
-              <h1 className="font-bold text-lg hover:cursor-pointer">Top 3 Most Powerful AI in Digital Marketing in 2023</h1>
-            </div>
-          </div>
-          <div className="mb-4 sm:w-1/3">
-            <img src="/assets/blog 3.png" className="w-full h-72" alt="Blog 3" />
-            <div>
-              <h2 className="text-gray-500 mt-4">Influencer Marketing</h2>
-            </div>
-
-            <div>
-              <h1 className="font-bold text-lg hover:cursor-pointer">Micro is the New Macro</h1>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -92,3 +102,24 @@ const Index = () => {
 };
 
 export default Index;
+
+export async function getStaticProps() {
+  var blogs = {};
+  // var footer = {};
+  await axios
+    .get("https://flc-cms.onrender.com/api/blogs?populate=*")
+    .then((res) => {
+      blogs = res.data.data;
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+
+  
+  return {
+    props: {
+      blogs,
+    },
+    revalidate: 3600,
+  };
+}

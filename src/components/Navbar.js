@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav
       className={`text-black fixed top-0 left-0 right-0 z-50 font-inter ${
-        isScrolled ? 'bg-white' : 'bg-transparent'
+        isScrolled ? 'bg-white margin-0' : 'bg-transparent'
       }`}API Gateway service
     >
       <div className="flex items-center justify-between p-4">
@@ -66,21 +66,22 @@ const Navbar = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-full right-0 mt-2 w-48 bg-gray-500  shadow-lg rounded-md font-inter">
+            <div className="absolute top-full right-0 w-48 bg-gray-100  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Case Studies</a>
+                <a className="block py-1 border border-top-black hover:font-bold ">Case Studies</a>
+                
               </Link>
               <Link href="/services" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Services</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">Services</a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">About Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">About Us</a>
               </Link>
               <Link href="/contact" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Contact Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">Contact Us</a>
               </Link>
               <Link href="/blogpage" legacyBehavior>
-                <a className="block py-1 hover:text-gray-300">Blog</a>
+                <a className="block py-1  border border-top-black hover:text-gray-300">Blog</a>
               </Link>
             </div>
           )}

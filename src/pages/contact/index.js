@@ -1,18 +1,17 @@
-import React from "react";
 import Navbar from "../../components/Navbar";
-import JoinUs from "../../components/JoinUs";
-// import Navbar from '../../components/Navbar'
-const index = () => {
+import axios from "axios";
+const index = ({contact,footer}) => {
+
+  const ourOffice = footer.data.attributes
+
   return (
+
     <>
     <Navbar />
     <div className="  p-4 md:mx-40 mt-40 mb-10 font-inter">
-      <h1 className="text-4xl font-bold mb-6">happy to Partner!</h1>
+      <h1 className="text-4xl font-bold mb-6">{contact.title}</h1>
       <p className="  mb-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        consectetur, nunc at condimentum accumsan, est ex bibendum tortor, nec
-        feugiat tellus nisi nec elit. Mauris sed libero eget justo tristique
-        semper.
+        {contact.description}
       </p>
       <div className="flex flex-col sm:flex-row gap-48">
         <div className="w-full sm:w-1/2 pr-4 ">
@@ -58,26 +57,70 @@ const index = () => {
         <div className="w-full sm:w-1/2 pl-4">
           <h2 className="text-2xl font-bold mb-7">Our Offices:</h2>
           <div className="mb-4">
-            <h3 className="font-bold  mb-4">UAE Office:</h3>
-            <p>1501, Concord Tower, Media City,</p>
-            <p>PO Box 283795, Dubai, UAE.</p>
+            <h3 className="font-bold  mb-4">{ourOffice && ourOffice.usa}:</h3>
+           <p className=" w-[300px]">
+            {ourOffice && ourOffice.uaeAddress}
+           </p>
           </div>
           <div className="mb-4">
-            <h3 className="font-bold mb-4">KSA Office:</h3>
-            <p>Al Tadamun Al Arabi Street,</p>
-            <p>Mishrifah Dist, Jeddah SA</p>
+            <h3 className="font-bold mb-4">{ourOffice && ourOffice.ksa}:</h3>
+           <p className=" w-[300px]">
+           {ourOffice && ourOffice.ksaAddress}
+           </p>
           </div>
           <div className="mb-4">
-            <h3 className="font-bold mb-4">India Office:</h3>
-            <p>401 B, Unitech Arcadia, South City 2,</p>
-            <p>Sec 49, Gurugram - 122018 India.</p>
+            <h3 className="font-bold mb-4">{ourOffice && ourOffice.india}:</h3>
+            <p className=" w-[300px]">{ourOffice && ourOffice.indiaAddress}</p>
           </div>
         </div>
       </div>
     </div>
-    <JoinUs/>
+    <div className="bg-gray-300 py-8">
+        <div className="container mx-auto">
+          <h1 className="text-xl px-10 md:px-32 md:text-2xl font-bold text-start mb-4">
+            {contact.footer}
+          </h1>
+          <div className="flex px-10 md:px-32 justify-start">
+            <button  className="text-black py-2 px-4 rounded hover:font-bold">
+              <a href="/joinOurTeam">Join our Team</a>
+            </button>
+          </div>
+        </div>
+      </div> 
     </>
   ); 
 };
 
 export default index;
+
+
+export async function getStaticProps() {
+  var contact = {};
+  var footer = {};
+  
+  await axios
+    .get("https://flc-cms.onrender.com/api/contact?populate=*")
+    .then((res) => {
+      contact = res.data.data.attributes;
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+
+    await axios
+    .get("https://flc-cms.onrender.com/api/footer?populate=*")
+    .then((res) => {
+      footer = res.data;
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+  return {
+    props: {
+      contact,
+      footer
+    
+    },
+    revalidate: 3600, 
+  };
+}
