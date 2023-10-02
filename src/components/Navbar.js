@@ -34,7 +34,8 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link href="/" legacyBehavior>
             <a className="flex items-center space-x-2 ml-3">
-              <Image src={logo} alt="Logo" className="h-12 w-12" />
+              <Image src={logo}   width={1000}
+              height={1000} alt="Logo" className="h-12 w-12" />
             </a>
           </Link>
         </div>

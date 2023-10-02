@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = ({hero}) => {
@@ -8,7 +9,7 @@ const Hero = ({hero}) => {
       className={`relative w-full bg-cover bg-center bg-no-repeat font-inter  bg-blue-400 h-[300px] md:h-[450px] lg:h-[660px]`}
     >
       <div className="absolute inset-0 bg-black h-[300px] md:h-[450px] lg:h-[660px] opacity-90">
-      <Image src={hero.path} width={hero.width} height={1500} className=' h-[300px] md:h-[450px] lg:h-[660px] ' />
+      <Image src={hero.path} width={hero.width} alt='' height={1500} className=' h-[300px] md:h-[450px] lg:h-[660px] ' />
 
       </div>
   
@@ -22,12 +23,12 @@ const Hero = ({hero}) => {
          
        
           <div className="mt-8  flex flex-wrap   text-center ">
-            <a
+            <Link
               href="#"
               className="block w-full    px-12 py-3 text-sm underline font-medium text-white shadow hover:font-bold focus:outline-none focus:ring active:font-bold"
             >
               {hero.moreButton}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

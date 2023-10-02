@@ -31,7 +31,7 @@ const SmallCardList = ({title,values}) => {
     <div className="  mx-5 md:mx-8 gap-5  mb-10 font-inter " style={{background:'#DB6A6A'}}> 
         <h1 className=" mt-5 pt-3 ml-20 md:ml-36 md:text-2xl font-bold text-4xl">{title}</h1>
         <div className="flex justify-center items-center flex-wrap mx-8">
-  {values.map((item, index) => (
+  {values && values.map((item, index) => (
     <div className="w-full  sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2" key={index}>
       <SmallCard
         icon={item.attributes.image.data.attributes}

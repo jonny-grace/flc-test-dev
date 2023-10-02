@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
 const index = ({contact,footer}) => {
@@ -82,7 +83,7 @@ const index = ({contact,footer}) => {
           </h1>
           <div className="flex px-10 md:px-32 justify-start">
             <button  className="text-black py-2 px-4 rounded hover:font-bold">
-              <a href="/joinOurTeam">Join our Team</a>
+              <Link href="/joinOurTeam">Join our Team</Link>
             </button>
           </div>
         </div>

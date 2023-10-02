@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
+import Link from "next/link";
 
 const index = ({joinTeam,teams}) => {
   return (
@@ -14,7 +15,7 @@ const index = ({joinTeam,teams}) => {
         </p>
         <div className="flex flex-col sm:flex-row gap-20">
           {/* Add new images in a single row here */}
-          {teams.map((team,index)=>{
+          {teams && teams.map((team,index)=>{
             return(
               <div key={index} className="w-full md:w-64 sm:w-1/2">
               <Image
@@ -38,7 +39,7 @@ const index = ({joinTeam,teams}) => {
           </h1>
           <div className="flex px-10 md:px-32 justify-start">
             <button  className="text-black py-2 px-4 rounded hover:font-bold">
-              <a href="/joinOurTeam">Join our Team</a>
+              <Link href="/joinOurTeam">Join our Team</Link>
             </button>
           </div>
         </div>

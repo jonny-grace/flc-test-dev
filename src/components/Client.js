@@ -4,7 +4,7 @@ import React from 'react';
 
 const Client = ({clientsDetail}) => {
   
-  const logos=clientsDetail.logos;
+  const logos=clientsDetail?.logos;
 
   return (
     <div className="container mx-auto mt-5 font-inter">
@@ -16,12 +16,12 @@ const Client = ({clientsDetail}) => {
       <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-2 md:px-24">
       <div className="flex  flex-wrap  md:gap-5 my-10">
           
-          {logos.map((logo, index) => (
+          {logos && logos.map((logo, index) => (
     <div key={index} className="w-1/7 p-2">
-      <img
+      <Image
         src={logo.attributes.url}
-        // width={20}
-        // height={20}
+        width={1000}
+        height={1000}
         // width={logo.attributes.width}
         // height={logo.attributes.height}
         alt="Company Logo"

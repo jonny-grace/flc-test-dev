@@ -37,11 +37,12 @@ const HomePageNavBar = ({logo}) => {
         <Link href="/" legacyBehavior>
             <a className="flex items-center space-x-2">
               <Image
-                src={isScrolled ? logoBlack : logo.path} 
-                width={logo.width}
-                height={logo.height}// Use the black logo when isScrolled is true
+                src={isScrolled ? logoBlack :  logo.path} 
+                width={1000}
+                height={1000}// Use the black logo when isScrolled is true
                 alt="Logo"
-                className="h-12 w-12"
+                className="h-12 w-12 object-contain"
+                
               />
             </a>
           </Link>
@@ -111,7 +112,7 @@ const HomePageNavBar = ({logo}) => {
           <Link href="/contact" legacyBehavior>
             <a className="hover:text-gray-300">Contact Us</a>
           </Link>
-          <Link href="/about" legacyBehavior>
+          <Link href="/blog" legacyBehavior>
             <a className="hover:text-gray-300">Blog</a>
           </Link>
         </div>

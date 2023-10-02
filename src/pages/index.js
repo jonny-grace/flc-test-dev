@@ -37,7 +37,7 @@ export async function getStaticProps() {
     await axios
     .get("https://flc-cms.onrender.com/api/services?populate=*")
     .then((res) => {
-      services=res.data.data
+      services=res.data
     })
     .catch((err) => {
       console.log(err.message);

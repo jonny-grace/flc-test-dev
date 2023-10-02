@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Carousel from "../../components/BottomCarousel/Carousel";
 import { useRouter } from 'next/router';
 import axios from "axios";
+import Image from "next/image";
 
 const Index = ({caseStudyDetails}) => {
 
@@ -16,7 +17,8 @@ const Index = ({caseStudyDetails}) => {
               <div className="absolute inset-0 md:mx-32 mt-48  h-full">
                 <h1 className=" text-[48px] mb-10 font-bold">{caseStudyDetails.name}</h1>
                 <div>
-                  <img src="/assets/hisence.png" alt="Hisense"  className="w-full md:w-auto"/>
+                  <Image  width={1000}
+              height={1000} src="/assets/hisence.png" alt="Hisense"  className="w-full md:w-auto"/>
                 </div>
               </div>
             </div>

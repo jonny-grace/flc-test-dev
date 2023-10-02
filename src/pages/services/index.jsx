@@ -3,15 +3,19 @@ import Carousel from "../../components/BottomCarousel/Carousel";
 import Navbar from "../../components/Navbar";
 import CaptionComponent from "../../components/CaptionBox";
 import axios from "axios";
+import Image from "next/image";
 
-const index = ({ serviceStatic }) => {
-  
+const index = ({ serviceStatic,services }) => {
+  // console.log('details sssssssssssssss of services',services)
+
   return (
     <>
       <div className="min-h-screen overflow-x-hidden font-inter">
         <section className="md:h-[90vh]  w-full relative md:mb-16">
           <Navbar />
-          <img
+          <Image
+           width={1000}
+           height={1000}
             src={serviceStatic.background.data.attributes.url}
             alt="banner image"
             className="md:h-[90vh]    w-full object-cover mt-20"
@@ -54,7 +58,7 @@ export default index;
 
 export async function getStaticProps() {
   var serviceStatic = {};
-  var footer = {};
+  var services = {};
   await axios
     .get("https://flc-cms.onrender.com/api/service-static?populate=*")
     .then((res) => {
@@ -65,17 +69,19 @@ export async function getStaticProps() {
       console.log(err.message);
     });
 
-  // await axios
-  // .get("https://flc-cms.onrender.com/api/footer?populate=*")
-  // .then((res) => {
-  //   footer = res.data;
-  // })
-  // .catch((err) => {
-  //   console.log(err.message);
-  // });
+  await axios
+  .get("https://flc-cms.onrender.com/api/services?populate=*")
+  .then((res) => {
+    
+    services = res.data.data;
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
   return {
     props: {
       serviceStatic,
+      services
     },
     revalidate: 3600,
   };

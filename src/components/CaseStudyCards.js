@@ -41,6 +41,8 @@ function CaseStudyCards({caseStudies}) {
                     <Image
                       src={column1.attributes.image.data.attributes.url}
                       alt="Retail"
+                      // width={1000}
+                      // height={1000}
                       layout="fill"
                       objectFit="cover"
                       className="rounded-lg"
@@ -67,6 +69,8 @@ function CaseStudyCards({caseStudies}) {
                     <Image
                       src={column2.attributes.image.data.attributes.url}
                       alt="Retail"
+                      // width={1000}
+                      // height={1000}
                       layout="fill"
                       objectFit="cover"
                       className="rounded-lg"
@@ -97,9 +101,11 @@ function CaseStudyCards({caseStudies}) {
 
               }} className="h-[400px] relative">
             <div className="relative md:w-[500px] flex h-full">
-              <img
+              <Image
                 src={caseStudy.attributes.image.data.attributes.url}
                 alt="Your Image"
+                width={1000}
+                height={1000}
                 className="object-cover hover:cursor-pointer w-full"
               />
   

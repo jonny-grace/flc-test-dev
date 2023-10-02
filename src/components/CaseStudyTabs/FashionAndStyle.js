@@ -4,6 +4,7 @@ import phoneImage from "../../../public/assets/DPOufH.png";
 import TheGirl from "../../../public/assets/The-Girl.png";
 
 import Perfume from "../../../public/assets/perfume.png";
+import Link from "next/link";
 
 const BoxComponent = () => {
   return (
@@ -15,6 +16,8 @@ const BoxComponent = () => {
             <Image
               src={phoneImage}
               alt="Your Image"
+              width={1000}
+              height={1000}
               className="object-cover hover:cursor-pointer w-full"
             />
 
@@ -46,37 +49,57 @@ const BoxComponent = () => {
               <div className="h-full">
                 <div className="h-[45%] bg-orange-500 relative">
                   <div className=" w-full h-full">
-                    <Image src={TheGirl} alt="The Girl" />
+                    <Image
+                      width={1000}
+                      height={1000}
+                      src={TheGirl}
+                      alt="The Girl"
+                    />
                   </div>
                 </div>
 
-                <div className="flex-grow pt-80  hover:cursor-pointer" style={{backgroundColor: '#1B413E'}}>
+                <div
+                  className="flex-grow pt-80  hover:cursor-pointer"
+                  style={{ backgroundColor: "#1B413E" }}
+                >
                   <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">
                     Undiz Influencers
                   </h2>
-                  <a>
-            <span className=" w-96 px-2 hover:cursor-pointer  ">Learn More</span>{" "}
-          </a>
+                  <Link href="#">
+                    <span className=" w-96 px-2 hover:cursor-pointer  ">
+                      Learn More
+                    </span>{" "}
+                  </Link>
                 </div>
               </div>
             </div>
             <div className=" flex-grow">
               <div className="h-full">
-              <div className="flex-grow pt-72  hover:cursor-pointer text-white" style={{backgroundColor: '#964a2f'}}>
-          <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">
-            Ajmal Perfumes
-          </h2>
-          <p className=" w-96 px-10 pt-5">
-            you can modify the code to display all the tabs horizontally instead
-            of wrapping them.
-          </p>
-          <a>
-            <span className=" w-96 px-10 hover:cursor-pointer  ">Learn More</span>{" "}
-          </a>
-        </div>
+                <div
+                  className="flex-grow pt-72  hover:cursor-pointer text-white"
+                  style={{ backgroundColor: "#964a2f" }}
+                >
+                  <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">
+                    Ajmal Perfumes
+                  </h2>
+                  <p className=" w-96 px-10 pt-5">
+                    you can modify the code to display all the tabs horizontally
+                    instead of wrapping them.
+                  </p>
+                  <Link href="#">
+                    <span className=" w-96 px-10 hover:cursor-pointer  ">
+                      Learn More
+                    </span>{" "}
+                  </Link>
+                </div>
                 <div className="h-[45%] bg-black relative">
                   <div className="w-full ">
-                    <Image src={Perfume} alt="The Girl" />
+                    <Image
+                      width={1000}
+                      height={1000}
+                      src={Perfume}
+                      alt="The Girl"
+                    />
                   </div>
                 </div>
               </div>
@@ -91,24 +114,38 @@ const BoxComponent = () => {
               <div className="h-full">
                 <div className="h-[45%] bg-orange-500 relative">
                   <div className=" w-full h-full">
-                    <Image src={TheGirl} alt="The Girl" layout="fill" />
+                    <Image
+                      src={TheGirl}
+                      // width={1000}
+                      // height={1000}
+                      alt="The Girl"
+                      layout="fill"
+                    />
                   </div>
                 </div>
 
-                <div className="h-[55%] pt-10 relative" style={{backgroundColor: '#1B413E'}}>
+                <div
+                  className="h-[55%] pt-10 relative"
+                  style={{ backgroundColor: "#1B413E" }}
+                >
                   <div className=" absolute w-60 ml-5 text-white">
                     <h2 className=" font-bold text-4xl  ">Undiz Influencers</h2>
 
-                    <a>
-            <span className=" w-96 px-2  py-4 hover:cursor-pointer  ">Learn More</span>{" "}
-          </a>
+                    <Link href="#">
+                      <span className=" w-96 px-2  py-4 hover:cursor-pointer  ">
+                        Learn More
+                      </span>{" "}
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className=" flex-grow">
               <div className="h-full">
-                <div className="h-[55%]  pt-10 relative" style={{backgroundColor: '#964a2f'}}>
+                <div
+                  className="h-[55%]  pt-10 relative"
+                  style={{ backgroundColor: "#964a2f" }}
+                >
                   <div className=" absolute w-60 ml-5 text-white">
                     <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
                     <p className=" pt-4">
@@ -123,7 +160,13 @@ const BoxComponent = () => {
                 </div>
                 <div className="h-[45%] bg-black relative">
                   <div className="w-full ">
-                    <Image src={Perfume} alt="The Girl" layout="fill" />
+                    <Image
+                      // width={1000}
+                      // height={1000}
+                      src={Perfume}
+                      alt="The Girl"
+                      layout="fill"
+                    />
                   </div>
                 </div>
               </div>

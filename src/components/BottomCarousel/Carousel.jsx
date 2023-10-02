@@ -84,6 +84,7 @@ export default class Carousel extends Component {
                 <div className="relative mx-2">
                   <Image
                     src="/assets/perfume.png"
+                    alt=""
                     height={1000}
                     width={1000}
                     className="h-64 w-full object-cover"
@@ -105,6 +106,7 @@ export default class Carousel extends Component {
                 <div className="relative mx-2">
                   <Image
                     src="/assets/percil.png"
+                    alt=""
                     height={1000}
                     width={1000}
                     className="h-64 w-full object-cover"
@@ -126,6 +128,7 @@ export default class Carousel extends Component {
                 <div className="relative mx-2">
                   <Image
                     src="/assets/burger.png"
+                    alt=""
                     height={1000}
                     width={1000}
                     className="h-64 w-full object-cover"
@@ -147,6 +150,7 @@ export default class Carousel extends Component {
                 <div className="relative mx-2">
                   <Image
                     src="/bannerService.jpg"
+                    alt=""
                     height={1000}
                     width={1000}
                     className="h-64 w-full object-cover"
@@ -168,6 +172,7 @@ export default class Carousel extends Component {
                 <div className="relative mx-2">
                   <Image
                     src="/bannerService.jpg"
+                    alt=""
                     height={1000}
                     width={1000}
                     className="h-64 w-full object-cover"
@@ -189,6 +194,7 @@ export default class Carousel extends Component {
                 <div className="relative mx-2">
                   <Image
                     src="/bannerService.jpg"
+                    alt=""
                     height={1000}
                     width={1000}
                     className="h-64 w-full object-cover"

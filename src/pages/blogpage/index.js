@@ -2,12 +2,13 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 
 import axios from "axios";
+import Image from "next/image";
 
 const Index = ({ blogs }) => {
   var feutured = {};
   var otherBlogs = [];
 
-  blogs.map((blog, index) => {
+  blogs && blogs.map((blog, index) => {
     if (index == 0) {
       feutured = blog.attributes;
     } else {
@@ -23,9 +24,10 @@ const Index = ({ blogs }) => {
         <div className="flex flex-col sm:flex-row ">
           <div className="w-[120vw]  px-4">
             <div className=" ">
-              <img
+              <Image
                 src={feutured.thumbnail.data.attributes.url}
-              
+                width={1000}
+                height={1000}
                 className="w-[100%] fit-content"
                 alt="Blog Banner"
               />
@@ -45,13 +47,15 @@ const Index = ({ blogs }) => {
             </div>
           </div>
           <div className="w-full sm:w-1/2 md:w-auto h-[40%]">
-            {otherBlogs.map((blog,index)=>{
+            {otherBlogs && otherBlogs.map((blog,index)=>{
               return(
                 <div key={index} className="mb-4 flex  sm:flex-row gap-5">
-              <img
+              <Image
                src={blog.attributes.thumbnail.data.attributes.url}
                 className="w-[180px] h-[188px]"
                 alt="Blog 1"
+                width={1000}
+                height={1000}
               />
               <div>
                 <h5>{blog.attributes.blog_type.data.attributes.name}</h5>
@@ -70,13 +74,15 @@ const Index = ({ blogs }) => {
 
       <div className="flex justify-center">
         <div className="w-full flex flex-col  md:mx-16 mx-4 sm:flex-row justify-center gap-5 pl-4">
-          {otherBlogs.map((blog, index) => {
+          {otherBlogs && otherBlogs.map((blog, index) => {
             return (
               <div key={index} className="mb-4 sm:w-1/3">
-                <img
+                <Image
                   src={blog.attributes.thumbnail.data.attributes.url}
                   className="w-full h-72"
                   alt="Blog 1"
+                  width={1000}
+                  height={1000}
                 />
                 <div>
                   <h2 className="text-gray-500 mt-4">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   FaLinkedin,
@@ -18,7 +20,7 @@ const Footer = ({footerData}) => {
               </p>
             </div>
 
-            <img
+            <Image
               src={footerData.logo.data.attributes.url}
               alt="Logo"
               className="ml-4 mt-4 md:mt-16"
@@ -39,37 +41,37 @@ const Footer = ({footerData}) => {
                 {footerData.follow}
               </h2>
               <div className="flex">
-                <a
+                <Link
                   href={footerData.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
                   <FaLinkedin size={24} />
-                </a>
-                <a
+                </Link>
+                <Link
                   href={footerData.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
                   <FaFacebook size={24} />
-                </a>
-                <a
+                </Link>
+                <Link
                   href={footerData.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
                   <FaInstagram size={24} />
-                </a>
-                <a
+                </Link>
+                <Link
                   href={footerData.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaWhatsapp size={24} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -100,21 +102,21 @@ const Footer = ({footerData}) => {
             {footerData.links}
             </h2>
             <div className="text-start md:text-start">
-              <a href="/link1" className="block mt-2">
+              <Link href="/link1" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                 {footerData.linkAbout}
                 </p>
-              </a>
-              <a href="/link2" className="block mt-2">
+              </Link>
+              <Link href="/link2" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                 {footerData.linkServices}
                 </p>
-              </a>
-              <a href="/joinOurTeam" className="block mt-2">
+              </Link>
+              <Link href="/joinOurTeam" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                 {footerData.linkJoin}
                 </p>
-              </a>
+              </Link>
             </div>
             <p className="mt-8 md:pr-20 md:ml-[-150px]  text-center md:mt-56">
             {footerData.copyright}

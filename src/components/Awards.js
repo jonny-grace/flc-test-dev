@@ -53,7 +53,7 @@ function Awards({awards,title}) {
           {title}
         </h1>
         <div className=" flex md:justify-center items-center  gap-2  flex-wrap">
-          {awards.map((item, index) => (
+          {awards && awards.map((item, index) => (
             <SmallCard
               key={index}
               year={item.attributes.date}
