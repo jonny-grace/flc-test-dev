@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import Carousel from "../../components/BottomCarousel/Carousel";
+// import Carousel from "../../components/BottomCarousel/Carousel";
 import { useRouter } from "next/router";
 import axios from "axios";
 import Image from "next/image";
