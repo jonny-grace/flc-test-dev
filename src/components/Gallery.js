@@ -15,17 +15,18 @@ const GaleryTab = ({ caseStudy }) => {
   return (
     <div className=" flex flex-col  mx-16  font-inter">
       <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
-        <TabList className="flex justify-center flex-wrap ">
+        <TabList className="flex justify-center hover:cursor-pointer flex-wrap ">
           {[
             "Integrated",
             "FMCG",
             "Electronics",
             "Fashion & Lifestyle",
             "Food & Beverage",
+           
           ].map((tab, index) => (
             <React.Fragment key={tab}>
               {index > 0 && (
-                <div className=" border-l-2 hidden md:block active:font-bold" />
+                <div className=" border-l-2  hidden md:block active:font-bold" />
               )}{" "}
               {/* Add horizontal line */}
               <Tab

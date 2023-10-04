@@ -23,19 +23,19 @@ const BoxComponent = () => {
               />
 
               <div className="absolute inset-0 flex  bg-slate-900 bg-opacity-50 text-white p-4">
-                <div>
-                  <p className="text-xl font-semibold text-left">
+                <div >
+                  <p className=" mt-4 ml-4 font-semibold text-left">
                     featured // events
                   </p>
                   <h2 className="text-4xl font-bold mt-10 px-4">
                     Honor Magic Pro Launch
                   </h2>
-                  <p className="mt-3 font-semibold">
+                  <p className="mt-3 font-semibold text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
                   </p>
-                  <span className=" hover:cursor-pointer mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                  <span className=" hover:cursor-pointer mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 ml-5 group-hover:underline font-medium">
                     Learn more
                   </span>
                 </div>

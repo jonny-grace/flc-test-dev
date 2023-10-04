@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        gotham: ['GothamHTF', 'sans-serif'],
+      },
       screens: {
         'sm': '640px',      // Small screens (mobile)
         'md': '768px',      // Medium screens (tablet)
@@ -18,7 +21,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-font-inter')],
+  // plugins: [require('tailwindcss-font-inter')],
  
 }
 

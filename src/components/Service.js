@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 const Service = ({ serviceSection, services }) => {
-  // console.log(services);
   function getColorByIndex(index) {
     switch (index) {
       case 0:
@@ -18,16 +17,17 @@ const Service = ({ serviceSection, services }) => {
         return "";
     }
   }
-
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:py-14 mx-auto font-inter mb-5">
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:py-8 mx-auto font-inter mb-5">
       <div className="font-bold justify-center items-center text-center ">
         {/* w-56  text-center lg:w-96   text-white */}
-        <h1 className="text-5xl lg:text-7xl md:pl-10 font-extrabold text-center md:mx-56 ">
-          {serviceSection?.title}
-        </h1>
+        <div className=" flex justify-center">
+          <h1 className="text-5xl lg:text-5xl md:pl-10 font-bold text-center w-96 md:mx-56 ">
+            {serviceSection?.title.toLowerCase()}
+          </h1>
+        </div>
 
-        <p className="mt-12 font-semibold text-1xl   md:text-center text-start md:mx-32">
+        <p className="mt-12 font-semibold text-1xl   md:text-center text-start  md:mx-40">
           {serviceSection?.desc}
         </p>
       </div>
@@ -40,21 +40,19 @@ const Service = ({ serviceSection, services }) => {
                   className="group flex flex-col justify-center   items-center md:justify-start md:items-start     p-4 md:p-7 dark:hover:bg-slate-800"
                   href="/services"
                 >
-                  <div
-                    className={`  ${index == 2 || index == 3 ? "pt-5" : null} `}
-                  >
-                    <div className="flex  w-28 h-full   ">
+                  <div className=" w-full  py-4 flex">
+                    <div className=" h-28 flex flex-col">
                       <Image
-                        src={service.attributes.image.data.attributes.url}
+                        src={service?.attributes?.image?.data?.attributes?.url}
                         alt="Your Image"
                         width={1000}
                         height={1000}
-                        className="object-cover w-full py-1"
+                        className="w-full h-full "
                       />
                     </div>
                   </div>
 
-                  <div className="mt-7  ">
+                  <div className="h-56 ">
                     <h3
                       className="text-lg font-semibold "
                       style={{ color: getColorByIndex(index) }}
@@ -62,7 +60,7 @@ const Service = ({ serviceSection, services }) => {
                       {service.attributes.name}
                     </h3>
                     <p className="mt-3 text-gray-800">
-                      {service.attributes.description.slice(1, 120)}
+                      {service.attributes.description.slice(0, 100)}
                     </p>
                     <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm  decoration-2 group-hover:underline font-medium">
                       Learn more

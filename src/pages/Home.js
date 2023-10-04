@@ -5,7 +5,7 @@ import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import HomePageNavBar from "../components/HomePageNavbar";
 import Service from "../components/Service";
-import axios from "axios";
+
 
 export default function HomePage({homepageContent,services,clients,blogs}) {
   // console.log(services)

@@ -1,10 +1,4 @@
-// {
-//   "extends": [
-//     "eslint:recommended",
-//     "plugin:react/recommended",
-//     // "next/babel"
-//   ]
-// }
+
 {
   "extends": [
     "next"

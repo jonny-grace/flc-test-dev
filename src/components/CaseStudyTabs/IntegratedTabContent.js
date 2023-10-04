@@ -31,7 +31,7 @@ const BoxComponent = ({ integratedData }) => {
             <div className="absolute inset-0 flex  bg-slate-900 bg-opacity-50 text-white p-4">
               <div>
                 <p className="text-xl font-semibold text-left">
-                  featured // events
+                  featured // eventsdd
                 </p>
                 <h2 className="text-5xl font-bold mt-10 px-4">
                   {firstBox.name}

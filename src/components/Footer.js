@@ -30,7 +30,7 @@ const Footer = ({footerData}) => {
           </div>
           <div className="p-4">
             <h2 className="font-bold text-start mb-4 text-[28px]">
-              {footerData.talk}
+              {footerData.talk.toLowerCase()}
             </h2>
             <div className="w-[304px] h-[77px] text-[14px] text-start">
               <p className="text-start mb-2">Phone: {footerData.phone}</p>
@@ -38,7 +38,7 @@ const Footer = ({footerData}) => {
             </div>
             <div className="md:mt-16 mt-4">
               <h2 className="font-bold text-start mb-4 text-[28px]">
-                {footerData.follow}
+                {footerData.follow.toLowerCase()}
               </h2>
               <div className="flex">
                 <Link
@@ -77,7 +77,7 @@ const Footer = ({footerData}) => {
           </div>
           <div className="p-4">
             <h2 className="font-bold text-start md:text-start mb-4 text-[28px]">
-            {footerData.visit}
+            {footerData.visit.toLowerCase()}
             </h2>
             <div className="text-start md:text-start flex flex-col gap-6 text-[14px]  w-[240px]">
               <div>
@@ -99,7 +99,7 @@ const Footer = ({footerData}) => {
 
           <div className="p-4 md:ml-9">
             <h2 className="font-bold text-start md:text-start mb-4 text-[28px]">
-            {footerData.links}
+            {footerData.links.toLowerCase()}
             </h2>
             <div className="text-start md:text-start">
               <Link href="/link1" className="block mt-2">

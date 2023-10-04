@@ -23,7 +23,7 @@ function CaseStudyCards({caseStudies}) {
 
   return (
     <>
-      <div class="hidden bg-slate-50   mt-10 md:grid grid-cols-3 gap-10 px-32 lg:px-4">
+      <div class="hidden  mt-10 md:grid grid-cols-3 gap-10 px-32 lg:px-4">
         {caseStudies.slice(0, visibleRows * 2).map((caseStudy, index) => {
           const column1 = index % 2 === 0 ? caseStudy : null;
           const column2 = index % 2 === 1 ? caseStudy : null;
@@ -41,11 +41,10 @@ function CaseStudyCards({caseStudies}) {
                     <Image
                       src={column1?.attributes?.image?.data?.attributes?.url}
                       alt="Retail"
-                      // width={1000}
-                      // height={1000}
+                    
                       layout="fill"
                       objectFit="cover"
-                      className="rounded-lg"
+                      className=""
                     />
                     <div className="absolute  p-4 text-white">
                       <h3 className="text-lg font-bold">
@@ -69,11 +68,10 @@ function CaseStudyCards({caseStudies}) {
                     <Image
                       src={column2?.attributes?.image?.data?.attributes?.url}
                       alt="Retail"
-                      // width={1000}
-                      // height={1000}
+                  
                       layout="fill"
                       objectFit="cover"
-                      className="rounded-lg"
+                      className=""
                     />
                     <div className="absolute  px-10 pt-3 text-white">
                       <h3 className="text-lg font-bold">

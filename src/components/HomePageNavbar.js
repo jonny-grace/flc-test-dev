@@ -81,39 +81,39 @@ const HomePageNavBar = ({logo}) => {
           {isMenuOpen && (
             <div className="absolute top-full right-0 w-48 bg-gray-100 text-black  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:font-bold ">Case Studies</a>
+                <a className="block py-1 border border-top-black hover:font-bold ">case studies</a>
                 
               </Link>
               <Link href="/services" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">Services</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">services</a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">About Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">about us</a>
               </Link>
               <Link href="/contact" legacyBehavior>
                 <a className="block py-1 border border-top-black hover:text-gray-300">Contact Us</a>
               </Link>
               <Link href="/blogpage" legacyBehavior>
-                <a className="block py-1  border border-top-black hover:text-gray-300">Blog</a>
+                <a className="block py-1  border border-top-black hover:text-gray-300">blogs</a>
               </Link>
             </div>
           )}
         </div>
-        <div className="hidden md:flex  space-x-16 mr-40 ">
+        <div className="hidden md:flex  space-x-10 mr-20 ">
           <Link href="/casestudy" legacyBehavior>
-            <a className="hover:text-gray-300">Case Studies</a>
+            <a className="hover:text-gray-300 nav-button " >case studies</a>
           </Link>
           <Link href="/services" legacyBehavior>
-            <a className="hover:text-gray-300">Services</a>
+            <a className="hover:text-gray-300 nav-button " >services</a>
           </Link>
           <Link href="/about" legacyBehavior>
-            <a className="hover:text-gray-300">About Us</a>
+            <a className="hover:text-gray-300 nav-button ">about us</a>
           </Link>
           <Link href="/contact" legacyBehavior>
-            <a className="hover:text-gray-300">Contact Us</a>
+            <a className="hover:text-gray-300 nav-button " >contact us</a>
           </Link>
           <Link href="/blog" legacyBehavior>
-            <a className="hover:text-gray-300">Blog</a>
+            <a className="hover:text-gray-300 nav-button " >blogs</a>
           </Link>
         </div>
       </div>

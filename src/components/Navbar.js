@@ -69,39 +69,39 @@ const Navbar = () => {
           {isMenuOpen && (
             <div className="absolute top-full right-0 w-48 bg-gray-100  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:font-bold ">Case Studies</a>
+                <a className="block py-1 border border-top-black hover:font-bold ">case studies</a>
                 
               </Link>
               <Link href="/services" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">Services</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">services</a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">About Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">about us</a>
               </Link>
               <Link href="/contact" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">Contact Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">contact us</a>
               </Link>
               <Link href="/blogpage" legacyBehavior>
-                <a className="block py-1  border border-top-black hover:text-gray-300">Blog</a>
+                <a className="block py-1  border border-top-black hover:text-gray-300">blogs</a>
               </Link>
             </div>
           )}
         </div>
         <div className="hidden md:flex  space-x-16 mr-40 ">
           <Link href="/casestudy" legacyBehavior>
-            <a className="hover:text-gray-300">Case Studies</a>
+            <a className="hover:text-gray-300">case ctudies</a>
           </Link>
           <Link href="/services" legacyBehavior>
-            <a className="hover:text-gray-300">Services</a>
+            <a className="hover:text-gray-300">services</a>
           </Link>
           <Link href="/about" legacyBehavior>
-            <a className="hover:text-gray-300">About Us</a>
+            <a className="hover:text-gray-300">about us</a>
           </Link>
           <Link href="/contact" legacyBehavior>
-            <a className="hover:text-gray-300">Contact Us</a>
+            <a className="hover:text-gray-300">contact us</a>
           </Link>
           <Link href="/blogpage" legacyBehavior>
-            <a className="hover:text-gray-300">Blog</a>
+            <a className="hover:text-gray-300">blogs</a>
           </Link>
         </div>
       </div>

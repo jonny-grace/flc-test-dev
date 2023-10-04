@@ -9,7 +9,7 @@ const Hero = ({hero}) => {
       className={`relative w-full bg-cover bg-center bg-no-repeat font-inter  bg-blue-400 h-[300px] md:h-[450px] lg:h-[660px]`}
     >
       <div className="absolute inset-0 bg-black h-[300px] md:h-[450px] lg:h-[660px] opacity-90">
-      <Image src={hero.path} width={hero.width} alt='' height={1500} className=' h-[300px] md:h-[450px] lg:h-[660px] ' />
+      <Image src={hero.path} width={1000} alt='' height={1000} className=' w-full h-[300px] md:h-[450px] lg:h-[660px] ' />
 
       </div>
   
@@ -17,8 +17,8 @@ const Hero = ({hero}) => {
         className="relative mx-auto max-w-screen-xl pt-24 md:pt-40 flex justify-center sm:px-6 lg:flex md:flex md:justify-center md:items-center lg:justify-center lg:h-full lg:items-center lg:px-8"
       >
         <div className=" w-56  text-center lg:w-96   text-white">
-          <h1 className="text-5xl lg:text-7xl  font-inter font-extrabold">
-            {hero.title}
+          <h1 className="text-5xl lg:text-6xl font-inter font-gotham font-bold">
+            {hero.title.toLowerCase()}
           </h1>
          
        
