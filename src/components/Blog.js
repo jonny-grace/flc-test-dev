@@ -5,12 +5,12 @@ import Link from "next/link";
 const Blog = ({ blogSectionTop, blogs }) => {
   return (
     <div
-      className="max-w-full  px-4 py-16 sm:px-6 lg:px-20 lg:py-14 mx-auto md:mx-10 mb-14 font-inter"
+      className="  px-4 py-16 sm:px-6 lg:px-20 lg:py-14 mx-auto md:mx-10 mb-14 font-inter"
       style={{ backgroundColor: "#E6E6E6" }}
     >
-      <div className="max-w-2xl mx-auto text-left ml-10 mb-10 lg:mb-14">
+      <div className=" mx-auto text-left ml-10 mb-10 lg:mb-14 xxl:w-[908px] ">
         <p className="mt-1 text-black text-xl mb-4 ">{blogSectionTop.header.toLowerCase()}</p>
-        <h2 className="text-2xl font-bold md:text-6xl md:leading-tight text-black">
+        <h2 className="text-2xl font-bold md:text-6xl xxl:text-[79px] md:leading-tight text-black">
           {blogSectionTop.title}
         </h2>
       </div>

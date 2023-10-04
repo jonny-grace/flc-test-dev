@@ -99,21 +99,16 @@ const HomePageNavBar = ({logo}) => {
             </div>
           )}
         </div>
-        <div className="hidden md:flex  space-x-10 mr-20 ">
-          <Link href="/casestudy" legacyBehavior>
-            <a className="hover:text-gray-300 nav-button " >case studies</a>
+        <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
+          <Link href="/casestudy"  className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >case studies
           </Link>
-          <Link href="/services" legacyBehavior>
-            <a className="hover:text-gray-300 nav-button " >services</a>
+          <Link href="/services"  className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >services
           </Link>
-          <Link href="/about" legacyBehavior>
-            <a className="hover:text-gray-300 nav-button ">about us</a>
+          <Link href="/about"  className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  ">about us
           </Link>
-          <Link href="/contact" legacyBehavior>
-            <a className="hover:text-gray-300 nav-button " >contact us</a>
+          <Link href="/contact"   className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >contact us
           </Link>
-          <Link href="/blog" legacyBehavior>
-            <a className="hover:text-gray-300 nav-button " >blogs</a>
+          <Link href="/blog"   className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >blogs
           </Link>
         </div>
       </div>

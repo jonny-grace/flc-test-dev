@@ -30,11 +30,12 @@ const GaleryTab = ({ caseStudy }) => {
               )}{" "}
               {/* Add horizontal line */}
               <Tab
-                className={`px-4 py-2 ${
+                className={`px-2 ${
                   activeTab === index
-                    ? " border-none font-bold"
-                    : " border-none text-gray-600"
+                    ? " border-none text-gray-900 font-bold decoration-0 "
+                    : " border-none text-gray-400"
                 }`}
+                
               >
                 {tab}
               </Tab>

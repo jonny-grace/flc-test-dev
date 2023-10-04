@@ -13,7 +13,7 @@ const BoxComponent = () => {
       <div className=" mt-5  md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
         <div className=" flex flex-col md:flex-row h-full">
           <div className=" md:w-[40%] bg-blue-300 h-full">
-            <div className="relative md:w-[500px] flex h-full">
+            <div className="relative lg:w-[500px] xl:w-[500px]  xxl:w-[751.36px] flex h-full">
               <Image
                 src={phoneImage}
                 alt="Your Image"
@@ -22,15 +22,15 @@ const BoxComponent = () => {
                 className="object-cover hover:cursor-pointer w-full"
               />
 
-              <div className="absolute inset-0 flex  bg-slate-900 bg-opacity-50 text-white p-4">
+              <div className="absolute inset-0 flex justify-center  bg-slate-900 bg-opacity-50 text-white p-4">
                 <div >
                   <p className=" mt-4 ml-4 font-semibold text-left">
                     featured // events
                   </p>
-                  <h2 className="text-4xl font-bold mt-10 px-4">
-                    Honor Magic Pro Launch
+                  <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-10 px-4">
+                    Honor <br/> Magic Pro Launch
                   </h2>
-                  <p className="mt-3 font-semibold text-sm ml-5  mr-10">
+                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] font-semibold text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
@@ -67,11 +67,7 @@ const BoxComponent = () => {
                     <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">
                       Undiz Influencers
                     </h2>
-                    <Link href="#">
-                      <span className=" w-96 px-2 hover:cursor-pointer  ">
-                        Learn More
-                      </span>{" "}
-                    </Link>
+                    
                   </div>
                 </div>
               </div>
@@ -81,7 +77,7 @@ const BoxComponent = () => {
                     className="flex-grow pt-72  hover:cursor-pointer text-white"
                     style={{ backgroundColor: "#964a2f" }}
                   >
-                    <h2 className="text-4xl font-bold mt-[-280px] w-48 px-10">
+                    <h2 className="text-4xl xxl:text-[65px] xxl:w-[309px] font-bold mt-[-280px] w-48 px-10">
                       Ajmal Perfumes
                     </h2>
                     <p className=" w-96 px-10 pt-5">
@@ -136,11 +132,7 @@ const BoxComponent = () => {
                         Undiz Influencers
                       </h2>
 
-                      <Link href="#">
-                        <span className=" w-96 px-2  py-4 hover:cursor-pointer  ">
-                          Learn More
-                        </span>{" "}
-                      </Link>
+                      
                     </div>
                   </div>
                 </div>

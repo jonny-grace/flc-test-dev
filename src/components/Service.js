@@ -21,16 +21,20 @@ const Service = ({ serviceSection, services }) => {
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:py-8 mx-auto font-inter mb-5">
       <div className="font-bold justify-center items-center text-center ">
         {/* w-56  text-center lg:w-96   text-white */}
-        <div className=" flex justify-center">
-          <h1 className="text-5xl lg:text-5xl md:pl-10 font-bold text-center w-96 md:mx-56 ">
+        <div className=" text-center w-full flex justify-center">
+          <h1 className="text-6xl xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 font-bold text-center w-96 md:mx-56 ">
             {serviceSection?.title.toLowerCase()}
           </h1>
         </div>
-
-        <p className="mt-12 font-semibold text-1xl   md:text-center text-start  md:mx-40">
+      </div>
+      <div className=" flex justify-center text-center ">
+        <p
+          className="mt-12 xxl:text-[26px] xl:w-[580px]  xxl:w-[922px]  font-semibold text-1xl   md:text-center   md:mx-40"
+        >
           {serviceSection?.desc}
         </p>
       </div>
+
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-2 mt-10 ">
         {services &&
           services.map((service, index) => {
@@ -52,9 +56,9 @@ const Service = ({ serviceSection, services }) => {
                     </div>
                   </div>
 
-                  <div className="h-56 ">
+                  <div className="h-56 xxl:w-[246px] lg:w-[200px] ">
                     <h3
-                      className="text-lg font-semibold "
+                      className=" xxl:text-[18px]   font-semibold "
                       style={{ color: getColorByIndex(index) }}
                     >
                       {service.attributes.name}
