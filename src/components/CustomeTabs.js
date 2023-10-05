@@ -15,7 +15,7 @@ const CustomeTabs = () => {
   return (
     <>
       <div className="w-full mx-auto font-inter">
-        <div className="flex justify-evenly items-center gap-2 flex-wrap">
+        <div className="flex justify-around items-center gap-2 flex-wrap max-w-2xl lg:flex-nowrap mx-auto lg:whitespace-nowrap">
           <button
             onClick={() => setTab("integrated")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -27,9 +27,10 @@ const CustomeTabs = () => {
                   : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
-              integrated
+              Integrated
             </span>
           </button>
+          <span>|</span>
           <button
             onClick={() => setTab("markating")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -41,9 +42,10 @@ const CustomeTabs = () => {
                   : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
-              | markating
+              markating
             </span>
           </button>
+          <span>|</span>
           <button
             onClick={() => setTab("events")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -55,9 +57,10 @@ const CustomeTabs = () => {
                   : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
-              | events & exhibitions
+              events & exhibitions
             </span>
           </button>
+          <span>|</span>
 
           <button
             onClick={() => setTab("digital")}
@@ -70,9 +73,10 @@ const CustomeTabs = () => {
                   : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
-              | Digital
+              Digital
             </span>
           </button>
+          <span>|</span>
 
           <button
             onClick={() => setTab("contentProduction")}
@@ -85,7 +89,7 @@ const CustomeTabs = () => {
                   : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
-              | content production
+              content production
             </span>
           </button>
         </div>

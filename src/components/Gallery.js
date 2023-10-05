@@ -138,7 +138,7 @@ const GaleryTab = ({ caseStudy }) => {
                   : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap`
               }
             >
-              Fash & Lifestyle
+              Fashn & Lifestyle
             </span>
           </button>
           <button>|</button>
@@ -158,7 +158,7 @@ const GaleryTab = ({ caseStudy }) => {
           </button>
         </div>
       </div>
-      <section className="w-full ">
+      <section className="w-full mt-8">
         <div>{tabs === "integrated" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "Electronics" ? <IntegratedTabContent /> : null}</div>

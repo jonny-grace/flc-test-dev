@@ -19,16 +19,18 @@ const index = ({ caseStudyStatic, caseStudies }) => {
       >
         {/* <div className="absolute inset-0 bg-gray-200 opacity-50"></div> */}
 
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex sm:items-center sm:justify-center lg:justify-center  lg:items-center lg:px-3">
-          <div className="grid max-w-2xl  text-center  ">
+        <div className=" max-w-screen mx-auto w-full  px-5 py-32  lg:px-3">
+          <div className="grid max-w-3xl  text-center mx-auto w-full">
             <h1 className=" font-extrabold text-[30px] sm:text-[75px] lg:text-[78px] lowercase text-black">
               {caseStudyStatic.title}
             </h1>
 
-            <p className="mt-10 text-center ">{caseStudyStatic.description}</p>
-            <div className="mt-8">
-              <CustomeTabs />
-            </div>
+            <p className="mt-10 text-center text-black">
+              {caseStudyStatic.description}
+            </p>
+          </div>
+          <div className="mt-8 w-full">
+            <CustomeTabs />
           </div>
           <div className=" flex flex-col  mx-16  font-inter"></div>
         </div>

@@ -105,7 +105,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex  space-x-16 mr-40 ">
           <Link href="/casestudy" legacyBehavior>
-            <a className="hover:text-gray-300">case ctudies</a>
+            <a className="hover:text-gray-300">case studies</a>
           </Link>
           <Link href="/services" legacyBehavior>
             <a className="hover:text-gray-300">services</a>
