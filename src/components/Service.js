@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["cyrillic"], weight: ["400"] });
 
 const Service = ({ serviceSection, services }) => {
   function getColorByIndex(index) {
@@ -37,9 +39,9 @@ const Service = ({ serviceSection, services }) => {
         {services &&
           services.map((service, index) => {
             return (
-              <div key={index} className="h-84  hover:bg-gray-200 rounded-xl ">
+              <div key={index} className="h-84  hover:bg-gray-50 rounded-xl ">
                 <Link
-                  className="group flex flex-col justify-center   items-center md:justify-start md:items-start     p-4 md:p-7 dark:hover:bg-slate-800"
+                  className="group flex flex-col justify-center   items-center md:justify-start md:items-start p-4 md:p-7"
                   href="/services"
                 >
                   <div className=" w-full  py-4 flex">
@@ -61,8 +63,10 @@ const Service = ({ serviceSection, services }) => {
                     >
                       {service.attributes.name}
                     </h3>
-                    <p className="mt-3 text-gray-800">
-                      {service.attributes.description.slice(0, 100)}
+                    <p className={`mt-3 text-gray-800`}>
+                      <span className={inter.className}>
+                        {service.attributes.description.slice(0, 100)}
+                      </span>
                     </p>
                     <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm  decoration-2 group-hover:underline font-medium">
                       Learn more

@@ -3,32 +3,37 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'GothamHTF-Bold';
-    src: url('/public/GothamHTF-Bold.otf') format('opentype');
-    /* You can also define font-weight and font-style if applicable */
-  }
+  font-family: "GothamHTF-Bold";
+  src: url("/public/GothamHTF-Bold.otf") format("opentype");
+  /* You can also define font-weight and font-style if applicable */
+}
 
-  @font-face {
-    font-family: 'GothamHTF-Book';
-    src: url('/public/GothamHTF-Book.otf') format('opentype');
-    /* You can also define font-weight and font-style if applicable */
-  }
+@font-face {
+  font-family: "GothamHTF-Book";
+  src: url("/public/GothamHTF-Book.otf") format("opentype");
+  /* You can also define font-weight and font-style if applicable */
+}
 
-  @font-face {
-    font-family: 'GothamHTF-Medium';
-    src: url('/public/GothamHTF-Medium.otf') format('opentype');
-    /* You can also define font-weight and font-style if applicable */
-  }
-  
-  body{
-    font-family: Inter;
-  }
-  .nav-button{
-    /* color: #FFF; */
+@font-face {
+  font-family: "GothamHTF-Medium";
+  src: url("/public/GothamHTF-Medium.otf") format("opentype");
+  /* You can also define font-weight and font-style if applicable */
+}
+
+body {
+  font-family: Inter;
+}
+.nav-button {
+  /* color: #FFF; */
   text-align: center;
   font-family: Inter;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  }
+}
+.react-tabs__tab--selected {
+  background-color: #e6e6e6;
+  color: gray;
+  border: none;
+}

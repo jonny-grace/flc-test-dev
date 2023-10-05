@@ -31,8 +31,8 @@ const GaleryTab = ({ caseStudy }) => {
                 dec
                 className={`px-2 ${
                   activeTab === index
-                    ? " border-none text-gray-900 font-bold decoration-none"
-                    : " border-none text-gray-400 decoration-none"
+                    ? " border-none text-gray-900 font-bold decoration-0"
+                    : " border-none text-gray-400 decoration-0"
                 }`}
               >
                 {tab}
