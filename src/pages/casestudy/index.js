@@ -7,7 +7,6 @@ import axios from "axios";
 import CaseStudyCards from "../../components/CaseStudyCards";
 
 const index = ({ caseStudyStatic, caseStudies }) => {
-
   return (
     <div className=" w-full overflow-x-hidden mb-16 font-inter">
       <Navbar />
@@ -19,15 +18,18 @@ const index = ({ caseStudyStatic, caseStudies }) => {
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex sm:items-center sm:justify-center lg:justify-center  lg:items-center lg:px-3">
           <div className="max-w-2xl  text-center  text-black">
-            <h1 className=" font-extrabold text-[30px] sm:text-[75px]">
-              {caseStudyStatic.title.toLowerCase()}
+            <h1 className=" font-extrabold text-[30px] sm:text-[75px] lg:text-[78px] lowercase">
+              {caseStudyStatic.title}
             </h1>
-            <p className="mt-10 text-center  ">{caseStudyStatic.description}</p>
+
+            <p className="mt-10 text-center ">{caseStudyStatic.description}</p>
           </div>
         </div>
       </div>
 
-      <div className=" mx-20"><CaseStudyCards caseStudies={caseStudies}  /></div>
+      <div className=" mx-20">
+        <CaseStudyCards caseStudies={caseStudies} />
+      </div>
     </div>
   );
 };
