@@ -5,7 +5,6 @@ import "react-tabs/style/react-tabs.css";
 import IntegratedTabContent from "./IntegratedTabContent";
 
 const GaleryTab = ({ caseStudy }) => {
-  
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {
@@ -22,20 +21,19 @@ const GaleryTab = ({ caseStudy }) => {
             "Electronics",
             "Fashion & Lifestyle",
             "Food & Beverage",
-           
           ].map((tab, index) => (
             <React.Fragment key={tab}>
               {index > 0 && (
-                <div className=" border-l-2  hidden md:block active:font-bold" />
+                <div className="   hidden md:block active:font-bold" />
               )}{" "}
               {/* Add horizontal line */}
               <Tab
+                dec
                 className={`px-2 ${
                   activeTab === index
-                    ? " border-none text-gray-900 font-bold decoration-0 "
-                    : " border-none text-gray-400"
+                    ? " border-none text-gray-900 font-bold decoration-none"
+                    : " border-none text-gray-400 decoration-none"
                 }`}
-                
               >
                 {tab}
               </Tab>
