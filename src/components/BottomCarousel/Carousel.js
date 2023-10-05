@@ -54,7 +54,7 @@ function Carousel() {
       {
         breakpoint: 2044,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {
@@ -83,10 +83,10 @@ function Carousel() {
       <div className="">
         <Slider {...settings}>
           {allProducts &&
-            allProducts.map((product,index) => (
+            allProducts.map((product, index) => (
               <div key={index} className=" ">
                 <div className="  relative ml-10">
-                  <Image     
+                  <Image
                     src={product?.attributes?.image?.data?.attributes?.url}
                     alt=""
                     height={1000}
