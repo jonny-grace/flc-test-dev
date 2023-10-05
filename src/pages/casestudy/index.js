@@ -30,7 +30,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
             </h1>
 
             <p className="mt-10 text-center ">{caseStudyStatic.description}</p>
-            <div className="mt-5">
+            <div className="mt-8">
               <CustomeTabs />
             </div>
           </div>
