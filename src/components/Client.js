@@ -23,7 +23,7 @@ const Client = ({ clientsDetail }) => {
         {clientsDetail.desc}
       </p>
 
-      <div className=" flex flex-col  mx-16  font-inter">
+      <div className=" flex flex-col  mx-16  font-inter pt-8">
         <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
           <TabList className="flex justify-center hover:cursor-pointer  flex-wrap ">
             {[

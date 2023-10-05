@@ -15,7 +15,7 @@ const CustomeTabs = () => {
   return (
     <>
       <div className="w-full mx-auto font-inter">
-        <div className="flex justify-evenly items-center gap-2 flex-wrap">
+        <div className="flex justify-around items-center gap-2 flex-wrap max-w-2xl lg:flex-nowrap mx-auto lg:whitespace-nowrap">
           <button
             onClick={() => setTab("integrated")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -23,13 +23,14 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "integrated"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap capitalize`
               }
             >
-              integrated
+              Integrated
             </span>
           </button>
+          <span>|</span>
           <button
             onClick={() => setTab("markating")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -37,13 +38,14 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "markating"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap capitalize`
               }
             >
-              | markating
+              Marketing
             </span>
           </button>
+          <span>|</span>
           <button
             onClick={() => setTab("events")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -51,13 +53,14 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "events"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap capitalize`
               }
             >
-              | events & exhibitions
+              events & exhibitions
             </span>
           </button>
+          <span>|</span>
 
           <button
             onClick={() => setTab("digital")}
@@ -66,13 +69,14 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "digital"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap capitalize`
               }
             >
-              | Digital
+              Digital
             </span>
           </button>
+          <span>|</span>
 
           <button
             onClick={() => setTab("contentProduction")}
@@ -81,11 +85,11 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap capitalize`
               }
             >
-              | content production
+              content production
             </span>
           </button>
         </div>

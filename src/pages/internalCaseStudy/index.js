@@ -4,9 +4,9 @@ import Navbar from "../../components/Navbar";
 import { useRouter } from "next/router";
 import axios from "axios";
 import Image from "next/image";
+import Carousel from "../../components/BottomCarousel/Carousel";
 
 const Index = ({ caseStudyDetails }) => {
-  
   return (
     <div className="mb-20 w-full font-inter">
       <div className="overflow-hidden ">
@@ -38,24 +38,20 @@ const Index = ({ caseStudyDetails }) => {
         <div className="flex flex-col sm:flex-row gap-8 mt-5">
           <div className="w-full sm:w-3/4 flex flex-col gap-5">
             <div>
-              <h2>Objectives:</h2>
-              <p>
+              <h2 className="text-gray-950 font-normal">Objectives:</h2>
+              <p className="text-gray-500 mt-5">
                 {caseStudyDetails?.objective}
               </p>
             </div>
 
             <div>
-              <h2>Idea:</h2>
-              <p>
-                {caseStudyDetails?.idea}
-              </p>
+              <h2 className="text-gray-950 font-normal">Idea:</h2>
+              <p className="text-gray-600 mt-5">{caseStudyDetails?.idea}</p>
             </div>
 
             <div>
-              <h2>Outcome:</h2>
-              <p>
-                {caseStudyDetails?.outcome}
-              </p>
+              <h2 className="text-gray-950 font-normal">Outcome:</h2>
+              <p className="text-gray-600 mt-5">{caseStudyDetails?.outcome}</p>
             </div>
           </div>
           <div className="w-full sm:w-1/4 mt-10">
@@ -65,8 +61,10 @@ const Index = ({ caseStudyDetails }) => {
             </h2>
           </div>
         </div>
+        <div className="mt-28 w-full">
+          <Carousel />
+        </div>
       </div>
-      {/* <Carousel /> */}
     </div>
   );
 };
