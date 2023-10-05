@@ -1,23 +1,22 @@
 import React from "react";
 
-const CaptionComponent = ({reviewerName,reviewerTitle,reviewerMessage}) => {
+const CaptionComponent = ({ reviewerName, reviewerTitle, reviewerMessage }) => {
   return (
     <div className="bg-slate-300 mt-24 font-inter">
       <div className="mx-5 py-16">
         <div className="bg-white p-8 rounded-lg md:mx-16 pt-5 mt-[-100px] border border-spacing-1 ">
           <div className="flex items-center mb-4">
             <div>
-              <p className="text-lg">
-              &quot;{reviewerMessage}.&quot;
+              <p className="text-lg text-gray-600">
+                &quot;{reviewerMessage}.&quot;
               </p>
-              
-              <p className="text-gray-600 font-bold">- {reviewerName}</p>
-              <p className="mr-2 opacity-90">{reviewerTitle}</p>
+
+              <p className="text-gray-900 font-bold mt-5">{reviewerName}</p>
+              <p className="mr-2 opacity-90 text-gray-600">{reviewerTitle}</p>
             </div>
           </div>
           <div className="flex items-end justify-end">
-            
-            <div className="flex">
+            <div className="flex text-gray-600">
               {[1, 2, 3, 4, 5].map((star) => (
                 <svg
                   key={star}
