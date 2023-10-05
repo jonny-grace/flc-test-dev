@@ -10,16 +10,19 @@ import {
 const SmallCard = ({ icon, title, description }) => {
   return (
     <div className=" text-white p-4 mb-4 w-96  mt-4 pl-8 lg:w-72ut ">
-      <div className="text-2xl mb-2 ml-5">
+      <div className="text-2xl h-full">
         <Image
           src={icon.url}
           alt={title}
           width={icon.width}
           height={icon.height}
+          className="h-[82px]  object-contain"
         />
       </div>
-      <h3 className="md:text-lg text-3xl mb-1">{title}</h3>
-      <p className="text-sm  md:w-32">{description}</p>
+      <div className="h-max mt-3">
+        <h3 className="md:text-lg text-3xl mb-1">{title}</h3>
+        <p className="text-sm  md:w-32">{description}</p>
+      </div>
     </div>
   );
 };
@@ -27,19 +30,16 @@ const SmallCard = ({ icon, title, description }) => {
 const SmallCardList = ({ title, values }) => {
   return (
     <div
-      className="mx-5 md:mx-8 gap-5  mb-10 font-inter p-5"
+      className="px-5 md:p-14 gap-5 mb-10 font-inter p-5"
       style={{ background: "#DB6A6A" }}
     >
-      <h1 className=" mt-5 pt-3 md:ml-36 md:text-2xl font-bold text-4xl">
+      <h1 className="mt-5 pt-3  md:text-2xl font-bold text-4xl pl-8">
         {title}
       </h1>
-      <div className="flex justify-center items-center flex-wrap">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center ">
         {values &&
           values.map((item, index) => (
-            <div
-              className="w-full  sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2"
-              key={index}
-            >
+            <div className="w-full " key={index}>
               <SmallCard
                 icon={item.attributes.image.data.attributes}
                 title={item.attributes.name}
