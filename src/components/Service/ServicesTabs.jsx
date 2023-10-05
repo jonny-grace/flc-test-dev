@@ -46,8 +46,8 @@ const ServicesTabs = ({ services }) => {
 
   return (
     <>
-      <div className="w-full mx-auto md:mt-20 font-inter">
-        <div className="flex justify-between items-center mx-3 md:mx-32 gap-2">
+      <div className="w-full mx-auto md:mt-20 font-inter ">
+        <div className="flex justify-between items-center gap-2 max-w-5xl mx-auto w-full px-5">
           <button
             onClick={() => setTab("marketing")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -56,8 +56,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "marketing"
-                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
-                  : "font-medium text-sm sm:text-lg"
+                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]`
+                  : "font-bold text-sm md:text-lg xxl:text-[22px]"
               }
             >
               marketing
@@ -72,8 +72,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "events"
-                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
-                  : "font-medium text-sm sm:text-lg"
+                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]`
+                  : "font-bold text-sm md:text-lg xxl:text-[22px]"
               }
             >
               events & exhibitions
@@ -88,8 +88,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "digitalMarketing"
-                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
-                  : "font-medium text-sm sm:text-lg"
+                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]`
+                  : "font-bold text-sm md:text-lg xxl:text-[22px]"
               }
             >
               digital marketing
@@ -104,8 +104,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
-                  : "font-medium text-sm sm:text-lg"
+                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]`
+                  : "font-bold text-sm md:text-lg xxl:text-[22px]"
               }
             >
               content production
@@ -114,7 +114,7 @@ const ServicesTabs = ({ services }) => {
         </div>
         <hr className="border-t-1 border-gray-800 "></hr>
       </div>
-      <section className="max-w-5xl mx-4 md:mx-auto">
+      <section className="max-w-5xl mx-4 md:mx-auto px-8">
         <div>
           {tabs === "marketing" ? <Marketing marketing={marketing} /> : null}
         </div>
