@@ -6,29 +6,41 @@ import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
 import CaptionComponent from "../CaptionBox";
 
-const ServicesTabs = ({services}) => {
+const ServicesTabs = ({ services }) => {
   // console.log('details sssssssssssssss of services',services)
 
-  var marketing = {}
-  var event= {}
-  var contentProduction={}
-  var digitalMarketing={}
-  
-services && services.map((service)=>{
-  if(service.attributes.name=='Marketing' || service.attributes.name=='marketing'){
-    marketing=service
-    
-  } else if(service.attributes.name=='events & exhibition' ||service.attributes.name=='Events & Exhibition'){
-event = service
-  } else if(service.attributes.name=='Content Production' ||service.attributes.name=='content production'){
-    contentProduction = service
-      }
-      else if(service.attributes.name=='Digital Marketing' ||service.attributes.name=='digital marketing' ||service.attributes.name=='digital'){
-        digitalMarketing = service
-          }
-})
+  var marketing = {};
+  var event = {};
+  var contentProduction = {};
+  var digitalMarketing = {};
 
-// console.log('event tab data ',digitalMarketing)
+  services &&
+    services.map((service) => {
+      if (
+        service.attributes.name == "Marketing" ||
+        service.attributes.name == "marketing"
+      ) {
+        marketing = service;
+      } else if (
+        service.attributes.name == "events & exhibition" ||
+        service.attributes.name == "Events & Exhibition"
+      ) {
+        event = service;
+      } else if (
+        service.attributes.name == "Content Production" ||
+        service.attributes.name == "content production"
+      ) {
+        contentProduction = service;
+      } else if (
+        service.attributes.name == "Digital Marketing" ||
+        service.attributes.name == "digital marketing" ||
+        service.attributes.name == "digital"
+      ) {
+        digitalMarketing = service;
+      }
+    });
+
+  // console.log('event tab data ',digitalMarketing)
 
   const [tabs, setTab] = useState("marketing");
 
@@ -44,7 +56,7 @@ event = service
             <span
               className={
                 tabs === "marketing"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
+                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -60,7 +72,7 @@ event = service
             <span
               className={
                 tabs === "events"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
+                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -76,7 +88,7 @@ event = service
             <span
               className={
                 tabs === "digitalMarketing"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
+                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -92,7 +104,7 @@ event = service
             <span
               className={
                 tabs === "contentProduction"
-                  ? `underline underline-offset-4 font-bold text-sm sm:text-lg mt-1`
+                  ? `border-b-4 border-black font-bold text-sm sm:text-lg mt-1`
                   : "font-medium text-sm sm:text-lg"
               }
             >
@@ -100,13 +112,25 @@ event = service
             </span>
           </button>
         </div>
-        <hr className="border-t-1 border-gray-800 mt-2"></hr>
+        <hr className="border-t-1 border-gray-800 "></hr>
       </div>
       <section className="max-w-5xl mx-4 md:mx-auto">
-        <div>{tabs === "marketing" ? <Marketing  marketing={marketing}/> : null}</div>
-        <div>{tabs === "events" ? <EventsAndExhibitions events={event}/> : null}</div>
-        <div>{tabs === "digitalMarketing" ? <DigitalMarketing digitalMarketing={digitalMarketing}/> : null}</div>
-        <div>{tabs === "contentProduction" ? <ContentProduction contentProduction={contentProduction}/> : null}</div>
+        <div>
+          {tabs === "marketing" ? <Marketing marketing={marketing} /> : null}
+        </div>
+        <div>
+          {tabs === "events" ? <EventsAndExhibitions events={event} /> : null}
+        </div>
+        <div>
+          {tabs === "digitalMarketing" ? (
+            <DigitalMarketing digitalMarketing={digitalMarketing} />
+          ) : null}
+        </div>
+        <div>
+          {tabs === "contentProduction" ? (
+            <ContentProduction contentProduction={contentProduction} />
+          ) : null}
+        </div>
       </section>
     </>
   );
