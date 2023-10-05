@@ -103,21 +103,36 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <div className="hidden md:flex  space-x-16 mr-40 ">
-          <Link href="/casestudy" legacyBehavior>
-            <a className="hover:text-gray-300">case studies</a>
+        <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
+          <Link
+            href="/casestudy"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            case studies
           </Link>
-          <Link href="/services" legacyBehavior>
-            <a className="hover:text-gray-300">services</a>
+          <Link
+            href="/services"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            services
           </Link>
-          <Link href="/about" legacyBehavior>
-            <a className="hover:text-gray-300">about us</a>
+          <Link
+            href="/about"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            about us
           </Link>
-          <Link href="/contact" legacyBehavior>
-            <a className="hover:text-gray-300">contact us</a>
+          <Link
+            href="/contact"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            contact us
           </Link>
-          <Link href="/blogpage" legacyBehavior>
-            <a className="hover:text-gray-300">blogs</a>
+          <Link
+            href="/blogpage"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            blogs
           </Link>
         </div>
       </div>

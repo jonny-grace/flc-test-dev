@@ -13,7 +13,7 @@ const BoxComponent = () => {
       <div className=" mt-5  md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
         <div className=" flex flex-col md:flex-row h-full">
           <div className=" md:w-[40%] bg-blue-300 h-full">
-            <div className="relative lg:w-[500px] xl:w-[500px]  xxl:w-[751.36px] flex h-full">
+            <div className="relative lg:w-[500px] xl:w-[610px] md:w-[450px]  xxl:w-[751.36px] flex h-full">
               <Image
                 src={phoneImage}
                 alt="Your Image"

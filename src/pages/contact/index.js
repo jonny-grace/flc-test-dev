@@ -56,7 +56,7 @@ const index = ({contact,footer}) => {
           </form>
         </div>
         <div className="w-full sm:w-1/2 pl-4">
-          <h2 className="text-2xl font-bold mb-7">Our Offices:</h2>
+          <h2 className="text-2xl xl:text-[27px] font-bold mb-7">our offices:</h2>
           <div className="mb-4">
             <h3 className="font-bold  mb-4">{ourOffice && ourOffice.usa}:</h3>
            <p className=" w-[300px]">
@@ -76,14 +76,14 @@ const index = ({contact,footer}) => {
         </div>
       </div>
     </div>
-    <div className="bg-gray-300 py-8">
-        <div className="container mx-auto">
-          <h1 className="text-xl px-10 md:px-32 md:text-2xl font-bold text-start mb-4">
+    <div className=" py-8" style={{background:'#E6E6E6'}}>
+        <div className="container xxl:w-[1004px]">
+          <h1 className="text-xl px-10 md:px-32 xxl:text-[47px] font-semibold text-start mb-4">
             {contact.footer}
           </h1>
           <div className="flex px-10 md:px-32 justify-start">
-            <button  className="text-black py-2 px-4 rounded hover:font-bold">
-              <Link href="/joinOurTeam">Join our Team</Link>
+            <button  className="text-black py-2  rounded hover:font-bold">
+              <Link className=" underline" href="/joinOurTeam">Join our team</Link>
             </button>
           </div>
         </div>

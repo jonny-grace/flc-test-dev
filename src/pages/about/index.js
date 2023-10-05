@@ -9,10 +9,10 @@ const index = ({ about, values, awards }) => {
   return (
     <div className=" overflow-x-hidden">
       <Navbar />
-      <div className=" overflow-x-hidden  p-4 md:mx-48 mt-20 mb-10 font-inter">
+      <div className=" overflow-x-hidden  p-4 md:mx-36 mt-20 mb-10 font-inter">
         <div>
           <h1 className="text-4xl font-bold mb-4">{about.title}</h1>
-          <p className="text-lg py-10 text-gray-600">{about.descriptionOne}</p>
+          <p className="text-lg xxl:w-[1432px] xl:w-full text-gray-600">{about.descriptionOne}</p>
         </div>
         <div>
           <Image
@@ -20,7 +20,7 @@ const index = ({ about, values, awards }) => {
             alt="banner image"
             width={1000}
             height={1000}
-            className="  h-48 md:h-96 object-cover mt-10"
+            className=" w-full  h-48 md:h-96 object-cover mt-10"
           />
         </div>
         <div className="my-8">
