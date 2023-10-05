@@ -1,4 +1,13 @@
 import React, { useState } from "react";
+import { Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ["cyrillic"],
+  weight: ["400"],
+});
+const interBold = Inter({
+  subsets: ["cyrillic"],
+  weight: ["500"],
+});
 
 const CustomeTabs = () => {
   const [tabs, setTab] = useState("integrated");
@@ -14,8 +23,8 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "integrated"
-                  ? "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap"
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap"
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
               integrated
@@ -28,8 +37,8 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "markating"
-                  ? "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap"
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap"
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
               | markating
@@ -42,8 +51,8 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "events"
-                  ? "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap"
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap"
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
               | events & exhibitions
@@ -57,8 +66,8 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "digital"
-                  ? "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap"
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap"
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
               | Digital
@@ -72,8 +81,8 @@ const CustomeTabs = () => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap"
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap"
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
               }
             >
               | content production
