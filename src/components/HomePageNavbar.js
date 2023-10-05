@@ -1,13 +1,11 @@
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import logo from '../../public/Frame.png';
-import logoBlack from '../../public/Frame-black.png';
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import logo from "../../public/Frame.png";
+import logoBlack from "../../public/Frame-black.png";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-const HomePageNavBar = ({logo}) => {
-
-
+const HomePageNavBar = ({ logo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,49 +15,51 @@ const HomePageNavBar = ({logo}) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       setIsScrolled(scrollTop > 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 font-inter font-extrabold ${
-      isScrolled ? 'bg-gray-100 text-black mt-0 transition ease-in-out duration-300 transform translate-y-0 px-12' : 'bg-transparent text-white md:ml-10 transition ease-in-out duration-500 transform md:translate-y-12'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 font-inter font-extrabold ${
+        isScrolled
+          ? "bg-gray-100 text-black mt-0 transition ease-in-out duration-300 transform translate-y-0 px-12"
+          : "bg-transparent text-white md:ml-10 transition ease-in-out duration-500 transform md:translate-y-12"
+      }`}
+    >
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
-        <Link href="/" legacyBehavior>
+          <Link href="/" legacyBehavior>
             <a className="flex items-center space-x-2">
               <Image
-                src={isScrolled ? logoBlack :  logo.path} 
+                src={isScrolled ? logoBlack : logo.path}
                 width={1000}
-                height={1000}// Use the black logo when isScrolled is true
+                height={1000} // Use the black logo when isScrolled is true
                 alt="Logo"
-                className="h-12 w-12 object-contain"
-                
+                className="h-16 w-16 object-contain"
               />
             </a>
           </Link>
-
         </div>
         <div className="relative md:hidden">
           <button
             className={`text-gray-400 hover:text-white focus:outline-none focus:text-white ${
-              isScrolled ? 'text-white' : 'text-gray-400'
+              isScrolled ? "text-white" : "text-gray-400"
             }`}
             onClick={toggleMenu}
           >
             <svg
-            className={` h-6 w-6 fill-current font-inter ${
-              isScrolled ? ' text-black' : 'bg-transparent text-white'
-            }`}
-
+              className={` h-6 w-6 fill-current font-inter ${
+                isScrolled ? " text-black" : "bg-transparent text-white"
+              }`}
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -81,34 +81,63 @@ const HomePageNavBar = ({logo}) => {
           {isMenuOpen && (
             <div className="absolute top-full right-0 w-48 bg-gray-100 text-black  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:font-bold ">case studies</a>
-                
+                <a className="block py-1 border border-top-black hover:font-bold ">
+                  case studies
+                </a>
               </Link>
               <Link href="/services" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">services</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">
+                  services
+                </a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">about us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">
+                  about us
+                </a>
               </Link>
               <Link href="/contact" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">Contact Us</a>
+                <a className="block py-1 border border-top-black hover:text-gray-300">
+                  Contact Us
+                </a>
               </Link>
               <Link href="/blogpage" legacyBehavior>
-                <a className="block py-1  border border-top-black hover:text-gray-300">blogs</a>
+                <a className="block py-1  border border-top-black hover:text-gray-300">
+                  blogs
+                </a>
               </Link>
             </div>
           )}
         </div>
         <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
-          <Link href="/casestudy"  className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >case studies
+          <Link
+            href="/casestudy"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            case studies
           </Link>
-          <Link href="/services"  className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >services
+          <Link
+            href="/services"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            services
           </Link>
-          <Link href="/about"  className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  ">about us
+          <Link
+            href="/about"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            about us
           </Link>
-          <Link href="/contact"   className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >contact us
+          <Link
+            href="/contact"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            contact us
           </Link>
-          <Link href="/blog"   className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  " >blogs
+          <Link
+            href="/blog"
+            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+          >
+            blogs
           </Link>
         </div>
       </div>

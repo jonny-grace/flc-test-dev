@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Inter } from "next/font/google";
 
+const inter = Inter({
+  subsets: ["cyrillic"],
+  weight: ["400"],
+});
 const Hero = ({ hero }) => {
   return (
     <section
@@ -23,10 +28,10 @@ const Hero = ({ hero }) => {
             {hero.title}
           </h1>
 
-          <div className="mt-8  flex flex-wrap   text-center ">
+          <div className="flex flex-wrap -mt-2  text-center ">
             <Link
               href="#"
-              className="block w-full    px-12 py-3 text-sm underline font-medium text-white shadow hover:font-bold focus:outline-none focus:ring active:font-bold"
+              className="block w-full text-[32px]  font-normal px-12 py-3  underline text-white shadow  focus:outline-none focus:ring active:font-bold"
             >
               {hero.moreButton}
             </Link>

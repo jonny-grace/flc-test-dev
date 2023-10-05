@@ -8,13 +8,14 @@ const Index = ({ blogs }) => {
   var feutured = {};
   var otherBlogs = [];
 
-  blogs && blogs.map((blog, index) => {
-    if (index == 0) {
-      feutured = blog.attributes;
-    } else {
-      otherBlogs.push(blog);
-    }
-  });
+  blogs &&
+    blogs.map((blog, index) => {
+      if (index == 0) {
+        feutured = blog.attributes;
+      } else {
+        otherBlogs.push(blog);
+      }
+    });
   return (
     <div className=" mb-20">
       <Navbar />
@@ -28,7 +29,7 @@ const Index = ({ blogs }) => {
                 src={feutured.thumbnail.data.attributes.url}
                 width={1000}
                 height={1000}
-                className="w-[100%] fit-content"
+                className="w-[100%] fit-cover xl:h-[566px]"
                 alt="Blog Banner"
               />
             </div>
@@ -43,64 +44,67 @@ const Index = ({ blogs }) => {
             </div>
 
             <div>
-              <h2 className="text-gray-500 mt-4">{feutured?.createdBy?.data?.attributes?.firstname} {feutured?.createdBy?.data?.attributes?.lastname}</h2>
+              <h2 className="text-gray-500 mt-4">
+                {feutured?.createdBy?.data?.attributes?.firstname}{" "}
+                {feutured?.createdBy?.data?.attributes?.lastname}
+              </h2>
             </div>
           </div>
           <div className="w-full sm:w-1/2 md:w-auto h-[40%]">
-            {otherBlogs && otherBlogs.map((blog,index)=>{
-              return(
-                <div key={index} className="mb-4 flex  sm:flex-row gap-5">
-              <Image
-               src={blog.attributes.thumbnail.data.attributes.url}
-                className="w-[180px] h-[188px]"
-                alt="Blog 1"
-                width={1000}
-                height={1000}
-              />
-              <div>
-                <h5>{blog.attributes.blog_type.data.attributes.name}</h5>
-                <h1 className=" font-bold hover:cursor-pointer">
-                  {blog.attributes.title}
-                </h1>
-                <h3>{feutured?.createdBy?.data?.attributes?.firstname}</h3>
-              </div>
-            </div>
-              )
-            })}
-            
+            {otherBlogs &&
+              otherBlogs.map((blog, index) => {
+                return (
+                  <div key={index} className="mb-4 flex  sm:flex-row gap-5">
+                    <Image
+                      src={blog.attributes.thumbnail.data.attributes.url}
+                      className="w-[180px] h-[233px] object-cover"
+                      alt="Blog 1"
+                      width={1000}
+                      height={1000}
+                    />
+                    <div>
+                      <h5>{blog.attributes.blog_type.data.attributes.name}</h5>
+                      <h1 className=" font-bold hover:cursor-pointer">
+                        {blog.attributes.title}
+                      </h1>
+                      <h3>
+                        {feutured?.createdBy?.data?.attributes?.firstname}
+                      </h3>
+                    </div>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>
 
       <div className="flex justify-center">
         <div className="w-full flex flex-col  md:mx-16 mx-4 sm:flex-row justify-center gap-5 pl-4">
-          {otherBlogs && otherBlogs.map((blog, index) => {
-            return (
-              <div key={index} className="mb-4 sm:w-1/3">
-                <Image
-                  src={blog.attributes.thumbnail.data.attributes.url}
-                  className="w-full h-72"
-                  alt="Blog 1"
-                  width={1000}
-                  height={1000}
-                />
-                <div>
-                  <h2 className="text-gray-500 mt-4">
-                    
-                    {blog.attributes.blog_type.data.attributes.name}
-                  </h2>
-                </div>
+          {otherBlogs &&
+            otherBlogs.map((blog, index) => {
+              return (
+                <div key={index} className="mb-4 sm:w-1/3">
+                  <Image
+                    src={blog.attributes.thumbnail.data.attributes.url}
+                    className="w-full h-72"
+                    alt="Blog 1"
+                    width={1000}
+                    height={1000}
+                  />
+                  <div>
+                    <h2 className="text-gray-500 mt-4">
+                      {blog.attributes.blog_type.data.attributes.name}
+                    </h2>
+                  </div>
 
-                <div>
-                  <h1 className="font-bold text-lg hover:cursor-pointer">
-                    {blog.attributes.title}
-                  </h1>
+                  <div>
+                    <h1 className="font-bold text-lg hover:cursor-pointer">
+                      {blog.attributes.title}
+                    </h1>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-
-          
+              );
+            })}
         </div>
       </div>
     </div>
@@ -121,7 +125,6 @@ export async function getStaticProps() {
       console.log(err.message);
     });
 
-  
   return {
     props: {
       blogs,

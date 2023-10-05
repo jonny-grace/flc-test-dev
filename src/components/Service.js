@@ -30,7 +30,7 @@ const Service = ({ serviceSection, services }) => {
         </div>
       </div>
       <div className=" flex justify-center text-center ">
-        <p className="mt-12 xxl:text-[26px] xl:w-[580px]  xxl:w-[922px]  font-semibold text-1xl   md:text-center   md:mx-40">
+        <p className="mt-12 xxl:text-[26px] xl:w-[580px]  xxl:w-[922px]  font-normal text-1xl   md:text-center   md:mx-40 text-gray-800">
           {serviceSection?.desc}
         </p>
       </div>
