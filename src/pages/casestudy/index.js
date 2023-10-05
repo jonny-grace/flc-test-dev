@@ -10,10 +10,6 @@ import "react-tabs/style/react-tabs.css";
 import CustomeTabs from "../../components/CustomeTabs";
 
 const index = ({ caseStudyStatic, caseStudies }) => {
-  const [activeTab, setActiveTab] = useState(0);
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
   return (
     <div className=" w-full overflow-x-hidden mb-16 font-inter">
       <Navbar />
