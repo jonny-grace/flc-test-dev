@@ -28,7 +28,7 @@ function Carousel() {
     const { className, onClick } = props;
     return (
       <div onClick={onClick}>
-        <AiOutlineArrowLeft className="text-2xl absolute top-0 left-0 mt-[-50px] ml-10 border-spacing-1 border-x-2 border-y-2 w-9 h-9 rounded-full text-black" />
+        <AiOutlineArrowLeft className="text-xl absolute top-0 left-0 mt-[-50px] ml-10 border-spacing-1 border-x-2 border-y-2 w-9 h-9 rounded-full text-black" />
       </div>
     );
   };
@@ -37,7 +37,7 @@ function Carousel() {
     const { className, onClick } = props;
     return (
       <div onClick={onClick}>
-        <AiOutlineArrowRight className="text-2xl absolute top-0 left-0 mt-[-50px] ml-24 border-x-2 border-y-2 w-9 h-9 rounded-full text-black" />
+        <AiOutlineArrowRight className="text-xl absolute top-0 left-0 mt-[-50px] ml-24 border-x-2 border-y-2 w-9 h-9 rounded-full text-black" />
       </div>
     );
   };
@@ -85,7 +85,7 @@ function Carousel() {
           {allProducts &&
             allProducts.map((product, index) => (
               <div key={index} className=" ">
-                <div className="  relative ml-10">
+                <div className="relative mr-10 ">
                   <Image
                     src={product?.attributes?.image?.data?.attributes?.url}
                     alt=""

@@ -5,15 +5,15 @@ import CaptionComponent from "../../components/CaptionBox";
 import axios from "axios";
 import Image from "next/image";
 
-const index = ({ serviceStatic,services }) => {
+const index = ({ serviceStatic, services }) => {
   return (
     <>
       <div className="min-h-screen overflow-x-hidden font-inter">
         <section className="md:h-[90vh]  w-full relative md:mb-16">
           <Navbar />
           <Image
-           width={1000}
-           height={1000}
+            width={1000}
+            height={1000}
             src={serviceStatic?.background?.data?.attributes?.url}
             alt="banner image"
             className="md:h-[90vh]    w-full object-cover mt-20"
@@ -22,7 +22,7 @@ const index = ({ serviceStatic,services }) => {
           <div className="absolute bottom-1/4  w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:mt-28 md:ml-10 ">
               <div className="px-8 max-w-xl mt-24 mx-auto">
-                <h1 className="text-white md:text-2xl text-xl font-medium capitalize">
+                <h1 className="text-white md:text-2xl text-xl font-medium lowercase">
                   {serviceStatic?.title}
                 </h1>
                 <p className="hidden md:block text-white mt-4  w-[400px]">
@@ -35,7 +35,7 @@ const index = ({ serviceStatic,services }) => {
         </section>
 
         <div className=" mt-7">
-          <ServicesTabs services={services}/>
+          <ServicesTabs services={services} />
         </div>
         <section className="my-16 max-w-5xl mx-auto">
           <Carousel />
@@ -60,7 +60,6 @@ export async function getStaticProps() {
   await axios
     .get("https://flc-cms.onrender.com/api/service-static?populate=*")
     .then((res) => {
-     
       serviceStatic = res.data.data.attributes;
     })
     .catch((err) => {
@@ -68,18 +67,17 @@ export async function getStaticProps() {
     });
 
   await axios
-  .get("https://flc-cms.onrender.com/api/services?populate=*")
-  .then((res) => {
-    
-    services = res.data.data;
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+    .get("https://flc-cms.onrender.com/api/services?populate=*")
+    .then((res) => {
+      services = res.data.data;
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
   return {
     props: {
       serviceStatic,
-      services
+      services,
     },
     revalidate: 3600,
   };
