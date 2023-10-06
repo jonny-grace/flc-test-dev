@@ -2,8 +2,9 @@ import Image from "next/image";
 import { Fragment, React, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-
+import CustomeTabs from "./CustomeTabs";
 import IntegratedTabContent from "./IntegratedTabContent";
+import CustomeTabs2 from "./CustomeTabs2";
 
 const Client = ({ clientsDetail }) => {
   const logos = clientsDetail?.logos;
@@ -24,60 +25,7 @@ const Client = ({ clientsDetail }) => {
       </p>
 
       <div className=" flex flex-col  mx-16  font-inter pt-8">
-        <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
-          <TabList className="flex justify-center hover:cursor-pointer  flex-wrap ">
-            {[
-              "FMCG",
-              "Electronics",
-              "Fashion & Lifestyle",
-              "Food & Beverage",
-              "Luxury",
-            ].map((tab, index) => (
-              <Fragment key={tab}>
-                {index > 0 && (
-                  <div className=" border-l-2 hidden md:block active:font-bold" />
-                )}{" "}
-                {/* Add horizontal line */}
-                <Tab
-                  className={`px-2  ${
-                    activeTab === index
-                      ? " border-none font-bold"
-                      : " border-none text-gray-600"
-                  }`}
-                >
-                  {tab}
-                </Tab>
-              </Fragment>
-            ))}
-          </TabList>
-
-          {/* TabPanel components */}
-          <TabPanel>
-            <div className="min-h-screen md:min-h-0">
-              {/* <IntegratedTabContent /> */}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="min-h-screen md:min-h-0">
-              {/* <IntegratedTabContent /> */}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="min-h-screen md:min-h-0">
-              {/* <IntegratedTabContent /> */}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="min-h-screen md:min-h-0">
-              {/* <IntegratedTabContent /> */}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="min-h-screen md:min-h-0">
-              {/* <IntegratedTabContent /> */}
-            </div>
-          </TabPanel>
-        </Tabs>
+        <CustomeTabs2 />
       </div>
 
       <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-2 md:px-24">

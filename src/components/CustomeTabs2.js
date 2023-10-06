@@ -92,6 +92,22 @@ const CustomeTabs2 = () => {
               content production
             </span>
           </button>
+          <span>|</span>
+
+          <button
+            onClick={() => setTab("Luxury")}
+            className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
+          >
+            <span
+              className={
+                tabs === "Luxury"
+                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-800 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap capitalize`
+              }
+            >
+              Luxury
+            </span>
+          </button>
         </div>
       </div>
     </>
