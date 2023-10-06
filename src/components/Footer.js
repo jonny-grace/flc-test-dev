@@ -119,7 +119,7 @@ const Footer = ({ footerData }) => {
                 </p>
               </Link>
             </div>
-            <p className="mt-8 md:pr-20 md:ml-[-150px]  text-center md:mt-56">
+            <p className="mt-8 md:pr-17 md:ml-[-140px]  text-center md:mt-56">
               {footerData.copyright}
             </p>
           </div>

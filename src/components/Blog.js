@@ -48,7 +48,7 @@ const Blog = ({ blogSectionTop, blogs }) => {
                 <h3 className="mt-5 text-xl text-black font-bold">
                   {blog.attributes.title.substring(0, 27)}...
                 </h3>
-                <p className="mt-3 inline-flex items-center gap-x-2 text-sm font-semibold text-black">
+                <p className="mt-3 inline-flex items-center gap-x-2 text-sm font-medium text-black">
                   Read more
                 </p>
               </Link>

@@ -138,7 +138,7 @@ function CaseStudyCards({ caseStudies }) {
       {visibleRows < totalRows && (
         <button
           onClick={handleLoadMore}
-          className="mt-10 items-center gap-x-1.5 text-black decoration-2 group-hover:underline font-bold w-full flex justify-center"
+          className="  mt-10 items-center gap-x-1.5 text-black decoration-2 group-hover:underline font-bold w-full flex justify-center"
         >
           Load more
         </button>

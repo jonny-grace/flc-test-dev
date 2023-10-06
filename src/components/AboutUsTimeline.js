@@ -1,6 +1,22 @@
 import { Chrono } from "react-chrono";
 
 const Timeline = ({ about }) => {
+  const timelineTheme = {
+    primary: "black",
+    secondary: "transparent",
+  };
+
+  const timelineStyles = {
+    timeline: {
+      borderTop: "1px solid black",
+    },
+    marker: {
+      backgroundColor: "none", // Set the marker background color to transparent to remove the dot indicator
+    },
+  };
+
+
+
   return (
     <div className=" mt-24 font-inter">
       <Chrono
@@ -44,6 +60,8 @@ const Timeline = ({ about }) => {
         ]}
         mode="VERTICAL_ALTERNATING"
         hideControls
+        theme={timelineTheme} // Apply the custom timeline theme
+        style={timelineStyles} // Apply the custom timeline styles
       />
     </div>
   );

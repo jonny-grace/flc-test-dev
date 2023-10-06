@@ -40,7 +40,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
         <CaseStudyCards caseStudies={caseStudies} />
       </div>
       <div className="mt-8">
-        <h1 className="text-center font-bold text-xl">load more</h1>
+        <h1 className="text-center hover:cursor-pointer font-bold text-xl">load more</h1>
       </div>
     </div>
   );

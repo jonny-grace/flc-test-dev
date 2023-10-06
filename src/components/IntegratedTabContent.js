@@ -22,15 +22,15 @@ const BoxComponent = () => {
                 className="object-cover hover:cursor-pointer w-full"
               />
 
-              <div className="absolute inset-0 flex justify-center  bg-slate-900 bg-opacity-50 text-white p-4">
+              <div className="absolute inset-0 flex   bg-slate-900 bg-opacity-50 text-white p-4">
                 <div >
-                  <p className=" mt-4 ml-4 font-semibold text-left">
+                  <p className=" mt-4 ml-4 font-medium text-left">
                     featured // events
                   </p>
                   <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-10 px-4">
                     Honor <br/> Magic Pro Launch
                   </h2>
-                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] font-semibold text-sm ml-5  mr-10">
+                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] md:w-[380px]  font-semibold text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
