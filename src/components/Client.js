@@ -25,7 +25,7 @@ const Client = ({ clientsDetail }) => {
       <p className="text-base font-semibold md:text-lg lg:text-xl text-center text-gray-600 xxl:w-[1606px] xxl:text-[26.63px] px-6 xl:w-12/12 xl:mx-48 mb-9">
         {clientsDetail.desc}
       </p>
-
+{/* ?here is some changes  */}
       <div className=" flex flex-col  mx-16  font-inter pt-8">
         <CustomeTabs2 />
       </div>
