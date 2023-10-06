@@ -1,0 +1,265 @@
+[33mcommit 733150a63795b6aa483f1b52c259698b4b1de555[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: e883d86 c4351e7
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Fri Oct 6 09:00:52 2023 +0300
+
+    Merge branch 'dev'
+
+[33mcommit c4351e71863a543f9d0014bbb110ee267b804e31[m[33m ([m[1;32mdev[m[33m)[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Fri Oct 6 09:00:10 2023 +0300
+
+    fix on horizontal scroller
+
+[33mcommit e883d8691d0ed02fd91940a7164c28283a0a9c75[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 69a7af3 98579fa
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Fri Oct 6 08:12:13 2023 +0300
+
+    Merge pull request #3 from jonny-grace/dev
+    
+    Dev
+
+[33mcommit 98579fa7a8485e10f71538dcb8f27370a9bbe174[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Fri Oct 6 08:08:51 2023 +0300
+
+    gallery
+
+[33mcommit 130bb3a873879b98bc9e39ec885bc9e4a97102bc[m
+Merge: 7a73a39 69a7af3
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Fri Oct 6 07:46:17 2023 +0300
+
+    Merge branch 'main' into dev
+
+[33mcommit 7a73a394fc4be1169513a375296c5c51764f08cd[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Fri Oct 6 07:40:50 2023 +0300
+
+    scroller button
+
+[33mcommit 69a7af3a081a245220c87aa0976a80e3bb4771de[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Fri Oct 6 03:45:16 2023 +0300
+
+    blog page completed and other pages little design change
+
+[33mcommit 0381dd4efbf0c76857c4dd5dba8fc165cdd0aafb[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Thu Oct 5 19:37:39 2023 +0300
+
+    carousel, navbar inside galery image and about us fixed
+
+[33mcommit 631d88ebde5ca3023a5f40505dace8737b7241bb[m
+Merge: 6032aed ea710ee
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 17:49:06 2023 +0300
+
+    Merge pull request #2 from jonny-grace/dev
+    
+    our services page fix
+
+[33mcommit ea710eeceb5ca3a5e964f7a5e661c289ff661b43[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 17:47:40 2023 +0300
+
+    our services page fix
+
+[33mcommit 6032aed53542d0dac0b841a293931a9b695dc86f[m
+Merge: 4a9faea 741d7ee
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 17:13:16 2023 +0300
+
+    Merge pull request #1 from jonny-grace/dev
+    
+    Dev
+
+[33mcommit 741d7ee91f870536bcde0413bbbd500f26f31b8d[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 17:11:40 2023 +0300
+
+    fix on about pages
+
+[33mcommit 1d4c11513c87675c7b28057a4a8fe85d54b13b97[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 16:30:00 2023 +0300
+
+    carosel fix
+
+[33mcommit ea25a00c7916c26937b29995f43d5221de8e57d9[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 15:59:06 2023 +0300
+
+    case study and services page fix
+
+[33mcommit 195d5e3466495886e31f1677eb1b51869944f447[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 15:35:30 2023 +0300
+
+    tab xxl size fix
+
+[33mcommit 4a9faea2bc66df963660c0556bf6098097220532[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 12:56:12 2023 +0300
+
+    tabFixed,logo sized increased
+
+[33mcommit f22e941d704c2f98bca647c5562231cc8576be8b[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 11:16:47 2023 +0300
+
+    carousel number of slides fix
+
+[33mcommit c6fbd27c7cf259780a75868a774c2d4d99c6fb89[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 11:02:34 2023 +0300
+
+    fix on case study
+
+[33mcommit ffeaa7efacb4ae854e7e897f6c36e22d3a0d405a[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 10:51:22 2023 +0300
+
+    tabs fix on servicess page
+
+[33mcommit 4a55eec22ba4c0cfd2496a753b2e9deb173bd62e[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 10:34:40 2023 +0300
+
+    border bottom on tabs
+
+[33mcommit ca1ff8f034e9c91797ee8ead457282b24f4eaffa[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 10:10:04 2023 +0300
+
+    tabs font change
+
+[33mcommit 5816e31cbf6805632f1b9459a44ba2c103b155a7[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 09:59:35 2023 +0300
+
+    custom tabs margin
+
+[33mcommit 53c92f8a12952d79e636990ea15468a0f2f627e6[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 09:54:40 2023 +0300
+
+    custom tabs
+
+[33mcommit 3c658e3bfc5cac2de3fdde6a0bc3a884d76645bb[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 08:40:39 2023 +0300
+
+    tab fixed
+
+[33mcommit 9b377a1279c5a7a18738d03cb52882c0290a28b5[m
+Author: DAdawit <58243647+DAdawit@users.noreply.github.com>
+Date:   Thu Oct 5 08:25:31 2023 +0300
+
+    build fix
+
+[33mcommit ed35c052703646c8e062b22e552d63ef1945f03e[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Thu Oct 5 00:34:37 2023 +0300
+
+    home page checked
+
+[33mcommit 0b5abc9ce98d6e60e05c767bf4dfff1144597fbe[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Wed Oct 4 20:56:42 2023 +0300
+
+    latest one
+
+[33mcommit 7ecec191e1450cd1c9700cae352cd46d556a8ebd[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Tue Oct 3 16:57:53 2023 +0300
+
+    carousel problem fixed and working fine
+
+[33mcommit 30e589dd2ee4a9b3f2abadb0574246b3948f11db[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Tue Oct 3 01:42:18 2023 +0300
+
+    service page static data inserted and image sharp installed
+
+[33mcommit 81002f5f62e610953d95ef3cbef1b565f0d8fa2f[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Mon Oct 2 23:56:17 2023 +0300
+
+    mapping errors and lint warnings fixed
+
+[33mcommit 44d11918f23e81eff5e8b6445710c2b4cd9967f3[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Mon Oct 2 15:16:11 2023 +0300
+
+    buil time error test dev
+
+[33mcommit 91b5c586fad0e3c96dd8ab01012a15f40e879d64[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Sat Sep 23 00:12:25 2023 +0300
+
+    use effect error fixed
+
+[33mcommit f1a7902b94c4dcb8a7c21d98dcabfacbe2519bd6[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Fri Sep 22 23:55:05 2023 +0300
+
+    Ui issues after the second round feed back fixed on all pages
+
+[33mcommit f56f0d2c0b7e40339a36fd53fb3a0b694d829609[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Fri Sep 22 09:18:38 2023 +0300
+
+    font inter added and some small ui related issues fixed
+
+[33mcommit b35960bbbb0bed58df08be84ba44720ce9d0ef7b[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Wed Sep 20 01:14:22 2023 +0300
+
+    font inter installed and added to the parrent of the div
+
+[33mcommit 2d1ead3f7c1c1f71bd27d5d158ba00d4982b85ca[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Wed Sep 20 00:53:21 2023 +0300
+
+    simple build error fixed with qoutation marks
+
+[33mcommit d48837f5577e6840b70fea1e624c69d9c08ecf32[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Wed Sep 20 00:48:45 2023 +0300
+
+    responsive issues fixed on casestudy age and Blog page created
+
+[33mcommit 06739008066fc9c2eb6045742e6e0cf513025088[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Tue Sep 19 11:54:43 2023 +0300
+
+    home page galery view responsive completed
+
+[33mcommit cf721c65a6f2b45c44135a3f8918b7dcb00b409b[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Tue Sep 19 11:24:04 2023 +0300
+
+    the simple image name error fixed
+
+[33mcommit 9345eea14e6be3afa0271fae8298897432cbe3f6[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Tue Sep 19 10:38:59 2023 +0300
+
+    the galery view in the home page fixed
+
+[33mcommit 03ff10a0dc4c93ccb927eaa592be97b054181dec[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Tue Sep 19 09:16:15 2023 +0300
+
+    the galery box in the home page
+
+[33mcommit 2b39fad414ca2d99940bf6d02984a2071913fbb2[m
+Author: jonny-grace <johnlemma9@gmail.com>
+Date:   Mon Sep 18 15:08:19 2023 +0300
+
+    service banner image problem fixed
+
+[33mcommit 8b5a928683aa3a63f3027c364b17514e4b73cd39[m
+Author: jonny-grace <johnlemma9@gmail.com
