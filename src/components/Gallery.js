@@ -117,8 +117,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Integrated"
-                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Integrated
@@ -132,8 +132,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "FMCG"
-                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               FMCG
@@ -148,8 +148,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Electronics"
-                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Electronics
@@ -164,8 +164,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Fashn & Lifestyle"
-                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Fashn & Lifestyle
@@ -179,8 +179,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Food & Beverage"
-                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Food & Beverage
