@@ -92,7 +92,7 @@ const Client = ({ clientsDetail }) => {
                   // width={logo.attributes.width}
                   // height={logo.attributes.height}
                   alt="Company Logo"
-                  className="w-full h-12 "
+                  className="w-full h-12 object-contain"
                 />
               </div>
             ))}
