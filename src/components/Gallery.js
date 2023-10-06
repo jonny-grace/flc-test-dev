@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { Inter } from "next/font/google";
@@ -16,6 +16,7 @@ const inter = Inter({
 // });
 
 const GaleryTab = ({ caseStudy }) => {
+  const contentRef = useRef(null);
   const tabsItems = [
     "Integrated",
     "FMCG",
@@ -36,6 +37,7 @@ const GaleryTab = ({ caseStudy }) => {
         }
       }
     }
+    contentRef.current.scrollIntoView({ behavior: "smooth" });
   };
   const handleRight = (tab) => {
     for (let i = 0; i < tabsItems.length; i++) {
@@ -47,6 +49,7 @@ const GaleryTab = ({ caseStudy }) => {
         }
       }
     }
+    contentRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -185,7 +188,7 @@ const GaleryTab = ({ caseStudy }) => {
           </button>
         </div>
       </div>
-      <section className="w-full mt-8 min-h-screen">
+      <section className="w-full mt-8 min-h-screen " ref={contentRef}>
         <div>{tabs === "Integrated" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "Electronics" ? <IntegratedTabContent /> : null}</div>
