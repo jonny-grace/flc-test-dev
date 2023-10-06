@@ -53,7 +53,7 @@ const GaleryTab = ({ caseStudy }) => {
   };
 
   return (
-    <div className=" flex flex-col  mx-16  font-inter">
+    <div className=" flex flex-col  mx-16  font-inter" ref={contentRef}>
       {/* <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
         <TabList className="flex justify-center hover:cursor-pointer flex-wrap ">
           {[
@@ -117,8 +117,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Integrated"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap`
+                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Integrated
@@ -132,8 +132,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "FMCG"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap`
+                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               FMCG
@@ -148,8 +148,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Electronics"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap`
+                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Electronics
@@ -164,8 +164,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Fashn & Lifestyle"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap`
+                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Fashn & Lifestyle
@@ -179,8 +179,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Food & Beverage"
-                  ? `${inter.interBold} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-600 whitespace-nowrap`
-                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap`
+                  ? `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} font-bold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Food & Beverage
