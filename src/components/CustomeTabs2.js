@@ -15,7 +15,7 @@ const CustomeTabs2 = () => {
   return (
     <>
       <div className="w-full mx-auto font-inter">
-        <div className="flex justify-around items-center gap-2 flex-wrap max-w-2xl lg:flex-nowrap mx-auto lg:whitespace-nowrap">
+        <div className="flex justify-around items-center gap-2 flex-wrap max-w-xl lg:flex-nowrap mx-auto lg:whitespace-nowrap">
           <button
             onClick={() => setTab("integrated")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
