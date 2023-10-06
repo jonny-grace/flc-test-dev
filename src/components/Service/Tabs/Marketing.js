@@ -11,7 +11,7 @@ const Marketing = ({ marketing }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
         <div className="grid h-min max-w-lg">
           <h5 className="text-gray-600 text-xl">01</h5>
-          <h5 className="text-black text-5xl py-8 font-bold lowercase">
+          <h5 className="text-black text-4xl py-8 font-bold lowercase">
             {marketing?.attributes?.name}{" "}
           </h5>
           <div className="grid gap-y-6  h-min">

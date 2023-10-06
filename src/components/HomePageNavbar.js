@@ -134,7 +134,7 @@ const HomePageNavBar = ({ logo }) => {
             contact us
           </Link>
           <Link
-            href="/blog"
+            href="/blogpage"
             className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
           >
             blogs

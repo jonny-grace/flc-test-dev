@@ -10,10 +10,10 @@ const inter = Inter({
   subsets: ["cyrillic"],
   weight: ["400"],
 });
-const interBold = Inter({
-  subsets: ["cyrillic"],
-  weight: ["500"],
-});
+// const interBold = Inter({
+//   subsets: ["cyrillic"],
+//   weight: ["500"],
+// });
 
 const GaleryTab = ({ caseStudy }) => {
   const tabsItems = [
@@ -113,6 +113,7 @@ const GaleryTab = ({ caseStudy }) => {
       </Tabs> */}
 
       <div className="w-full mx-auto ">
+        
         <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-2xl mx-auto">
           <button
             onClick={() => setTab("Integrated")}
@@ -192,6 +193,9 @@ const GaleryTab = ({ caseStudy }) => {
           </button>
         </div>
       </div>
+
+      <section className="w-full mt-8">
+        <div>{tabs === "integrated" ? <IntegratedTabContent /> : null}</div>
       <section className="w-full mt-8 min-h-screen">
         <div>{tabs === "Integrated" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
@@ -203,24 +207,7 @@ const GaleryTab = ({ caseStudy }) => {
           {tabs === "Food & Beverage" ? <IntegratedTabContent /> : null}
         </div>
       </section>
-      <div className="flex justify-end gap-3 mt-5">
-        <button
-          className="flex justify-center items-center h-12 w-12 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
-          onClick={() => handleLeft(tabs)}
-        >
-          <span className="text-gray-600">
-            <LeftArrow />
-          </span>
-        </button>
-        <button
-          className="flex justify-center items-center h-12 w-12 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
-          onClick={() => handleRight(tabs)}
-        >
-          <span className="text-gray-600">
-            <RightArrow />
-          </span>
-        </button>
-      </div>
+      
     </div>
   );
 };

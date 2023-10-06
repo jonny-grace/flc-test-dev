@@ -21,7 +21,7 @@ function CaseStudyCards({ caseStudies }) {
   return (
     <>
       <div class="hidden  mt-10 md:grid grid-cols-3 gap-10 px-32 lg:px-4">
-        {caseStudies.slice(0, visibleRows * 2).map((caseStudy, index) => {
+        {caseStudies && caseStudies.slice(0, visibleRows * 2).map((caseStudy, index) => {
           const column1 = index % 2 === 0 ? caseStudy : null;
           const column2 = index % 2 === 1 ? caseStudy : null;
           const isEvenRow = Math.floor(index / 2) % 2 === 0;

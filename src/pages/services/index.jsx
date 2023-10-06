@@ -9,7 +9,7 @@ const index = ({ serviceStatic, services }) => {
   return (
     <>
       <div className="min-h-screen overflow-x-hidden font-inter">
-        <section className="md:h-[90vh]  w-full relative md:mb-16">
+        <section className="md:h-[90vh]  w-full relative md:mb-10">
           <Navbar />
           <Image
             width={1000}
@@ -25,7 +25,7 @@ const index = ({ serviceStatic, services }) => {
                 <h1 className="text-white md:text-2xl text-xl font-medium lowercase">
                   {serviceStatic?.title}
                 </h1>
-                <p className="hidden md:block text-white mt-4  w-[400px]">
+                <p className="hidden md:block text-white mt-4  w-[365px]">
                   {serviceStatic?.description}
                 </p>
               </div>

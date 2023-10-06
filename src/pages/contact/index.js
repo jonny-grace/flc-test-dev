@@ -10,17 +10,17 @@ const index = ({contact,footer}) => {
     <>
     <Navbar />
     <div className="  p-4 md:mx-40 mt-40 mb-10 font-inter">
-      <h1 className="text-4xl font-bold mb-6">{contact.title}</h1>
-      <p className="  mb-8">
+      <h1 className="text-4xl font-bold mb-10">{contact.title}</h1>
+      <p className=" xl:text-sm mr-20  mb-16">
         {contact.description}
       </p>
       <div className="flex flex-col sm:flex-row gap-48">
         <div className="w-full sm:w-1/2 pr-4 ">
           
           <form className=" flex flex-col ">
-            <div className="mb-4">
+            <div className="mb-7 text-gray-600">
               <label htmlFor="help-text" >
-                How Can We Help?
+                How can we help?
               </label>
               <input
                 type="text"
@@ -28,7 +28,7 @@ const index = ({contact,footer}) => {
                 className="block w-full mt-1 p-2 py-10 border border-gray-300 rounded"
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-7 text-gray-600">
               <label htmlFor="name" >
                 Name
               </label>
@@ -38,7 +38,7 @@ const index = ({contact,footer}) => {
                 className="block w-full mt-1 p-2 border border-gray-300 rounded"
               />
             </div>
-            <label htmlFor="company-email" >
+            <label className=" text-gray-600" htmlFor="company-email" >
               Company Email
             </label>
             <input
@@ -46,7 +46,7 @@ const index = ({contact,footer}) => {
               id="company-email"
               className="block w-full mt-1 p-2 border border-gray-300 rounded"
             />
-            <div className=" flex justify-end"><button
+            <div className=" mt-6 flex justify-end"><button
               type="submit"
               className=" bg-black text-white py-2  rounded mt-4 w-32"
             >
@@ -56,34 +56,34 @@ const index = ({contact,footer}) => {
           </form>
         </div>
         <div className="w-full sm:w-1/2 pl-4">
-          <h2 className="text-2xl font-bold mb-7">Our Offices:</h2>
-          <div className="mb-4">
-            <h3 className="font-bold  mb-4">{ourOffice && ourOffice.usa}:</h3>
-           <p className=" w-[300px]">
+          <h2 className="text-xl xl:text-[20px] font-semibold mb-14">our offices:</h2>
+          <div className="mb-9">
+            <h3 className="text-sm font-semibold text-gray-600  mb-4">{ourOffice && ourOffice.usa}:</h3>
+           <p className=" w-[300px] text-sm text-gray-500">
             {ourOffice && ourOffice.uaeAddress}
            </p>
           </div>
-          <div className="mb-4">
-            <h3 className="font-bold mb-4">{ourOffice && ourOffice.ksa}:</h3>
-           <p className=" w-[300px]">
+          <div className="mb-9">
+            <h3 className="text-sm font-semibold text-gray-600  mb-4">{ourOffice && ourOffice.ksa}:</h3>
+           <p className=" w-[300px] text-md text-gray-600">
            {ourOffice && ourOffice.ksaAddress}
            </p>
           </div>
-          <div className="mb-4">
-            <h3 className="font-bold mb-4">{ourOffice && ourOffice.india}:</h3>
-            <p className=" w-[300px]">{ourOffice && ourOffice.indiaAddress}</p>
+          <div className="mb-6">
+            <h3 className="text-sm font-semibold text-gray-600  mb-4">{ourOffice && ourOffice.india}:</h3>
+            <p className=" w-[300px] text-md text-gray-600">{ourOffice && ourOffice.indiaAddress}</p>
           </div>
         </div>
       </div>
     </div>
-    <div className="bg-gray-300 py-8">
-        <div className="container mx-auto">
-          <h1 className="text-xl px-10 md:px-32 md:text-2xl font-bold text-start mb-4">
+    <div className=" py-8" style={{background:'#E6E6E6'}}>
+        <div className="container xxl:w-[1004px]">
+          <h1 className="text-xl px-10 md:px-32 xxl:text-[47px] font-semibold text-start mb-4">
             {contact.footer}
           </h1>
           <div className="flex px-10 md:px-32 justify-start">
-            <button  className="text-black py-2 px-4 rounded hover:font-bold">
-              <Link href="/joinOurTeam">Join our Team</Link>
+            <button  className="text-gray-900 text-lg py-2  rounded hover:text-gray-600">
+              <Link className=" underline" href="/joinOurTeam">Join our team</Link>
             </button>
           </div>
         </div>

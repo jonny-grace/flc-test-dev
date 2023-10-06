@@ -34,7 +34,7 @@ const ServicesTabs = ({ services }) => {
       } else if (
         service.attributes.name == "Digital Marketing" ||
         service.attributes.name == "digital marketing" ||
-        service.attributes.name == "digital"
+        service.attributes.name == "Digital"
       ) {
         digitalMarketing = service;
       }
@@ -46,18 +46,19 @@ const ServicesTabs = ({ services }) => {
 
   return (
     <>
-      <div className="w-full mx-auto md:mt-20 font-inter ">
+    
+      <div className="w-full mx-auto  font-inter ">
         <div className="flex justify-between items-center gap-2 max-w-5xl mx-auto w-full px-5">
           <button
             onClick={() => setTab("marketing")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
-            <small className="text-sm -mt-4 text-gray-500">01</small>
+            <small className="text-sm -mt-7 text-gray-500">01</small>
             <span
               className={
                 tabs === "marketing"
                   ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px] pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px]  pb-4"
+                  : "font-medium text-sm md:text-lg xxl:text-[22px]  pb-4"
               }
             >
               marketing
@@ -68,12 +69,12 @@ const ServicesTabs = ({ services }) => {
             onClick={() => setTab("events")}
             className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
-            <small className="text-sm sm:text-lg -mt-4 text-gray-500">02</small>
+            <small className="text-sm  -mt-7 text-gray-500">02</small>
             <span
               className={
                 tabs === "events"
                   ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px] pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px]  pb-4"
+                  : "font-medium text-sm md:text-lg xxl:text-[22px]  pb-4"
               }
             >
               events & exhibitions
@@ -84,12 +85,12 @@ const ServicesTabs = ({ services }) => {
             onClick={() => setTab("digitalMarketing")}
             className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
-            <small className="text-sm sm:text-lg -mt-4 text-gray-500">03</small>
+            <small className="text-sm  -mt-7 text-gray-500">03</small>
             <span
               className={
                 tabs === "digitalMarketing"
                   ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]  pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] pb-4"
+                  : "font-medium text-sm md:text-lg xxl:text-[22px] pb-4"
               }
             >
               digital marketing
@@ -100,12 +101,12 @@ const ServicesTabs = ({ services }) => {
             onClick={() => setTab("contentProduction")}
             className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
-            <small className="text-sm -mt-4 text-gray-500">04</small>
+            <small className="text-sm -mt-7 text-gray-500">04</small>
             <span
               className={
                 tabs === "contentProduction"
                   ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]  pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px]  pb-4"
+                  : "font-medium text-sm md:text-lg xxl:text-[22px]  pb-4"
               }
             >
               content production

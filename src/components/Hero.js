@@ -31,7 +31,7 @@ const Hero = ({ hero }) => {
           <div className="flex flex-wrap -mt-2  text-center ">
             <Link
               href="#"
-              className="block w-full text-[32px]  font-normal px-12 py-3  underline text-white shadow  focus:outline-none focus:ring active:font-bold"
+              className="block w-full text-[24px]  font-normal px-12 py-3  underline text-white shadow  focus:outline-none focus:ring active:font-bold"
             >
               {hero.moreButton}
             </Link>
