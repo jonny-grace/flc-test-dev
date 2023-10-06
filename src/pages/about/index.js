@@ -7,24 +7,28 @@ import AboutUsTimeline from "../../components/AboutUsTimeline";
 import axios from "axios";
 const index = ({ about, values, awards }) => {
   return (
-    <div className=" overflow-x-hidden">
+    <div className=" overflow-x-hidden ">
       <Navbar />
-      <div className=" overflow-x-hidden  p-4 md:mx-36 mt-20 mb-10 font-inter">
+      <div className=" overflow-x-hidden  p-4 md:mx-36 mt-32 mb-10 font-inter">
         <div>
-          <h1 className="text-4xl font-bold mb-4">{about.title}</h1>
-          <p className="text-lg xxl:w-[1432px] xl:w-full text-gray-600">{about.descriptionOne}</p>
-        </div>
+          <h1 className="text-4xl font-bold mb-10">{about.title}</h1>
+          <p className=" xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600">{about.descriptionOne}</p>
+           </div>
         <div>
           <Image
-            src={about.image.data.attributes.url}
+            src={about?.image?.data.attributes.url}
             alt="banner image"
             width={1000}
             height={1000}
             className=" w-full  h-48 md:h-96 object-cover mt-10"
           />
         </div>
-        <div className="my-8">
-          <p className="text-lg  text-gray-600">{about.descriptionTwo}</p>
+        <div className="my-8 mb-10">
+          <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600">{about.descriptionTwo}</p>
+          <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600"> <br />
+We have the experience of working with companies such as Huawei, Samsung, Hisense, Acer, P&G, Nestle, Aujan Coca Cola, Mondelez, IFFCO, Etude House, Coty Middle East, Estee Lauder – the list goes on. 
+From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we`&apos;` ve set the pace.</p>
+       
         </div>
         <AboutUsTimeline about={about} />
       </div>

@@ -8,10 +8,10 @@ const inter = Inter({
   subsets: ["cyrillic"],
   weight: ["400"],
 });
-const interBold = Inter({
-  subsets: ["cyrillic"],
-  weight: ["500"],
-});
+// const interBold = Inter({
+//   subsets: ["cyrillic"],
+//   weight: ["500"],
+// });
 
 const GaleryTab = ({ caseStudy }) => {
   const [tabs, setTab] = useState("integrated");
@@ -79,6 +79,7 @@ const GaleryTab = ({ caseStudy }) => {
       </Tabs> */}
 
       <div className="w-full mx-auto ">
+        
         <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-2xl mx-auto">
           <button
             onClick={() => setTab("integrated")}
@@ -158,6 +159,7 @@ const GaleryTab = ({ caseStudy }) => {
           </button>
         </div>
       </div>
+
       <section className="w-full mt-8">
         <div>{tabs === "integrated" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
@@ -165,6 +167,7 @@ const GaleryTab = ({ caseStudy }) => {
         <div>{tabs === "Fash" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "food" ? <IntegratedTabContent /> : null}</div>
       </section>
+      
     </div>
   );
 };

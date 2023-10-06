@@ -19,7 +19,7 @@ const Blog = ({ blogSectionTop, blogs }) => {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:grid-cols-2 ml-10 md:ml-1">
         {blogs &&
-          blogs.map((blog, index) => {
+          blogs.slice(0,4).map((blog, index) => {
             return (
               <Link
                 key={index}

@@ -81,22 +81,22 @@ const Navbar = () => {
                 </a>
               </Link>
               <Link href="/services" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">
+                <a className="block py-1 border border-top-black hover:text-gray-500">
                   services
                 </a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">
+                <a className="block py-1 border border-top-black hover:text-gray-500">
                   about us
                 </a>
               </Link>
               <Link href="/contact" legacyBehavior>
-                <a className="block py-1 border border-top-black hover:text-gray-300">
+                <a className="block py-1 border border-top-black hover:text-gray-500">
                   contact us
                 </a>
               </Link>
               <Link href="/blogpage" legacyBehavior>
-                <a className="block py-1  border border-top-black hover:text-gray-300">
+                <a className="block py-1  border border-top-black hover:text-gray-500">
                   blogs
                 </a>
               </Link>
@@ -106,31 +106,31 @@ const Navbar = () => {
         <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
           <Link
             href="/casestudy"
-            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+            className="hover:text-gray-500  font-semibold md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
           >
             case studies
           </Link>
           <Link
             href="/services"
-            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+            className="hover:text-gray-500 font-semibold md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
           >
             services
           </Link>
           <Link
             href="/about"
-            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+            className="hover:text-gray-500 font-semibold md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
           >
             about us
           </Link>
           <Link
             href="/contact"
-            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+            className="hover:text-gray-500 font-semibold md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
           >
             contact us
           </Link>
           <Link
             href="/blogpage"
-            className="hover:text-gray-300 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
+            className="hover:text-gray-500 md:text-xl lg:text-2xl  xl:text-xl xxl:text-3xl inter  "
           >
             blogs
           </Link>

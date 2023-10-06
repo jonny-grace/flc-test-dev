@@ -73,7 +73,7 @@ const Footer = ({ footerData }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaWhatsapp size={24} />
+                  <FaWhatsapp size={24} className=" bg-white text-black" />
                 </Link>
               </div>
             </div>
@@ -108,12 +108,12 @@ const Footer = ({ footerData }) => {
                   {footerData.linkAbout}
                 </p>
               </Link>
-              <Link href="/link2" className="block mt-2">
+              <Link href="/link2" className="block ">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                   {footerData.linkServices}
                 </p>
               </Link>
-              <Link href="/joinOurTeam" className="block mt-2">
+              <Link href="/joinOurTeam" className="block ">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                   {footerData.linkJoin}
                 </p>

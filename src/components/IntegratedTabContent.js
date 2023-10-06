@@ -170,7 +170,9 @@ const BoxComponent = () => {
               </div>
             </div>
           </div>
+          
         </div>
+       
       </div>
     </div>
   );

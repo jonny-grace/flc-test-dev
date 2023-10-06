@@ -2,28 +2,28 @@ import React from "react";
 
 const CaptionComponent = ({ reviewerName, reviewerTitle, reviewerMessage }) => {
   return (
-    <div className="bg-slate-300 mt-24 font-inter">
-      <div className="mx-5 py-16">
-        <div className="bg-white p-8 rounded-lg md:mx-16 pt-5 mt-[-100px] border border-spacing-1 ">
-          <div className="flex items-center mb-4">
+    <div className=" mt-28 font-inter" style={{background:'#E6E6E6'}}>
+      <div className="mx-14 py-16">
+        <div className="bg-white p-8 rounded-lg md:mx-16 pt-9 mt-[-130px] border border-spacing-1 ">
+          <div className="flex items-center mb-4 mx-8 my-5">
             <div>
-              <p className="text-lg text-gray-600">
-                &quot;{reviewerMessage}.&quot;
+              <p className="text-xl text-gray-600">
+               {reviewerMessage}
               </p>
 
-              <p className="text-gray-900 font-bold mt-5">{reviewerName}</p>
+              <p className="text-gray-900 font-medium mt-5">{reviewerName}</p>
               <p className="mr-2 opacity-90 text-gray-600">{reviewerTitle}</p>
             </div>
           </div>
           <div className="flex items-end justify-end">
-            <div className="flex text-gray-600">
+            <div className="flex text-gray-600 mr-16">
               {[1, 2, 3, 4, 5].map((star) => (
                 <svg
                   key={star}
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className={`h-8 w-8 `}
+                  className={`h-8 w-7 `}
                 >
                   <path
                     strokeLinecap="round"
