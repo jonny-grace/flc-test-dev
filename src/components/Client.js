@@ -5,7 +5,7 @@ import "react-tabs/style/react-tabs.css";
 import CustomeTabs from "./CustomeTabs";
 import IntegratedTabContent from "./IntegratedTabContent";
 import CustomeTabs2 from "./CustomeTabs2";
-import logoss from "../../public/assets/client-logo.png";
+import logoss from "../../public/assets/clientLogo.png";
 
 
 const Client = ({ clientsDetail }) => {
