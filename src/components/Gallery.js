@@ -53,7 +53,7 @@ const GaleryTab = ({ caseStudy }) => {
   };
 
   return (
-    <div className=" flex flex-col mx-5 md:mx-16  font-inter" ref={contentRef}>
+    <div className=" flex flex-col  mx-5 md:mx-16  font-inter" ref={contentRef}>
       <div className="w-full mx-auto ">
         <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-2xl mx-auto lg:flex-nowrap">
           <button
@@ -134,7 +134,7 @@ const GaleryTab = ({ caseStudy }) => {
           </button>
         </div>
       </div>
-      <section className="w-full mt-8 min-h-screen " ref={contentRef}>
+      <section className="w-full mt-8  " ref={contentRef}>
         <div>{tabs === "Integrated" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "Electronics" ? <IntegratedTabContent /> : null}</div>

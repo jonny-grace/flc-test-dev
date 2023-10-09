@@ -20,11 +20,11 @@ const Service = ({ serviceSection, services }) => {
     }
   }
   return (
-    <div className="md:max-w-[85rem] px-4    lg:px-16 lg:py-8 mx-auto font-inter mb-5">
+    <div className="md:max-w-[85rem] px-4 m-5  lg:px-16 lg:py-8 mx-auto font-inter mb-5">
       <div className="font-bold justify-center items-center text-center ">
         {/* w-56  text-center lg:w-96   text-white */}
         <div className=" text-center w-full flex justify-center">
-          <h1 className="text-6xl xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 font-bold text-center w-96 md:mx-56 lowercase">
+          <h1 className="text-5xl xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 font-bold text-center w-96 md:mx-56 lowercase">
             {serviceSection?.title}
           </h1>
         </div>
