@@ -54,62 +54,8 @@ const GaleryTab = ({ caseStudy }) => {
 
   return (
     <div className=" flex flex-col  mx-16  font-inter" ref={contentRef}>
-      {/* <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
-        <TabList className="flex justify-center hover:cursor-pointer flex-wrap ">
-          {[
-            "Integrated",
-            "FMCG",
-            "Electronics",
-            "Fashion & Lifestyle",
-            "Food & Beverage",
-          ].map((tab, index) => (
-            <React.Fragment key={tab}>
-              {index > 0 && (
-                <div className="   hidden md:block active:font-bold" />
-              )}{" "}
-              <Tab
-                dec
-                className={`px-2 ${
-                  activeTab === index
-                    ? " border-none text-gray-900 font-bold decoration-0"
-                    : " border-none text-gray-400 decoration-0"
-                }`}
-              >
-                {tab}
-              </Tab>
-            </React.Fragment>
-          ))}
-        </TabList>
-
-        <TabPanel>
-          <div className="min-h-screen md:min-h-0">
-            <IntegratedTabContent />
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="min-h-screen md:min-h-0">
-            <IntegratedTabContent />
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="min-h-screen md:min-h-0">
-            <IntegratedTabContent />
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="min-h-screen md:min-h-0">
-            <IntegratedTabContent />
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="min-h-screen md:min-h-0">
-            <IntegratedTabContent />
-          </div>
-        </TabPanel>
-      </Tabs> */}
-
       <div className="w-full mx-auto ">
-        <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-2xl mx-auto">
+        <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-2xl mx-auto lg:flex-nowrap">
           <button
             onClick={() => setTab("Integrated")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
