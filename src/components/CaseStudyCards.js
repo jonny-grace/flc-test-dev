@@ -95,8 +95,8 @@ function CaseStudyCards({ caseStudies }) {
           );
         })}
       </div>
-
-      <div className=" md:hidden mt-10  grid grid-cols-1 gap-10 px-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+{/* mobile view  */}
+      <div className=" md:hidden mt-10  grid grid-cols-1 gap-10 px-4 ">
         {caseStudies?.slice(0, visibleRows * 2).map((caseStudy, index) => {
           return (
             <Link
@@ -105,7 +105,7 @@ function CaseStudyCards({ caseStudies }) {
                 pathname: "/internalCaseStudy",
                 query: { caseStudyId: caseStudy.id },
               }}
-              className="h-[400px] relative"
+              className=" bg-black relative"
             >
               <div className="relative md:w-[500px] flex h-full">
                 <Image

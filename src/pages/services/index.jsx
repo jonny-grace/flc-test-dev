@@ -37,7 +37,7 @@ const index = ({ serviceStatic, services }) => {
         <div className=" mt-7">
           <ServicesTabs services={services} />
         </div>
-        <section className="my-16 max-w-5xl mx-auto">
+        <section className="md:my-16 mt-16 md:mt-0 md:max-w-5xl ml-10 md:mx-auto">
           <Carousel />
         </section>
         <section>

@@ -14,8 +14,8 @@ const Index = ({ caseStudyDetails }) => {
         <div className="w-screen  relative bg-gray-50">
           <div className="absolute inset-0 bg-gray-200">
             <div className="w-screen relative">
-              <div className="md:absolute inset-0 md:mx-32 mt-48  h-full">
-                <h1 className=" md:text-[48px] md:mb-10 font-bold">
+              <div className="md:absolute absolute  mx-auto inset-0 md:mx-32 mt-48  h-full">
+                <h1 className=" md:text-[48px] md:mb-10 ml-3  md:ml-0 font-bold">
                   {caseStudyDetails?.name}
                 </h1>
                 <div>
@@ -38,19 +38,19 @@ const Index = ({ caseStudyDetails }) => {
         <div className="flex flex-col sm:flex-row gap-8 mt-5">
           <div className="w-full sm:w-3/4 flex flex-col gap-5">
             <div>
-              <h2 className="text-gray-950 font-normal">Objectives:</h2>
+              <h2 className="text-gray-950 font-semibold">Objectives:</h2>
               <p className="text-gray-500 mt-5">
                 {caseStudyDetails?.objective}
               </p>
             </div>
 
             <div>
-              <h2 className="text-gray-950 font-normal">Idea:</h2>
+              <h2 className="text-gray-950 font-semibold">Idea:</h2>
               <p className="text-gray-600 mt-5">{caseStudyDetails?.idea}</p>
             </div>
 
             <div>
-              <h2 className="text-gray-950 font-normal">Outcome:</h2>
+              <h2 className="text-gray-950 font-semibold">Outcome:</h2>
               <p className="text-gray-600 mt-5">{caseStudyDetails?.outcome}</p>
             </div>
           </div>

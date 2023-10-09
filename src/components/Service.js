@@ -20,7 +20,7 @@ const Service = ({ serviceSection, services }) => {
     }
   }
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:py-8 mx-auto font-inter mb-5">
+    <div className="md:max-w-[85rem] px-4    lg:px-16 lg:py-8 mx-auto font-inter mb-5">
       <div className="font-bold justify-center items-center text-center ">
         {/* w-56  text-center lg:w-96   text-white */}
         <div className=" text-center w-full flex justify-center">
@@ -39,7 +39,7 @@ const Service = ({ serviceSection, services }) => {
         {services &&
           services.map((service, index) => {
             return (
-              <div key={index} className="h-84  hover:bg-gray-50 rounded-xl ">
+              <div key={index} className="h-80 md:h-84 px-10 md:px-0 hover:bg-gray-50 rounded-xl ">
                 <Link
                   className="group flex flex-col justify-center   items-center md:justify-start md:items-start p-4 md:p-7"
                   href="/services"

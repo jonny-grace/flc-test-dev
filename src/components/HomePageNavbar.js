@@ -79,7 +79,7 @@ const HomePageNavBar = ({ logo }) => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-full right-0 w-48 bg-gray-100 text-black  shadow-lg rounded-md font-inter">
+            <div className="absolute top-full right-0 w-52 bg-gray-100 text-black  shadow-lg rounded-md font-inter">
               <Link href="/casestudy" legacyBehavior>
                 <a className="block py-1 border border-top-black hover:font-bold ">
                   case studies

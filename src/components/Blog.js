@@ -5,7 +5,7 @@ import Link from "next/link";
 const Blog = ({ blogSectionTop, blogs }) => {
   return (
     <div
-      className="  px-4 py-16 sm:px-6 lg:px-20 lg:py-14 mx-auto md:mx-10 mb-14 font-inter"
+      className="   py-8 sm:px-6 lg:px-20 lg:py-14 mx-auto md:mx-10 mb-14 font-inter"
       style={{ backgroundColor: "#E6E6E6" }}
     >
       <div className=" mx-auto text-left ml-10 mb-10 lg:mb-14 xxl:w-[908px] ">
@@ -17,7 +17,7 @@ const Blog = ({ blogSectionTop, blogs }) => {
         </h2>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:grid-cols-2 ml-10 md:ml-1">
+      <div className="grid px-3 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:grid-cols-2 ml-10 md:ml-1">
         {blogs &&
           blogs.slice(0,4).map((blog, index) => {
             return (

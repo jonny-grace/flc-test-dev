@@ -48,7 +48,7 @@ function Awards({awards,title}) {
   ];
   return (
     <div className=" py-8 font-inter  text-black" style={{backgroundColor:'#D9D9D9'}}>
-      <div className=" mx-5  bg-blue mx-auto mb-10 flex justify-center flex-col ">
+      <div className="  mx-auto mb-10 flex justify-center  flex-col ">
         <h1 className=" mt-5 pl-5  md:ml-[120px] md:text-2xl text-4xl font-bold">
           {title}
         </h1>

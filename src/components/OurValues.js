@@ -21,7 +21,7 @@ const SmallCard = ({ icon, title, description }) => {
       </div>
       <div className="h-max mt-3">
         <h3 className="md:text-lg text-3xl mb-1">{title}</h3>
-        <p className="text-sm  md:w-36 ">{description}</p>
+        <p className="text-sm  w-48 md:w-36 ">{description}</p>
       </div>
     </div>
   );
@@ -30,7 +30,7 @@ const SmallCard = ({ icon, title, description }) => {
 const SmallCardList = ({ title, values }) => {
   return (
     <div
-      className="px-5 max-w-7px mx-7 md:p-14 gap-5 mb-10 font-inter p-5"
+      className="px-5 max-w-7px md:mx-7  md:p-14 gap-5 mb-10 font-inter p-5"
       style={{ background: "#DB6A6A" }}
     >
       <h1 className="mt-5 pt-3  md:text-2xl font-bold text-4xl pl-8">

@@ -5,9 +5,9 @@ const CaptionComponent = ({ reviewerName, reviewerTitle, reviewerMessage }) => {
     <div className=" mt-28 font-inter" style={{background:'#E6E6E6'}}>
       <div className="mx-14 py-16">
         <div className="bg-white p-8 rounded-lg md:mx-16 pt-9 mt-[-130px] border border-spacing-1 ">
-          <div className="flex items-center mb-4 mx-8 my-5">
+          <div className="flex items-center mb-4 md:mx-8 md:my-5">
             <div>
-              <p className="text-xl text-gray-600">
+              <p className=" md:text-xl text-md text-gray-600">
                {reviewerMessage}
               </p>
 
