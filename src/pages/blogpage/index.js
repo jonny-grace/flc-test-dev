@@ -17,7 +17,7 @@ const Index = ({ blogs }) => {
       }
     });
   return (
-    <div className=" mby-20">
+    <div className=" mby-20 px-5 md:px-8 lg:px-10">
       <Navbar />
       <div className="p-4 mx-auto mt-20 mb-5 font-inter max-w-8xl xxl:max-w-7xl ">
         <h1 className="text-2xl font-bold mb-4 mx-5">featured articles</h1>
@@ -34,13 +34,18 @@ const Index = ({ blogs }) => {
               />
             </div>
             <div>
-              <h2 className="ml-12 md:ml-0 mt-10 xl:text-[20px] xxl:text-[25px]" style={{color:'#999999'}}>
+              <h2
+                className="ml-12 md:ml-0 mt-10 xl:text-[20px] xxl:text-[25px]"
+                style={{ color: "#999999" }}
+              >
                 {feutured.blog_type.data.attributes.name}
               </h2>
             </div>
 
             <div>
-              <h1 className=" ml-12 md:ml-0 font-bold text-black text-2xl my-5">{feutured.title}</h1>
+              <h1 className=" ml-12 md:ml-0 font-bold text-black text-2xl my-5">
+                {feutured.title}
+              </h1>
             </div>
 
             <div>
@@ -52,20 +57,28 @@ const Index = ({ blogs }) => {
           </div>
           <div className="w-full col-span-1 ">
             {otherBlogs &&
-              otherBlogs.slice(0,3).map((blog, index) => {
+              otherBlogs.slice(0, 3).map((blog, index) => {
                 return (
-                  <div key={index} className="  pb-12 md:flex row-span-3  sm:flex-row gap-5">
+                  <div
+                    key={index}
+                    className=" pb-12 md:flex row-span-3  sm:flex-row gap-5"
+                  >
                     <Image
                       src={blog.attributes.thumbnail.data.attributes.url}
-                      className=" md:ml-12 md:ml-0 md:w-[233px]  h-[233.19px] md:h-[180px]  xl:h-[180.19px] xxl:h-[233.19px] object-fit"
+                      className="md:ml-0 md:w-[233px]  h-[233.19px] md:h-[180px]  xl:h-[180.19px] xxl:h-[233.19px] object-cover"
                       alt="Blog 1"
                       width={1000}
                       height={1000}
                     />
                     <div>
-                      <h5 className=" xl:w-[232px] mt-2 " style={{color:'#999999'}}>{blog.attributes.blog_type.data.attributes.name}</h5>
+                      <h5
+                        className=" xl:w-[232px] mt-2 "
+                        style={{ color: "#999999" }}
+                      >
+                        {blog.attributes.blog_type.data.attributes.name}
+                      </h5>
                       <h1 className=" font-bold text-2xl lg:my-7 lg:w-[210px] xxl:w-[253px] xxl:text-[37px] hover:cursor-pointer">
-                      {blog.attributes.title.slice(0, 18)}
+                        {blog.attributes.title.slice(0, 18)}
                       </h1>
                       <h3>
                         {feutured?.createdBy?.data?.attributes?.firstname}
@@ -81,7 +94,7 @@ const Index = ({ blogs }) => {
       <div className=" md:max-w-6xl  md:mx-auto md:flex-wrap md:flex justify-center">
         <div className=" flex flex-col  md:flex-row justify-center gap-5 ">
           {otherBlogs &&
-            otherBlogs.slice(3,6).map((blog, index) => {
+            otherBlogs.slice(3, 6).map((blog, index) => {
               return (
                 <div key={index} className="mb-4 mx-5 md:mx-0 sm:w-1/2">
                   <Image

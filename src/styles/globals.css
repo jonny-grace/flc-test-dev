@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "gothamBold";
-  src: url("/public/gotham-bold.otf");
+  src: url("/public/gotham-bold.otf") format("opentype");
   /* You can also define font-weight and font-style if applicable */
 }
 
@@ -22,7 +20,7 @@
 }
 
 body {
-  font-family: 'gothamBold', sans-serif;
+  font-family: "gothamBold", sans-serif;
 }
 .nav-button {
   /* color: #FFF; */
@@ -38,6 +36,6 @@ body {
   color: gray;
   border: none;
 }
-.active{
+.active {
   text-decoration: underline;
 }
