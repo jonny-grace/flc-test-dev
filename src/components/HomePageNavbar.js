@@ -38,7 +38,7 @@ const HomePageNavBar = ({ logo }) => {
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
           <Link href="/" legacyBehavior>
-            <a className="flex items-center space-x-2">
+            <a className="flex items-center ml-5">
               <Image
                 src={isScrolled ? logoBlack : logo.path}
                 width={1000}
@@ -135,7 +135,7 @@ const HomePageNavBar = ({ logo }) => {
           </Link>
           <Link
             href="/blogpage"
-            className="hover:text-gray-400 md:text-xl lg:text-lg xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 md:text-xl xxl:text-2xl inter tracking-wide  "
           >
             blogs
           </Link>

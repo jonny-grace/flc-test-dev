@@ -45,8 +45,8 @@ function CaseStudyCards({ caseStudies }) {
                       objectFit="cover"
                       className=""
                     />
-                    <div className="absolute  p-4 text-white">
-                      <h3 className="text-lg font-bold">
+                    <div className="absolute  p-7 text-white">
+                      <h3 className="text-md font-bold">
                         {
                           column1?.attributes?.product_type?.data?.attributes
                             ?.name
@@ -77,8 +77,8 @@ function CaseStudyCards({ caseStudies }) {
                       objectFit="cover"
                       className=""
                     />
-                    <div className="absolute  px-10 pt-3 text-white">
-                      <h3 className="text-lg font-bold">
+                    <div className="absolute  px-8 pt-3 text-white">
+                      <h3 className="text-md font-bold">
                         {
                           column2?.attributes?.product_type?.data?.attributes
                             ?.name

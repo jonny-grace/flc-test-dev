@@ -23,8 +23,8 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "integrated"
-                  ? `font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? ` text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : ` text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Integrated
@@ -38,8 +38,8 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "markating"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Marketing
@@ -53,8 +53,8 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "events"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               events & exhibitions
@@ -69,8 +69,8 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "digital"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Digital
@@ -85,8 +85,8 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               content production
@@ -101,8 +101,8 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "Luxury"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Luxury

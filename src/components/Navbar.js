@@ -2,11 +2,12 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import logo from "../../public/Frame-black.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+const router= useRouter();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -104,33 +105,34 @@ const Navbar = () => {
           )}
         </div>
         <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
+          {/* <pre>{JSON.stringify(router.pathname, null, 2)}</pre>  */}
           <Link
             href="/casestudy"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide"
+            className={ `${router.pathname==='"/casestudy"'?'underline':''}hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide`}
           >
             case studies
           </Link>
           <Link
             href="/services"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide "
+            className="hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide "
           >
             services
           </Link>
           <Link
             href="/about"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide "
+            className="hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide "
           >
             about us
           </Link>
           <Link
             href="/contact"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide  "
           >
             contact us
           </Link>
           <Link
             href="/blogpage"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide  "
           >
             blogs
           </Link>

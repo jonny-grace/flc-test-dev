@@ -103,7 +103,7 @@ function Carousel() {
                     width={1000}
                     className="h-64 w-full object-cover"
                   />
-                  <div className="absolute top-4 w-full">
+                  <div className="absolute  top-4 w-full">
                     <div className="grid pl-5">
                       <h1 className="text-white text-sm">
                         {product.attributes.product_type.data.attributes.name}

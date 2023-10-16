@@ -10,8 +10,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        gotham: ['GothamHTF', 'sans-serif'],
+      fontFamily:{
+        gothamBold:"gothamBold",
       },
       screens: {
         'sm': '640px',      // Small screens (mobile)

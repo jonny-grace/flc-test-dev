@@ -51,9 +51,9 @@ const serviceSection={
 }
 
   return (
-    <div className="w-full overflow-x-hidden font-inter">
+    <div className="w-full overflow-x-hidden font-gothamBold">
       <div><HomePageNavBar logo={logo}/></div>
-     <div className=" md:mx-10 md:my-7"><Hero hero={hero} /></div> 
+     <div className=" md:mx-7 md:my-7"><Hero hero={hero} /></div> 
       <Service serviceSection={serviceSection} services={servicesData}/>
       <Gallery  caseStudy={caseStudy}/>
       <Client clientsDetail={clientsDetail}/>

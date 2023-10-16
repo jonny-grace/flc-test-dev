@@ -11,7 +11,7 @@ import CustomeTabs from "../../components/CustomeTabs";
 
 const index = ({ caseStudyStatic, caseStudies }) => {
   return (
-    <div className=" w-full overflow-x-hidden mb-16 font-inter">
+    <div className=" w-full overflow-x-hidden mb-16 font-gothamBold">
       <Navbar />
       <div
         className=" w-screen relative "
@@ -21,7 +21,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
 
         <div className=" max-w-screen mx-auto w-full  px-4 py-32  lg:px-3">
           <div className="grid max-w-3xl  text-center mx-auto w-full">
-            <h1 className=" font-extrabold text-[40px] sm:text-[75px] lg:text-[78px] lowercase text-black">
+            <h1 className=" font-extrabold text-[40px] sm:text-[75px] lg:text-[78px] lowercase text-gray-600">
               {caseStudyStatic.title}
             </h1>
 
@@ -36,7 +36,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
         </div>
       </div>
 
-      <div className=" md:mx-20">
+      <div className=" md:mx-40">
         <CaseStudyCards caseStudies={caseStudies} />
       </div>
       <div className="mt-8">

@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { Inter } from "next/font/google";
 
@@ -10,11 +9,6 @@ const inter = Inter({
   subsets: ["cyrillic"],
   weight: ["400"],
 });
-// const interBold = Inter({
-//   subsets: ["cyrillic"],
-//   weight: ["500"],
-// });
-
 const GaleryTab = ({ caseStudy }) => {
   const contentRef = useRef(null);
   const tabsItems = [
@@ -63,8 +57,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Integrated"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-bold whitespace-nowrap capitalize`
+                  : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Integrated
@@ -78,8 +72,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "FMCG"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-bold whitespace-nowrap capitalize`
+                  : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               FMCG
@@ -94,8 +88,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Electronics"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-bold whitespace-nowrap capitalize`
+                  : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Electronics
@@ -110,8 +104,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Fashn & Lifestyle"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-bold whitespace-nowrap capitalize`
+                  : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Fashn & Lifestyle
@@ -125,8 +119,8 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Food & Beverage"
-                  ? `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className} font-semibold text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-bold whitespace-nowrap capitalize`
+                  : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
               Food & Beverage
@@ -147,7 +141,7 @@ const GaleryTab = ({ caseStudy }) => {
       </section>
       <div className="flex justify-end gap-3 mt-5">
         <button
-          className="flex justify-center items-center h-12 w-12 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
+          className="flex justify-center items-center h-8 w-8 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
           onClick={() => handleLeft(tabs)}
         >
           <span className="text-gray-600">
@@ -155,7 +149,7 @@ const GaleryTab = ({ caseStudy }) => {
           </span>
         </button>
         <button
-          className="flex justify-center items-center h-12 w-12 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
+          className="flex justify-center items-center h-8 w-8 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
           onClick={() => handleRight(tabs)}
         >
           <span className="text-gray-600">

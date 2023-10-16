@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { Fragment, React, useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { React, useState } from "react";
 import "react-tabs/style/react-tabs.css";
-import CustomeTabs from "./CustomeTabs";
-import IntegratedTabContent from "./IntegratedTabContent";
 import CustomeTabs2 from "./CustomeTabs2";
 import logoss from "../../public/assets/clientLogo.png";
 
@@ -21,7 +18,7 @@ const Client = ({ clientsDetail }) => {
           {clientsDetail.title}
         </h1>
       </div>
-      <p className="text-base font-semibold md:text-lg lg:text-xl text-center text-gray-600 xxl:w-[1606px] xxl:text-[26.63px] px-6 xl:w-12/12 xl:mx-48 mb-3 md:mb-9">
+      <p className="text-base font-normal md:text-lg lg:text-xl text-center text-gray-600 xxl:w-[1606px] xxl:text-[26.63px] px-6 xl:w-12/12 xl:mx-48 mb-3 md:mb-9">
         {clientsDetail.desc}
       </p>
       {/* ?here is some changes  */}

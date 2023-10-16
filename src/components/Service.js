@@ -14,17 +14,17 @@ const Service = ({ serviceSection, services }) => {
       case 2:
         return "#006BB2";
       case 3:
-        return "#006BB2";
+        return "#55bf0f";
       default:
         return "";
     }
   }
   return (
-    <div className="md:max-w-[85rem] px-4 m-5  lg:px-16 lg:py-8 mx-auto font-inter mb-5">
+    <div className="md:max-w-[80rem] px-4 m-5  lg:px-16 lg:py-8 mx-auto mb-5">
       <div className="font-bold justify-center items-center text-center ">
         {/* w-56  text-center lg:w-96   text-white */}
         <div className=" text-center w-full flex justify-center">
-          <h1 className="text-5xl xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 font-bold text-center w-96 md:mx-56 lowercase">
+          <h1 className="text-5xl xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 text-center w-96 md:mx-56 lowercase">
             {serviceSection?.title}
           </h1>
         </div>
@@ -35,17 +35,17 @@ const Service = ({ serviceSection, services }) => {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-2 mt-10 ">
+      <div className="grid sm:grid-cols-1  md:mx-16 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-2 mt-10 ">
         {services &&
           services.map((service, index) => {
             return (
-              <div key={index} className="h-80 md:h-84 px-10 md:px-0 hover:bg-gray-50 rounded-xl ">
+              <div key={index} className="h-80 md:h-84 px-10 md:px-0  rounded-xl ">
                 <Link
                   className="group flex flex-col justify-center   items-center md:justify-start md:items-start p-4 md:p-7"
                   href="/services"
                 >
                   <div className=" w-full  py-4 flex">
-                    <div className=" h-28 flex flex-col">
+                    <div className=" h-28  mb-3 flex flex-col">
                       <Image
                         src={service?.attributes?.image?.data?.attributes?.url}
                         alt="Your Image"
@@ -56,14 +56,14 @@ const Service = ({ serviceSection, services }) => {
                     </div>
                   </div>
 
-                  <div className="h-56 xxl:w-[246px] lg:w-[200px] ">
+                  <div className="h-56 xxl:w-[246px] lg:w-[180px] ">
                     <h3
                       className=" xxl:text-[18px]   font-semibold "
                       style={{ color: getColorByIndex(index) }}
                     >
                       {service.attributes.name}
                     </h3>
-                    <p className={`mt-3 text-gray-800`}>
+                    <p className={` text-sm mt-3 text-gray-800`}>
                       <span className={inter.className}>
                         {service.attributes.description.slice(0, 100)}
                       </span>
