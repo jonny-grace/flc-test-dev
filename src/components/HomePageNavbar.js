@@ -2,10 +2,12 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import logo from "../../public/Frame.png";
 import logoBlack from "../../public/Frame-black.png";
+import { useRouter } from "next/router";
 
 import Image from "next/image";
 
 const HomePageNavBar = ({ logo }) => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
