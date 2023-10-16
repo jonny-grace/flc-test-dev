@@ -20,7 +20,7 @@ function CaseStudyCards({ caseStudies }) {
 
   return (
     <>
-      <div class="hidden  mt-10 md:grid grid-cols-3 gap-10 px-32 lg:px-4">
+      <div class="hidden  mt-10 md:grid grid-cols-3 gap-6 px-32 lg:px-4">
         {caseStudies && caseStudies.slice(0, visibleRows * 2).map((caseStudy, index) => {
           const column1 = index % 2 === 0 ? caseStudy : null;
           const column2 = index % 2 === 1 ? caseStudy : null;
@@ -33,7 +33,7 @@ function CaseStudyCards({ caseStudies }) {
                     pathname: "/internalCaseStudy",
                     query: { caseStudyId: caseStudy?.id },
                   }}
-                  className={` h-auto sm:h-[400px] bg-cover bg-center bg-no-repeat ${
+                  className={` h-auto sm:h-[350px] bg-cover bg-center bg-no-repeat ${
                     isEvenRow ? "" : "col-span-2"
                   }`}
                 >
@@ -45,8 +45,8 @@ function CaseStudyCards({ caseStudies }) {
                       objectFit="cover"
                       className=""
                     />
-                    <div className="absolute  p-7 text-white">
-                      <h3 className="text-md font-bold">
+                    <div className="absolute  p-5 text-white">
+                      <h3 className="text-sm opacity-80">
                         {
                           column1?.attributes?.product_type?.data?.attributes
                             ?.name
@@ -77,8 +77,8 @@ function CaseStudyCards({ caseStudies }) {
                       objectFit="cover"
                       className=""
                     />
-                    <div className="absolute  px-8 pt-3 text-white">
-                      <h3 className="text-md font-bold">
+                    <div className="absolute  p-5 text-white">
+                      <h3 className="text-sm opacity-80">
                         {
                           column2?.attributes?.product_type?.data?.attributes
                             ?.name

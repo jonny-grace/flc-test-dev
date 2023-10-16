@@ -44,8 +44,8 @@ const Service = ({ serviceSection, services }) => {
                   className="group flex flex-col justify-center   items-center md:justify-start md:items-start p-4 md:p-7"
                   href="/services"
                 >
-                  <div className=" w-full  py-4 flex">
-                    <div className=" h-28  mb-3 flex flex-col">
+                  <div className=" w-full  py-4 flex ">
+                    <div className=" h-28  mb-3 flex flex-col ml-5">
                       <Image
                         src={service?.attributes?.image?.data?.attributes?.url}
                         alt="Your Image"

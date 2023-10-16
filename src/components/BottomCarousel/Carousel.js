@@ -91,7 +91,7 @@ function Carousel() {
           {allProducts &&
             allProducts.map((product, index) => (
               <div key={index} className=" ">
-                <div className="relative mr-10 ">
+                <div className="relative md:mr-10  ">
                   <Link href={{
                     pathname: "/internalCaseStudy",
                     query: { caseStudyId: product?.id },
