@@ -1,11 +1,10 @@
 "use client";
-import Link from "next/link";
 import { Fragment, React, useState } from "react";
 import Navbar from "../../components/Navbar";
-import Image from "next/image";
+
 import axios from "axios";
 import CaseStudyCards from "../../components/CaseStudyCards";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
 import "react-tabs/style/react-tabs.css";
 import CustomeTabs from "../../components/CustomeTabs";
 
@@ -21,7 +20,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
 
         <div className=" max-w-screen mx-auto w-full  px-4 py-32  lg:px-3">
           <div className="grid max-w-3xl  text-center mx-auto w-full">
-            <h1 className=" font-extrabold text-[40px] sm:text-[75px] lg:text-[78px] lowercase text-gray-600">
+            <h1 className=" font-bold text-[40px] sm:text-[75px] lg:text-[78px] text-gray-800 lowercase">
               {caseStudyStatic.title}
             </h1>
 
@@ -36,7 +35,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
         </div>
       </div>
 
-      <div className=" md:mx-40">
+      <div className=" md:mx-32">
         <CaseStudyCards caseStudies={caseStudies} />
       </div>
       <div className="mt-8">

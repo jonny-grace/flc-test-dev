@@ -30,12 +30,12 @@ const BoxComponent = () => {
                   <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-10 px-4">
                     Honor <br/> Magic Pro Launch
                   </h2>
-                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] md:w-[380px]  font-semibold text-sm ml-5  mr-10">
+                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] md:w-[380px]  opacity-75 text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
                   </p>
-                  <span className=" hover:cursor-pointer mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 ml-5 group-hover:underline font-medium">
+                  <span className=" hover:cursor-pointer mt-2 inline-flex items-center opacity-75 gap-x-1.5 text-sm text-white decoration-2 ml-5 group-hover:underline font-medium">
                     Learn more
                   </span>
                 </div>
@@ -144,8 +144,8 @@ const BoxComponent = () => {
                     style={{ backgroundColor: "#964a2f" }}
                   >
                     <div className=" absolute w-60 ml-5 text-white">
-                      <h2 className=" font-bold text-4xl  ">Ajmal Perfume</h2>
-                      <p className=" pt-4">
+                      <h2 className=" font-bold text-5xl w-40">Ajmal Perfumes</h2>
+                      <p className=" pt-4 text-sm">
                         Duis autem vel eum iriure dolor in hendrerit in
                         vulputate velit esse molestie consequat, vel illum
                         dolore eu feugiat nulla
