@@ -3,8 +3,10 @@ import Navbar from "../../components/Navbar";
 import Awards from "../../components/Awards";
 import OurValues from "../../components/OurValues";
 import Image from "next/image";
-import AboutUsTimeline from "../../components/AboutUsTimeline";
 import axios from "axios";
+import aboutTree from "../../../public/assets/image.jpg";
+
+
 const index = ({ about, values, awards }) => {
   return (
     <div className=" overflow-x-hidden ">
@@ -30,7 +32,12 @@ We have the experience of working with companies such as Huawei, Samsung, Hisens
 From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we`&apos;` ve set the pace.</p>
        
         </div>
-        <AboutUsTimeline about={about} />
+        {/* <AboutUsTimeline about={about} /> */}
+        <div className=" md:py-16 sm:py-16 px-2 ">
+        <div className="flex  md:gap-5 my-5 xxl:w-[1425.87px] xl:w-[1240] mx-7 lg:mx-28 justify-center ">
+          <Image src={aboutTree} alt="logos" width={1000} height={1000} />
+        </div>
+      </div>
       </div>
       <OurValues title={about.value} values={values} />
       <Awards title={about.award} awards={awards} />

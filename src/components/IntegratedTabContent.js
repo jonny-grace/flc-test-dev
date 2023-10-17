@@ -2,15 +2,14 @@ import Image from "next/image";
 import React from "react";
 import phoneImage from "../../public/assets/DPOufH.png";
 import TheGirl from "../../public/assets/The-Girl.png";
-
 import Perfume from "../../public/assets/perfume.png";
 import Link from "next/link";
 
 const BoxComponent = () => {
   return (
     // general box
-    <div className=" w-full bg-green-50">
-      <div className="   md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
+    <div className=" w-full">
+      <div className=" xxl:mx-40 xll:mx-40  bg-gray-500 md:h-[670px] font-inter">
         <div className=" flex flex-col md:flex-row h-full">
           <div className=" md:w-[40%] bg-blue-300 h-full">
             <div className="relative lg:w-[500px] xl:w-[610px] md:w-[450px]  xxl:w-[751.36px] flex h-full">
@@ -27,10 +26,10 @@ const BoxComponent = () => {
                   <p className=" mt-4 ml-4 font-small opacity-70 text-left">
                     featured // events
                   </p>
-                  <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-7 px-4">
+                  <h2 className="text-4xl xl:w-[450px] xxl:w-[510px] xxl:text-[45px] font-bold mt-7 px-4">
                     Honor <br/> Magic Pro Launch
                   </h2>
-                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] md:w-[380px] font-small  opacity-75 text-sm ml-5  mr-10">
+                  <p className="mt-6 xxl:w-[420px] xxl:text-[18px] md:w-[380px] font-small  opacity-75 text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
@@ -115,8 +114,6 @@ const BoxComponent = () => {
                     <div className=" w-full h-full">
                       <Image
                         src={TheGirl}
-                        // width={1000}
-                        // height={1000}
                         alt="The Girl"
                         layout="fill"
                       />

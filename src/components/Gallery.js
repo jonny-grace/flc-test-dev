@@ -139,7 +139,7 @@ const GaleryTab = ({ caseStudy }) => {
           {tabs === "Food & Beverage" ? <IntegratedTabContent /> : null}
         </div>
       </section>
-      <div className="flex justify-end gap-3 mt-5">
+      <div className="flex justify-end xxl:mx-48 xll:mx-40 gap-3 mt-5">
         <button
           className="flex justify-center items-center h-8 w-8 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
           onClick={() => handleLeft(tabs)}
