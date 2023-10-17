@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Inter } from "next/font/google";
 const inter = Inter({
   subsets: ["cyrillic"],
-  weight: ["400"],
+  weight: ["600"],
 });
 // const interBold = Inter({
 //   subsets: ["cyrillic"],
@@ -17,17 +17,17 @@ const CustomeTabs2 = () => {
       <div className="w-full mx-auto font-inter">
         <div className="flex justify-around items-center gap-2 flex-wrap max-w-xl lg:flex-nowrap mx-auto lg:whitespace-nowrap">
           <button
-            onClick={() => setTab("integrated")}
+            onClick={() => setTab("FMCG")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <span
               className={
-                tabs === "integrated"
-                  ? ` text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : ` text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
+                tabs === "FMCG"
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
-              Integrated
+              FMCG
             </span>
           </button>
           <span>|</span>
@@ -42,7 +42,7 @@ const CustomeTabs2 = () => {
                   : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
-              Marketing
+              Electronics
             </span>
           </button>
           <span>|</span>
@@ -57,7 +57,7 @@ const CustomeTabs2 = () => {
                   : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
-              events & exhibitions
+              Fashion & Lifestyle
             </span>
           </button>
           <span>|</span>
@@ -73,26 +73,12 @@ const CustomeTabs2 = () => {
                   : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
-              Digital
+              Food & Beverage
             </span>
           </button>
           <span>|</span>
 
-          <button
-            onClick={() => setTab("contentProduction")}
-            className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
-          >
-            <span
-              className={
-                tabs === "contentProduction"
-                  ? `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
-                  : `${inter.className}  text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
-              }
-            >
-              content production
-            </span>
-          </button>
-          <span>|</span>
+          
 
           <button
             onClick={() => setTab("Luxury")}
