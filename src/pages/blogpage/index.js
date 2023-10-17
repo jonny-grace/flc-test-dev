@@ -17,7 +17,7 @@ const Index = ({ blogs }) => {
       }
     });
   return (
-    <div className=" mby-20 px-5 md:px-8 lg:px-10">
+    <div className=" my-16 px-5 md:px-8 lg:px-10">
       <Navbar />
       <div className="p-4 mx-auto mt-20 mb-5 font-inter max-w-8xl xxl:max-w-7xl ">
         <h1 className="text-2xl font-bold mb-4 mx-5">featured articles</h1>
@@ -29,7 +29,7 @@ const Index = ({ blogs }) => {
                 src={feutured.thumbnail.data.attributes.url}
                 width={1000}
                 height={1000}
-                className="object-cover md:min-h-[405px] lg:min-h-[468px] lg:max-h[468px] xl:min-h-[400px] xl:max-h-[430px] xxl:min-h-[506px]"
+                className="object-cover md:min-h-[405px] lg:min-h-[468px] lg:max-h[468px] xl:min-h-[430px] xl:max-h-[430px] xxl:min-h-[506px]"
                 alt="Blog Banner"
               />
             </div>
