@@ -29,11 +29,11 @@ const Index = ({ blogs }) => {
                 src={feutured.thumbnail.data.attributes.url}
                 width={1000}
                 height={1000}
-                className="fit-cover md:h-[400px] lg:h-[400px] xl:h-[400px] xxl:h-[506px]"
+                className="object-cover md:min-h-[405px] lg:min-h-[506px]  xl:min-h-[506px] xxl:min-h-[506px]"
                 alt="Blog Banner"
               />
             </div>
-            <div>
+            <div className="h-min">
               <h2
                 className="ml-12 md:ml-0 mt-10 xl:text-[20px] xxl:text-[25px]"
                 style={{ color: "#999999" }}
@@ -55,22 +55,22 @@ const Index = ({ blogs }) => {
               </h2>
             </div>
           </div>
-          <div className="w-full col-span-1 ">
+          <div className="w-full col-span-1 h-">
             {otherBlogs &&
               otherBlogs.slice(0, 3).map((blog, index) => {
                 return (
                   <div
                     key={index}
-                    className=" pb-12 md:flex row-span-3  sm:flex-row gap-5"
+                    className="pb-8 md:flex row-span-3  sm:flex-row gap-5"
                   >
                     <Image
                       src={blog.attributes.thumbnail.data.attributes.url}
-                      className="md:ml-0 md:w-[233px]  h-[233.19px] md:h-[180px]  xl:h-[180.19px] xxl:h-[233.19px] object-cover"
+                      className="md:ml-0 md:min-w-[220px]  h-[233.19px] md:h-[188px]  lg:h-[240px] xl:h-[240px] xxl:h-[240px] object-fill "
                       alt="Blog 1"
                       width={1000}
                       height={1000}
                     />
-                    <div>
+                    <div className="">
                       <h5
                         className=" xl:w-[232px] mt-2 "
                         style={{ color: "#999999" }}

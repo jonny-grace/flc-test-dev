@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "gothamBold";
-  src: url("/public/gotham-bold.otf") format("opentype");
+  src: url("../../public/gotham-bold.otf") format("opentype");
   /* You can also define font-weight and font-style if applicable */
 }
 
 @font-face {
   font-family: "Gotham-book";
-  src: url("/public/Gotham-book.otf") format("opentype");
+  src: url("../../public/Gotham-book.otf") format("opentype");
   /* You can also define font-weight and font-style if applicable */
 }
 
 @font-face {
   font-family: "Gotham-medium";
-  src: url("/public/Gotham-medium.otf") format("opentype"); /* You can also define font-weight and font-style if applicable */
+  src: url("../../public/Gotham-medium.otf") format("opentype"); /* You can also define font-weight and font-style if applicable */
 }
 
 body {
