@@ -61,7 +61,8 @@ const Timeline = ({ about }) => {
         mode="VERTICAL_ALTERNATING"
         hideControls
         theme={timelineTheme} // Apply the custom timeline theme
-        style={timelineStyles} // Apply the custom timeline styles
+        style={timelineStyles} 
+        // Apply the custom timeline styles
       />
     </div>
   );

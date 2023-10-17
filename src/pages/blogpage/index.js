@@ -17,10 +17,10 @@ const Index = ({ blogs }) => {
       }
     });
   return (
-    <div className=" mby-20 px-5 md:px-8 lg:px-10">
+    <div className=" mb-20 mt-10 px-5 md:px-8 lg:px-10">
       <Navbar />
-      <div className="p-4 mx-auto mt-20 mb-5 font-inter max-w-8xl xxl:max-w-7xl ">
-        <h1 className="text-2xl font-bold mb-4 mx-5">featured articles</h1>
+      <div className="p-4 mx-auto mt-20 mb-5  max-w-8xl xxl:max-w-7xl ">
+        <h1 className="text-2xl font-gothamBold mb-4 mx-5">featured articles</h1>
 
         <div className="grid md:grid-cols-5 md:grid-rows-1">
           <div className=" md:w-full md:col-span-3 col-span-5 md:row-span-1   md:px-4">
@@ -35,7 +35,7 @@ const Index = ({ blogs }) => {
             </div>
             <div className="h-min">
               <h2
-                className="ml-12 md:ml-0 mt-10 xl:text-[20px] xxl:text-[25px]"
+                className="ml-12 md:ml-0 mt-10 xl:text-[20px] font-gothamBold xxl:text-[25px]"
                 style={{ color: "#999999" }}
               >
                 {feutured.blog_type.data.attributes.name}
@@ -43,7 +43,7 @@ const Index = ({ blogs }) => {
             </div>
 
             <div>
-              <h1 className=" ml-12 md:ml-0 font-bold text-black text-2xl my-5">
+              <h1 className=" ml-12 md:ml-0  font-gothamBold text-black text-2xl my-5">
                 {feutured.title}
               </h1>
             </div>
@@ -77,7 +77,7 @@ const Index = ({ blogs }) => {
                       >
                         {blog.attributes.blog_type.data.attributes.name}
                       </h5>
-                      <h1 className=" font-bold text-2xl lg:my-7 lg:w-[210px] xxl:w-[253px] xxl:text-[37px] hover:cursor-pointer">
+                      <h1 className="  font-gothamBold text-2xl lg:my-7 lg:w-[210px] xxl:w-[253px] xxl:text-[37px] hover:cursor-pointer">
                         {blog.attributes.title.slice(0, 18)}
                       </h1>
                       <h3>
@@ -111,7 +111,7 @@ const Index = ({ blogs }) => {
                   </div>
 
                   <div>
-                    <h1 className="font-bold text-lg hover:cursor-pointer">
+                    <h1 className=" font-gothamBold text-lg hover:cursor-pointer">
                       {blog.attributes.title}
                     </h1>
                   </div>

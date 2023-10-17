@@ -10,7 +10,7 @@ const index = ({contact,footer}) => {
     <>
     <Navbar />
     <div className="  p-4 md:mx-40 mt-40 mb-10 font-inter">
-      <h1 className="text-4xl font-bold mb-10">{contact.title}</h1>
+      <h1 className="text-4xl font-gothamBold mb-10">{contact.title}</h1>
       <p className=" xl:text-sm mr-20  mb-16">
         {contact.description}
       </p>
