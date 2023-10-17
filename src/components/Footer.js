@@ -32,15 +32,15 @@ const Footer = ({ footerData }) => {
             />
           </div>
           <div className="p-4">
-            <h2 className="font-bold text-start mb-4 text-[28px] lowercase">
+            <h2 className=" font-gothamBold text-start mb-4 text-[28px] lowercase">
               {footerData.talk}
             </h2>
-            <div className="w-[304px] h-[77px] text-[14px] text-start">
+            <div className="w-[304px] h-[77px] text-[15px] text-start">
               <p className="text-start mb-2">Phone: {footerData.phone}</p>
               <p className="text-start">Email: {footerData.email}</p>
             </div>
             <div className="md:mt-16 mt-4">
-              <h2 className="font-bold text-start mb-4 text-[28px] lowercase">
+              <h2 className=" font-gothamBold text-start mb-4 text-[28px] lowercase">
                 {footerData.follow}
               </h2>
               <div className="flex">
@@ -79,7 +79,7 @@ const Footer = ({ footerData }) => {
             </div>
           </div>
           <div className="p-4">
-            <h2 className="font-bold text-start md:text-start mb-4 text-[28px] lowercase">
+            <h2 className=" font-gothamBold text-start md:text-start mb-4 text-[28px] lowercase">
               {footerData.visit}
             </h2>
             <div className="text-start md:text-start flex flex-col gap-6 text-[14px]  w-[240px]">
@@ -99,7 +99,7 @@ const Footer = ({ footerData }) => {
           </div>
 
           <div className="p-4 md:ml-9">
-            <h2 className="font-bold text-start md:text-start mb-4 text-[28px] lowercase">
+            <h2 className=" font-gothamBold text-start md:text-start mb-4 text-[28px] lowercase">
               {footerData.links}
             </h2>
             <div className="text-start md:text-start">
