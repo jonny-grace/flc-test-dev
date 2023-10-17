@@ -2,7 +2,7 @@ import React from "react";
 
 const SmallCard = ({ year, title, description }) => {
   return (
-    <div className="  p-4 mb-4 w-64 sm:w-1/2 mt-4  md:w-[40%]    hover:bg-white hover:text-black">
+    <div className="  p-4 mb-4 w-64 sm:w-1/2 mt-4  md:w-[40%] hover:text-black">
       <div className=" text-gray-600">{year}</div>
       <h3 className="md:text-lg text-3xl text-gray-700 font-semibold ">{title}</h3>
       <p className="text-sm text-gray-600  ">{description}</p>
