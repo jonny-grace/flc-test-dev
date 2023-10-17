@@ -9,19 +9,17 @@
 }
 
 @font-face {
-  font-family: "Gotham-book";
+  font-family: "GothamBook";
   src: url("../../public/Gotham-book.otf") format("opentype");
   /* You can also define font-weight and font-style if applicable */
 }
 
 @font-face {
-  font-family: "Gotham-medium";
+  font-family: "GothamMedium";
   src: url("../../public/Gotham-medium.otf") format("opentype"); /* You can also define font-weight and font-style if applicable */
 }
 
-body {
-  font-family: "gothamBold";
-}
+
 .nav-button {
   /* color: #FFF; */
   text-align: center;

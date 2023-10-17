@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       fontFamily:{
         gothamBold:"gothamBold",
+        gothamBook:"gothamBook",
+        gothamMedium:"gothamMedium"
       },
       screens: {
         'sm': '640px',      // Small screens (mobile)

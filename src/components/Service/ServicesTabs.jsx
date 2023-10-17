@@ -57,8 +57,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "marketing"
-                  ? `border-b-4 border-black font-bold  text-sm md:text-lg xxl:text-[22px] pb-4`
-                  : "font-bold text-sm md:text-lg  xxl:text-[22px]  pb-4"
+                  ? `border-b-4 border-black font-gothamBold  text-sm md:text-lg xxl:text-[22px] pb-4`
+                  : "font-gothamBold text-sm md:text-lg  xxl:text-[22px]  pb-4"
               }
             >
               marketing
@@ -73,8 +73,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "events"
-                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px] pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px]  pb-4"
+                  ? `border-b-4 border-black font-gothamBold text-sm md:text-lg xxl:text-[22px] pb-4`
+                  : "font-gothamBold text-sm md:text-lg xxl:text-[22px]  pb-4"
               }
             >
               events & exhibitions
@@ -89,8 +89,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "digitalMarketing"
-                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]  pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px] pb-4"
+                  ? `border-b-4 border-black font-gothamBold text-sm md:text-lg xxl:text-[22px]  pb-4`
+                  : "font-gothamBold text-sm md:text-lg xxl:text-[22px] pb-4"
               }
             >
               digital marketing
@@ -105,8 +105,8 @@ const ServicesTabs = ({ services }) => {
             <span
               className={
                 tabs === "contentProduction"
-                  ? `border-b-4 border-black font-bold text-sm md:text-lg xxl:text-[22px]  pb-4`
-                  : "font-bold text-sm md:text-lg xxl:text-[22px]  pb-4"
+                  ? `border-b-4 border-black font-gothamBold text-sm md:text-lg xxl:text-[22px]  pb-4`
+                  : "font-gothamBold text-sm md:text-lg xxl:text-[22px]  pb-4"
               }
             >
               content production

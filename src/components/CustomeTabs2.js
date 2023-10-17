@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Inter } from "next/font/google";
 const inter = Inter({
   subsets: ["cyrillic"],
-  weight: ["600"],
+  weight: ["400"],
 });
 // const interBold = Inter({
 //   subsets: ["cyrillic"],
@@ -23,7 +23,7 @@ const CustomeTabs2 = () => {
             <span
               className={
                 tabs === "FMCG"
-                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-900 whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-900 font-gothamBold whitespace-nowrap capitalize`
                   : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >

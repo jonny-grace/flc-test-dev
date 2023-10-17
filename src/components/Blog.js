@@ -12,7 +12,7 @@ const Blog = ({ blogSectionTop, blogs }) => {
         <p className="mt-1 text-gray-700 text-3xl mb-4 lowercase">
           {blogSectionTop.header}
         </p>
-        <h2 className="text-2xl font-bold md:text-6xl xxl:text-[79px] md:leading-tight text-black">
+        <h2 className="text-2xl font-gothamBold md:text-6xl xxl:text-[79px] md:leading-tight text-black">
           {blogSectionTop.title}
         </h2>
       </div>
@@ -45,7 +45,7 @@ const Blog = ({ blogSectionTop, blogs }) => {
                     </span>
                   </div>
                 </div>
-                <h3 className="mt-5 text-2xl text-black font-bold">
+                <h3 className="mt-5 text-2xl text-black font-gothamBold">
                   {blog.attributes.title.substring(0, 27)}...
                 </h3>
                 <p className="mt-3 inline-flex items-center gap-x-2 text-sm font-medium underline text-gray-500">

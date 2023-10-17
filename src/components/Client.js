@@ -14,7 +14,7 @@ const Client = ({ clientsDetail }) => {
   return (
     <div className="container mx-auto   font-inter">
       <div className="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16">
-        <h1 className="xl:text-5xl md:text-3xl text-5xl text-center text-gray-800 font-extrabold md:mb-5 pt-4 lowercase">
+        <h1 className="xl:text-5xl md:text-3xl text-5xl text-center text-gray-800 font-gothamBold md:mb-5 pt-4 lowercase">
           {clientsDetail.title}
         </h1>
       </div>

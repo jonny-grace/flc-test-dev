@@ -8,7 +8,7 @@ const Timeline = ({ about }) => {
 
   const timelineStyles = {
     timeline: {
-      borderTop: "1px solid black",
+      // borderTop: "1px solid black",
     },
     marker: {
       backgroundColor: "none", // Set the marker background color to transparent to remove the dot indicator
@@ -24,7 +24,7 @@ const Timeline = ({ about }) => {
           {
             // title: "2009",
             cardTitle: (
-              <h2 className="text-3xl xxl:text-[40px] ml-3 mb-3  font-semibold text-gray-500">{about.timeline1Year}</h2>
+              <h2 className="text-3xl ml-3 mb-3 font-gothamBold text-gray-500">{about.timeline1Year}</h2>
             ),
 
            
@@ -33,27 +33,27 @@ const Timeline = ({ about }) => {
           {
             // title: "2011",
             cardTitle: (
-              <h2 className="text-3xl ml-3 mb-3  font-bold text-gray-500">{about.timeline2Year}</h2>
+              <h2 className="text-3xl ml-3 mb-3 font-gothamBold text-gray-500">{about.timeline2Year}</h2>
             ),
             cardDetailedText: <p className=" xl:w-[375px]">{about.timeline2Description}</p>},
           {
             // title: "2013",
             cardTitle: (
-              <h2 className="text-3xl ml-3 mb-3  font-bold text-gray-500">{about.timeline3Year}</h2>
+              <h2 className="text-3xl ml-3 mb-3 font-gothamBold text-gray-500">{about.timeline3Year}</h2>
             ),
             cardDetailedText: <p>{about.timeline3Description}</p>,
           },
           {
             // title: "2021",
             cardTitle: (
-              <h2 className="text-3xl ml-3 mb-3  font-bold text-gray-500">{about.timeline4Year}</h2>
+              <h2 className="text-3xl ml-3 mb-3 font-gothamBold text-gray-500">{about.timeline4Year}</h2>
             ),
             cardDetailedText: <p>{about.timeline4Description}</p>,
           },
           {
             // title: "2023",
             cardTitle: (
-              <h2 className="  text-3xl ml-3 mb-3  font-bold text-gray-500">{about.timeline5Year}</h2>
+              <h2 className="  text-3xl ml-3 mb-3 font-gothamBold text-gray-500">{about.timeline5Year}</h2>
             ),
             cardDetailedText: <p>{about.timeline5Description}</p>,
           },

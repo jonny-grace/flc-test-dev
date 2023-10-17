@@ -11,8 +11,8 @@ const index = ({ about, values, awards }) => {
       <Navbar />
       <div className=" overflow-x-hidden   md:mx-36 mt-32 mb-10 font-inter">
         <div className=" mx-4">
-          <h1 className="text-4xl font-bold mb-10">{about.title}</h1>
-          <p className=" xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600">{about.descriptionOne}</p>
+          <h1 className="text-4xl font-gothamBold mb-10">{about.title}</h1>
+          <p className=" xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70">{about.descriptionOne}</p>
            </div>
         <div>
           <Image
@@ -24,8 +24,8 @@ const index = ({ about, values, awards }) => {
           />
         </div>
         <div className="my-8 mb-10 mx-3">
-          <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600">{about.descriptionTwo}</p>
-          <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600"> <br />
+          <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70">{about.descriptionTwo}</p>
+          <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70"> <br />
 We have the experience of working with companies such as Huawei, Samsung, Hisense, Acer, P&G, Nestle, Aujan Coca Cola, Mondelez, IFFCO, Etude House, Coty Middle East, Estee Lauder – the list goes on. 
 From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we`&apos;` ve set the pace.</p>
        

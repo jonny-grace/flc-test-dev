@@ -10,7 +10,7 @@ const BoxComponent = () => {
   return (
     // general box
     <div className=" w-full bg-green-50">
-      <div className=" mt-5  md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
+      <div className="   md:w-[100%]  bg-gray-500 md:h-[670px] font-inter">
         <div className=" flex flex-col md:flex-row h-full">
           <div className=" md:w-[40%] bg-blue-300 h-full">
             <div className="relative lg:w-[500px] xl:w-[610px] md:w-[450px]  xxl:w-[751.36px] flex h-full">
@@ -22,15 +22,15 @@ const BoxComponent = () => {
                 className="object-cover hover:cursor-pointer w-full"
               />
 
-              <div className="absolute inset-0 flex   bg-slate-900 bg-opacity-50 text-white p-4">
+              <div className="absolute inset-0 flex   bg-slate-900 bg-opacity-50 text-white p-8">
                 <div >
-                  <p className=" mt-4 ml-4 font-medium text-left">
+                  <p className=" mt-4 ml-4 font-small opacity-70 text-left">
                     featured // events
                   </p>
-                  <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-10 px-4">
+                  <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-7 px-4">
                     Honor <br/> Magic Pro Launch
                   </h2>
-                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] md:w-[380px]  opacity-75 text-sm ml-5  mr-10">
+                  <p className="mt-6 xxl:w-[596px] xxl:text-[18px] md:w-[380px] font-small  opacity-75 text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
@@ -145,12 +145,12 @@ const BoxComponent = () => {
                   >
                     <div className=" absolute w-60 ml-5 text-white">
                       <h2 className=" font-bold text-5xl w-40">Ajmal Perfumes</h2>
-                      <p className=" pt-4 text-sm">
+                      <p className=" pt-4 text-sm opacity-75">
                         Duis autem vel eum iriure dolor in hendrerit in
                         vulputate velit esse molestie consequat, vel illum
                         dolore eu feugiat nulla
                       </p>
-                      <span className=" hover:cursor-pointer  mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                      <span className=" hover:cursor-pointer opacity-75  mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                         Learn more
                       </span>
                     </div>

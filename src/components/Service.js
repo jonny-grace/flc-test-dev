@@ -24,13 +24,13 @@ const Service = ({ serviceSection, services }) => {
       <div className="font-bold justify-center items-center text-center ">
         {/* w-56  text-center lg:w-96   text-white */}
         <div className=" text-center w-full flex justify-center">
-          <h1 className="text-5xl xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 text-center w-96 md:mx-56 lowercase">
+          <h1 className="text-5xl font-gothamBold xxl:text-[78px] xl:text-[70px] lg:text-[60px] md:text-[60px] xxl:w-[400px]  xl:w-[380px] lg:text-5xl md:pl-10 text-center w-96 md:mx-56 lowercase">
             {serviceSection?.title}
           </h1>
         </div>
       </div>
       <div className=" flex justify-center text-center ">
-        <p className="mt-12 xxl:text-[26px] xl:w-[580px]  xxl:w-[922px]  font-normal text-1xl   md:text-center   md:mx-40 text-gray-800">
+        <p className="mt-12 font-gothamBook xxl:text-[26px] xl:w-[580px]  xxl:w-[922px]  font-normal text-1xl   md:text-center   md:mx-40 text-gray-800">
           {serviceSection?.desc}
         </p>
       </div>
@@ -65,10 +65,10 @@ const Service = ({ serviceSection, services }) => {
                     </h3>
                     <p className={` text-sm mt-3 text-gray-800`}>
                       <span className={inter.className}>
-                        {service.attributes.description.slice(0, 100)}
+                        {service.attributes.description}
                       </span>
                     </p>
-                    <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm  decoration-2 group-hover:underline font-medium">
+                    <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm  decoration-2 hover:underline font-small text-gray-500">
                       Learn more
                     </span>
                   </div>
