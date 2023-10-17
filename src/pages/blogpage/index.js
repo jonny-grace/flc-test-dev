@@ -29,7 +29,7 @@ const Index = ({ blogs }) => {
                 src={feutured.thumbnail.data.attributes.url}
                 width={1000}
                 height={1000}
-                className="object-cover md:min-h-[405px] lg:min-h-[506px]  xl:min-h-[506px] xxl:min-h-[506px]"
+                className="object-cover md:min-h-[405px] lg:min-h-[468px] lg:max-h[468px] xl:min-h-[400px] xl:max-h-[430px] xxl:min-h-[506px]"
                 alt="Blog Banner"
               />
             </div>
@@ -65,7 +65,7 @@ const Index = ({ blogs }) => {
                   >
                     <Image
                       src={blog.attributes.thumbnail.data.attributes.url}
-                      className="md:ml-0 md:min-w-[220px]  min-h-[233.19px] md:min-h-[188px]  lg:min-h-[240px] xl:min-h-[240px] xxl:min-h-[240px] object-fill "
+                      className="md:ml-0 md:min-w-[220px]  min-h-[233.19px] md:min-h-[100px] md:max-h-[190px] lg:min-h-[100px] lg:max-h-[220px] xl:min-h-[100px] xl:max-h-[200px] xxl:min-h-[240px] object-fill "
                       alt="Blog 1"
                       width={1000}
                       height={1000}
