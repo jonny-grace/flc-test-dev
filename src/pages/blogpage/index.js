@@ -65,7 +65,7 @@ const Index = ({ blogs }) => {
                   >
                     <Image
                       src={blog.attributes.thumbnail.data.attributes.url}
-                      className="md:ml-0 md:min-w-[220px]  h-[233.19px] md:h-[188px]  lg:h-[240px] xl:h-[240px] xxl:h-[240px] object-fill "
+                      className="md:ml-0 md:min-w-[220px]  min-h-[233.19px] md:min-h-[188px]  lg:min-h-[240px] xl:min-h-[240px] xxl:min-h-[240px] object-fill "
                       alt="Blog 1"
                       width={1000}
                       height={1000}
