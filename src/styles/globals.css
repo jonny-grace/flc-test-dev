@@ -2,27 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "gothamBold";
-  src: url("/public/gotham-bold.otf");
+  src: url("../../public/gotham-bold.otf") format("opentype");
   /* You can also define font-weight and font-style if applicable */
 }
 
 @font-face {
   font-family: "Gotham-book";
-  src: url("/public/Gotham-book.otf") format("opentype");
+  src: url("../../public/Gotham-book.otf") format("opentype");
   /* You can also define font-weight and font-style if applicable */
 }
 
 @font-face {
   font-family: "Gotham-medium";
-  src: url("/public/Gotham-medium.otf") format("opentype"); /* You can also define font-weight and font-style if applicable */
+  src: url("../../public/Gotham-medium.otf") format("opentype"); /* You can also define font-weight and font-style if applicable */
 }
 
 body {
-  font-family: 'gothamBold';
+  font-family: "gothamBold";
 }
 .nav-button {
   /* color: #FFF; */
@@ -38,6 +36,6 @@ body {
   color: gray;
   border: none;
 }
-.active{
+.active {
   text-decoration: underline;
 }
