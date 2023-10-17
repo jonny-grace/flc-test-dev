@@ -8,14 +8,14 @@ import Carousel from "../../components/BottomCarousel/Carousel";
 
 const Index = ({ caseStudyDetails }) => {
   return (
-    <div className="mb-20 md:mb-0 w-full font-inter">
+    <div className="mb-20 md:mb-0 w-full">
       <div className="overflow-hidden ">
         <Navbar />
         <div className="w-screen  relative bg-gray-50">
           <div className="absolute inset-0 bg-gray-200">
             <div className="w-screen relative">
               <div className="md:absolute absolute  mx-auto inset-0 md:mx-32 mt-28  h-full">
-                <h1 className=" md:text-[33px] md:mb-5 ml-3  md:ml-0 font-bold">
+                <h1 className=" md:text-[33px] md:mb-5 ml-3  md:ml-0 font-gothamBold">
                   {caseStudyDetails?.name}
                 </h1>
                 <div>
@@ -36,26 +36,26 @@ const Index = ({ caseStudyDetails }) => {
       </div>
       <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 mb-20 md:mb-0">
         <div className="flex flex-col sm:flex-row gap-8  md:mt-[-50px]">
-          <div className="w-full md:pr-20 sm:w-3/4 flex flex-col gap-5">
+          <div className="w-full  md:pr-20 sm:w-3/4 flex flex-col gap-5">
             <div>
-              <h2 className="text-gray-950 font-semibold">Objectives:</h2>
+              <h2 className="text-gray-950 font-gothamMedium">Objectives:</h2>
               <p className="text-gray-500 mt-5">
                 {caseStudyDetails?.objective}
               </p>
             </div>
 
             <div>
-              <h2 className="text-gray-950 font-semibold">Idea:</h2>
+              <h2 className="text-gray-950 font-gothamMedium">Idea:</h2>
               <p className="text-gray-600 mt-5">{caseStudyDetails?.idea}</p>
             </div>
 
             <div>
-              <h2 className="text-gray-950 font-semibold">Outcome:</h2>
+              <h2 className="text-gray-950 font-gothamMedium">Outcome:</h2>
               <p className="text-gray-600 mt-5">{caseStudyDetails?.outcome}</p>
             </div>
           </div>
           <div className="w-full sm:w-1/4 mt-10">
-            <h2 className="text-2xl">
+            <h2 className="text-2xl font-gothamBook">
               Ut wisi enim ad minim veniam, quis nostrud exerci tation
               ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
             </h2>

@@ -22,10 +22,10 @@ const index = ({ serviceStatic, services }) => {
           <div className="absolute bottom-1/4  w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:mt-28 md:ml-10 ">
               <div className="px-8 max-w-xl mt-24 mx-auto">
-                <h1 className="text-white md:text-2xl text-xl font-medium lowercase">
+                <h1 className="text-white font-gothamBold md:text-2xl text-xl font-medium lowercase">
                   {serviceStatic?.title}
                 </h1>
-                <p className="hidden md:block text-white mt-4  w-[365px]">
+                <p className="hidden md:block  text-white opacity-80 mt-4  w-[365px]">
                   {serviceStatic?.description}
                 </p>
               </div>

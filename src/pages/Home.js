@@ -51,7 +51,7 @@ const serviceSection={
 }
 
   return (
-    <div className="w-full overflow-x-hidden font-gothamBold">
+    <div className="w-full overflow-x-hidden ">
       <div><HomePageNavBar logo={logo}/></div>
      <div className=" md:mx-7 md:my-7"><Hero hero={hero} /></div> 
       <Service serviceSection={serviceSection} services={servicesData}/>

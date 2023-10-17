@@ -57,7 +57,7 @@ const GaleryTab = ({ caseStudy }) => {
             <span
               className={
                 tabs === "Integrated"
-                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-bold whitespace-nowrap capitalize`
+                  ? `${inter.className} text-sm md:text-lg xxl:text-[22px] text-black font-gothamBold whitespace-nowrap capitalize`
                   : `${inter.className} text-sm md:text-lg xxl:text-[22px] text-gray-500 whitespace-nowrap capitalize`
               }
             >
