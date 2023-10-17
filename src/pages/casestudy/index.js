@@ -16,7 +16,6 @@ const index = ({ caseStudyStatic, caseStudies }) => {
         className=" w-screen relative "
         style={{ backgroundColor: "#E6E6E6" }}
       >
-        {/* <div className="absolute inset-0 bg-gray-200 opacity-50"></div> */}
 
         <div className=" max-w-screen mx-auto w-full  px-4 py-32  lg:px-3">
           <div className="grid max-w-3xl  text-center mx-auto w-full">
