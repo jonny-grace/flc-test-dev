@@ -19,8 +19,8 @@ function CaseStudyCards({ caseStudies }) {
   const totalRows = Math.ceil(caseStudies?.length / 2);
 
   return (
-    <>
-      <div class="hidden  mt-10 md:grid grid-cols-3 gap-6 px-32 lg:px-4">
+    <div className=" lg:max-w-4xl xl:max-w-5xl  xxl:max-w-7xl mx-auto">
+      <div class="hidden mt-10 md:grid grid-cols-3  gap-6 px-32 lg:px-4">
         {caseStudies && caseStudies.slice(0, visibleRows * 2).map((caseStudy, index) => {
           const column1 = index % 2 === 0 ? caseStudy : null;
           const column2 = index % 2 === 1 ? caseStudy : null;
@@ -33,7 +33,7 @@ function CaseStudyCards({ caseStudies }) {
                     pathname: "/internalCaseStudy",
                     query: { caseStudyId: caseStudy?.id },
                   }}
-                  className={` h-auto sm:h-[350px] bg-cover bg-center bg-no-repeat ${
+                  className={` min-h-[320px] md:min-h-[220px] lg:min-h-[320px] xl:min-h-[380px] xxl:min-h-[450px] bg-cover bg-center bg-no-repeat ${
                     isEvenRow ? "" : "col-span-2"
                   }`}
                 >
@@ -152,7 +152,7 @@ function CaseStudyCards({ caseStudies }) {
           Show less
         </button>
       )}
-    </>
+    </div>
   );
 }
 
