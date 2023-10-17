@@ -19,7 +19,7 @@ function CaseStudyCards({ caseStudies }) {
   const totalRows = Math.ceil(caseStudies?.length / 2);
 
   return (
-    <div className=" lg:max-w-4xl xl:max-w-5xl   xxl:max-w-7xl mx-auto">
+    <div className=" lg:max-w-4xl xl:max-w-5xl xxl:max-w-7xl mx-auto">
       <div class="hidden mt-10 md:grid grid-cols-3  gap-6 px-32 lg:px-4">
         {caseStudies && caseStudies.slice(0, visibleRows * 2).map((caseStudy, index) => {
           const column1 = index % 2 === 0 ? caseStudy : null;
