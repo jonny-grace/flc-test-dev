@@ -29,7 +29,7 @@ const index = ({ about, values, awards }) => {
           <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70">{about.descriptionTwo}</p>
           <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70"> <br />
 We have the experience of working with companies such as Huawei, Samsung, Hisense, Acer, P&G, Nestle, Aujan Coca Cola, Mondelez, IFFCO, Etude House, Coty Middle East, Estee Lauder – the list goes on. 
-From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we`&apos;` ve set the pace.</p>
+From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we&apos;ve set the pace.</p>
        
         </div>
         {/* <AboutUsTimeline about={about} /> */}
