@@ -27,10 +27,10 @@ const BoxComponent = () => {
                   <p className=" mt-4 ml-4 font-small opacity-70 text-left">
                     featured // events
                   </p>
-                  <h2 className="text-4xl xl:w-[450px] xxl:w-[566px] xxl:text-[65px] font-bold mt-7 px-4">
+                  <h2 className="text-4xl xl:w-[450px] xxl:w-[510px] xxl:text-[45px] font-bold mt-7 px-4">
                     Honor <br/> Magic Pro Launch
                   </h2>
-                  <p className="mt-6 xxl:w-[296px] xxl:text-[18px] md:w-[380px] font-small  opacity-75 text-sm ml-5  mr-10">
+                  <p className="mt-6 xxl:w-[420px] xxl:text-[18px] md:w-[380px] font-small  opacity-75 text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
                     velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla
