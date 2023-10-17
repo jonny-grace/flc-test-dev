@@ -35,7 +35,7 @@ const Footer = ({ footerData }) => {
             <h2 className=" font-gothamBold text-start mb-4 text-[28px] lowercase">
               {footerData.talk}
             </h2>
-            <div className="w-[304px] h-[77px] text-[14px] text-start">
+            <div className="w-[304px] h-[77px] text-[15px] text-start">
               <p className="text-start mb-2">Phone: {footerData.phone}</p>
               <p className="text-start">Email: {footerData.email}</p>
             </div>
