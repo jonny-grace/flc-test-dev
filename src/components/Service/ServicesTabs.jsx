@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import DigitalMarketing from "./Tabs/DigitalMarketing";
 import EventsAndExhibitions from "./Tabs/EventsAndExhibitions";
@@ -8,7 +8,7 @@ import CaptionComponent from "../CaptionBox";
 
 const ServicesTabs = ({ services }) => {
   // console.log('details sssssssssssssss of services',services)
-
+  const contentRef = useRef(null);
   var marketing = {};
   var event = {};
   var contentProduction = {};
@@ -42,13 +42,19 @@ const ServicesTabs = ({ services }) => {
 
   // console.log('event tab data ',digitalMarketing)
 
+  const handleChange =(name)=>{
+    setTab(name);
+    contentRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+
   const [tabs, setTab] = useState("marketing");
   const [isToped, setIsToped] = useState(false);
   useEffect(() => {
       const handleScroll = (e) => {
         const secondNav = document.getElementById('someDiv');
         const distanceToTop = secondNav.getBoundingClientRect().top;
-        setIsToped(distanceToTop <= 96)
+        setIsToped(distanceToTop <= 94)
       }
       addEventListener('scroll', handleScroll)
       return () => {
@@ -58,10 +64,10 @@ const ServicesTabs = ({ services }) => {
   return (
     <>
     
-      <div className={`${isToped && 'fixed bg-white top-[96px] z-10'} w-full mx-auto  font-inter `}>
+      <div className={`${isToped && 'fixed bg-white top-[96px] z-10'} w-full mx-auto   font-gothamBold `} ref={contentRef}>
         <div className="flex justify-between items-center gap-2 max-w-5xl xxl:max-w-7xl mx-auto w-full px-5">
           <button
-            onClick={() => setTab("marketing")}
+            onClick={() => handleChange("marketing")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm -mt-7 text-gray-500">01</small>
@@ -77,7 +83,7 @@ const ServicesTabs = ({ services }) => {
           </button>
 
           <button
-            onClick={() => setTab("events")}
+            onClick={() => handleChange("events")}
             className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm  -mt-7 text-gray-500">02</small>
@@ -93,7 +99,7 @@ const ServicesTabs = ({ services }) => {
           </button>
 
           <button
-            onClick={() => setTab("digitalMarketing")}
+            onClick={() => handleChange("digitalMarketing")}
             className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm  -mt-7 text-gray-500">03</small>
@@ -109,7 +115,7 @@ const ServicesTabs = ({ services }) => {
           </button>
 
           <button
-            onClick={() => setTab("contentProduction")}
+            onClick={() => handleChange("contentProduction")}
             className="flex items-center justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm -mt-7 text-gray-500">04</small>

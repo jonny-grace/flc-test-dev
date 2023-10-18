@@ -9,7 +9,7 @@ const BoxComponent = () => {
   return (
     // general box
     <div className=" w-full">
-      <div className=" xxl:mx-24 xll:mx-40  bg-gray-500 md:h-[670px]  font-inter">
+      <div className=" xxl:mx-24 xll:mx-40  bg-gray-500 md:h-[670px] xxl:h-[850px]  font-inter">
         <div className=" flex flex-col md:flex-row h-full">
           <div className=" md:w-[40%] bg-blue-300 h-full">
             <div className="relative lg:w-[500px] xl:w-[610px] md:w-[450px]  xxl:w-[751.36px] flex h-full">

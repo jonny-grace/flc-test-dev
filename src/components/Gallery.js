@@ -5,6 +5,10 @@ import { Inter } from "next/font/google";
 import IntegratedTabContent from "./IntegratedTabContent";
 import { LeftArrow } from "../../assets/Icons/LeftArrow";
 import { RightArrow } from "../../assets/Icons/RightArrow";
+import rightArrow from '../../public/assets/rightArrow.png';
+import leftArrow from '../../public/assets/leftArrow.png';
+import Image from "next/image";
+
 const inter = Inter({
   subsets: ["cyrillic"],
   weight: ["400"],
@@ -128,7 +132,7 @@ const GaleryTab = ({ caseStudy }) => {
           </button>
         </div>
       </div>
-      <section className="w-full mt-8  " ref={contentRef}>
+      <section className="w-full mt-8 " ref={contentRef}>
         <div>{tabs === "Integrated" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
         <div>{tabs === "Electronics" ? <IntegratedTabContent /> : null}</div>
@@ -145,7 +149,8 @@ const GaleryTab = ({ caseStudy }) => {
           onClick={() => handleLeft(tabs)}
         >
           <span className="text-gray-600">
-            <LeftArrow />
+            {/* <LeftArrow /> */}
+            <Image src={leftArrow} width={1000} height={1000} className="w-8 h-8" />
           </span>
         </button>
         <button
@@ -153,7 +158,8 @@ const GaleryTab = ({ caseStudy }) => {
           onClick={() => handleRight(tabs)}
         >
           <span className="text-gray-600">
-            <RightArrow />
+          <Image src={rightArrow} width={1000} height={1000} className="w-8 h-8" />
+            {/* <RightArrow /> */}
           </span>
         </button>
       </div>

@@ -16,7 +16,7 @@ const index = ({ serviceStatic, services }) => {
             height={1000}
             src={serviceStatic?.background?.data?.attributes?.url}
             alt="banner image"
-            className="md:h-[60vh]     w-full object-top object-cover mt-20"
+            className="md:h-[75vh]     w-full object-top object-cover mt-20"
           />
 
           <div className="absolute bottom-1/4  w-full">

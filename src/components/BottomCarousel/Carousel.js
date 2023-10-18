@@ -8,6 +8,9 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
+import leftArrow from '../../../public/assets/leftArrow.png';
+import rightArrow from '../../../public/assets/rightArrow.png';
+
 
 function Carousel() {
   const [allProducts, setAllProducts] = useState([]);
@@ -32,7 +35,9 @@ function Carousel() {
         
         <div className="text-3xl absolute top-0 left-0 mt-[-50px] ml-0 border-spacing-1 border-x-2 border-y-2  rounded-full text-gray-600" >
           
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M10.05 16.94v-4h8.92l.03-2.01h-8.95V6.94l-5 5Z"></path></svg> </div>
+          <Image  src={leftArrow} width={1000} height={1000} className="w-7 h-7"/>
+        {/* <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M10.05 16.94v-4h8.92l.03-2.01h-8.95V6.94l-5 5Z"></path></svg>  */}
+        </div>
       </div>
     );
   };
@@ -41,8 +46,10 @@ function Carousel() {
     const { className, onClick } = props;
     return (
       <div onClick={onClick}>
-        <div className="text-3xl absolute top-0 left-0 mt-[-50px] ml-10 border-x-2 border-y-2 rounded-full text-gray-600" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"></path></svg>
+        <div className="text-3xl absolute top-0 left-0 mt-[-50px] ml-9 border-x-2 border-y-2 rounded-full text-gray-600" >
+        <Image  src={rightArrow} width={1000} height={1000} className="w-7 h-7"/>
+
+        {/* <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"></path></svg> */}
            </div>
       </div>
     );
@@ -91,7 +98,7 @@ function Carousel() {
           {allProducts &&
             allProducts.map((product, index) => (
               <div key={index} className=" ">
-                <div className="relative md:mr-10  ">
+                <div className="relative md:mr-10   ">
                   <Link href={{
                     pathname: "/internalCaseStudy",
                     query: { caseStudyId: product?.id },
@@ -101,7 +108,7 @@ function Carousel() {
                     alt=""
                     height={1000}
                     width={1000}
-                    className="h-64 w-full object-cover"
+                    className="h-64 xl:h-96 w-full object-cover"
                   />
                   <div className="absolute  top-4 w-full">
                     <div className="grid pl-5">

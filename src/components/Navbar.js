@@ -34,8 +34,8 @@ const Navbar = () => {
       Gateway
       service
     >
-      <div className="flex items-center justify-between p-4">
-        <div className="flex items-center ml-6 xxl:ml-28">
+      <div className="flex items-center justify-between py-4">
+        <div className="flex items-center ml-6 xxl:ml-3">
           <Link href="/" className="flex items-center space-x-2 ml-3">
             <Image
               src={logo}

@@ -40,7 +40,7 @@ const HomePageNavBar = ({ logo }) => {
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
           <Link href="/" legacyBehavior>
-            <a className="flex items-center ml-5">
+            <a className="flex items-center ml-8">
               <Image
                 src={isScrolled ? logoBlack : logo.path}
                 width={1000}
@@ -110,34 +110,34 @@ const HomePageNavBar = ({ logo }) => {
             </div>
           )}
         </div>
-        <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
+        <div className="hidden ml-4 md:flex  space-x-6 lg:space-x-12 mr-16 ">
           <Link
             href="/casestudy"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-bold md:text-xl  xxl:text-2xl inter tracking-wide  "
           >
             case studies
           </Link>
           <Link
             href="/services"
-            className="hover:text-gray-400 md:text-xl xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-bold md:text-xl xxl:text-2xl inter tracking-wide  "
           >
             services
           </Link>
           <Link
             href="/about"
-            className="hover:text-gray-400 md:text-xl  xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-bold md:text-xl  xxl:text-2xl inter tracking-wide  "
           >
             about us
           </Link>
           <Link
             href="/contact"
-            className="hover:text-gray-400 md:text-xl xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-bold md:text-xl xxl:text-2xl inter tracking-wide  "
           >
             contact us
           </Link>
           <Link
             href="/blogpage"
-            className="hover:text-gray-400 md:text-xl xxl:text-2xl inter tracking-wide  "
+            className="hover:text-gray-400 font-bold md:text-xl xxl:text-2xl inter tracking-wide  "
           >
             blogs
           </Link>
