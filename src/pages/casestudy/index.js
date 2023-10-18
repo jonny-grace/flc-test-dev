@@ -34,7 +34,7 @@ const index = ({ caseStudyStatic, caseStudies }) => {
         </div>
       </div>
 
-      <div className=" md:mx-32">
+      <div className=" md:mx-44">
         <CaseStudyCards caseStudies={caseStudies} />
       </div>
       <div className="mt-8">

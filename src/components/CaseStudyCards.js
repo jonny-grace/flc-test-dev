@@ -33,7 +33,7 @@ function CaseStudyCards({ caseStudies }) {
                     pathname: "/internalCaseStudy",
                     query: { caseStudyId: caseStudy?.id },
                   }}
-                  className={` h-auto sm:h-[350px] bg-cover bg-center bg-no-repeat ${
+                  className={` h-auto sm:h-[350px] xxl:min-h-[600px] bg-cover bg-center bg-no-repeat ${
                     isEvenRow ? "" : "col-span-2"
                   }`}
                 >

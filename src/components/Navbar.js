@@ -28,15 +28,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-black fixed top-0 left-0 right-0 z-50 font-inter font-semibld ${
-        isScrolled ? "bg-white margin-0" : "bg-transparent"
-      }`}
+      className={`text-black fixed top-0 left-0 right-0 z-50 font-inter font-semibld ${isScrolled ? "bg-white margin-0" : "bg-transparent"
+        }`}
       API
       Gateway
       service
     >
       <div className="flex items-center justify-between p-4">
-        <div className="flex items-center">
+        <div className="flex items-center ml-6 xxl:ml-28">
           <Link href="/" className="flex items-center space-x-2 ml-3">
             <Image
               src={logo}
@@ -49,9 +48,8 @@ const Navbar = () => {
         </div>
         <div className="md:hidden">
           <button
-            className={`text-gray-400 hover:text-white focus:outline-none focus:text-white ${
-              isScrolled ? "text-white" : "text-gray-400"
-            }`}
+            className={`text-gray-400 hover:text-white focus:outline-none focus:text-white ${isScrolled ? "text-white" : "text-gray-400"
+              }`}
             onClick={toggleMenu}
           >
             <svg
@@ -107,49 +105,44 @@ const Navbar = () => {
         <div className="hidden md:flex  space-x-6 lg:space-x-12 mr-20 ">
           <Link
             href="/casestudy"
-            className={`${
-              router.pathname === "/casestudy"
+            className={`${router.pathname === "/casestudy"
                 ? "underline underline-offset-2"
                 : ""
-            } hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide`}
+              } hover:text-gray-400 font-bold  md:text-xl  xxl:text-2xl inter tracking-wide`}
           >
             case studies
           </Link>
           <Link
             href="/services"
-            className={`${
-              router.pathname === "/services"
+            className={`${router.pathname === "/services"
                 ? "underline underline-offset-2"
                 : ""
-            } hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide`}
+              } hover:text-gray-400 font-bold  md:text-xl  xxl:text-2xl inter tracking-wide`}
           >
             services
           </Link>
           <Link
             href="/about"
-            className={`${
-              router.pathname === "/about" ? "underline underline-offset-2" : ""
-            } hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide`}
+            className={`${router.pathname === "/about" ? "underline underline-offset-2" : ""
+              } hover:text-gray-400 font-bold  md:text-xl  xxl:text-2xl inter tracking-wide`}
           >
             about us
           </Link>
           <Link
             href="/contact"
-            className={`${
-              router.pathname === "/contact"
+            className={`${router.pathname === "/contact"
                 ? "underline underline-offset-2"
                 : ""
-            } hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide`}
+              } hover:text-gray-400 font-bold  md:text-xl  xxl:text-2xl inter tracking-wide`}
           >
             contact us
           </Link>
           <Link
             href="/blogpage"
-            className={`${
-              router.pathname === "/blogpage"
+            className={`${router.pathname === "/blogpage"
                 ? "underline underline-offset-2"
                 : ""
-            } hover:text-gray-400 font-semibold  md:text-xl  xxl:text-2xl inter tracking-wide`}
+              } hover:text-gray-400 font-bold  md:text-xl  xxl:text-2xl inter tracking-wide`}
           >
             blogs
           </Link>

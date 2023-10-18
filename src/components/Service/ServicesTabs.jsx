@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import DigitalMarketing from "./Tabs/DigitalMarketing";
 import EventsAndExhibitions from "./Tabs/EventsAndExhibitions";
@@ -43,12 +43,23 @@ const ServicesTabs = ({ services }) => {
   // console.log('event tab data ',digitalMarketing)
 
   const [tabs, setTab] = useState("marketing");
-
+  const [isToped, setIsToped] = useState(false);
+  useEffect(() => {
+      const handleScroll = (e) => {
+        const secondNav = document.getElementById('someDiv');
+        const distanceToTop = secondNav.getBoundingClientRect().top;
+        setIsToped(distanceToTop <= 96)
+      }
+      addEventListener('scroll', handleScroll)
+      return () => {
+        removeEventListener('scroll', handleScroll)
+      }
+  },[])
   return (
     <>
     
-      <div className="w-full mx-auto  font-inter ">
-        <div className="flex justify-between items-center gap-2 max-w-5xl mx-auto w-full px-5">
+      <div className={`${isToped && 'fixed bg-white top-[96px] z-10'} w-full mx-auto  font-inter `}>
+        <div className="flex justify-between items-center gap-2 max-w-5xl xxl:max-w-7xl mx-auto w-full px-5">
           <button
             onClick={() => setTab("marketing")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -115,7 +126,7 @@ const ServicesTabs = ({ services }) => {
         </div>
         <hr className="border-t-1 border-gray-800 "></hr>
       </div>
-      <section className="max-w-5xl mx-4 md:mx-auto px-8">
+      <section className="max-w-5xl xxl:max-w-[1300px] mx-4 md:mx-auto px-8">
         <div>
           {tabs === "marketing" ? <Marketing marketing={marketing} /> : null}
         </div>

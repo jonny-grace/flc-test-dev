@@ -18,7 +18,7 @@ const Client = ({ clientsDetail }) => {
           {clientsDetail.title}
         </h1>
       </div>
-      <p className="text-base font-normal md:text-lg lg:text-xl text-center text-gray-600 xxl:w-[1606px] xxl:text-[26.63px] px-6 xl:w-12/12 xl:mx-48 mb-3 md:mb-9">
+      <p className="text-base font-normal md:text-lg lg:text-xl text-center text-gray-600 xxl:w-[1456px] xxl:text-[26.63px] px-6 xl:w-12/12 xl:mx-48 mb-3 md:mb-9">
         {clientsDetail.desc}
       </p>
       {/* ?here is some changes  */}

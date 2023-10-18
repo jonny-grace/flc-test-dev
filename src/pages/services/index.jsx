@@ -8,15 +8,15 @@ import Image from "next/image";
 const index = ({ serviceStatic, services }) => {
   return (
     <>
-      <div className="min-h-screen overflow-x-hidden font-inter">
-        <section className="md:h-[90vh]  w-full relative md:mb-10">
+      <div className="min-h-screen mt-7 overflow-x-hidden font-inter">
+        <section className="md:h-[75vh]  w-full relative md:mb-10">
           <Navbar />
           <Image
             width={1000}
             height={1000}
             src={serviceStatic?.background?.data?.attributes?.url}
             alt="banner image"
-            className="md:h-[90vh]    w-full object-cover mt-20"
+            className="md:h-[75vh]    w-full object-top object-cover mt-20"
           />
 
           <div className="absolute bottom-1/4  w-full">
@@ -34,13 +34,14 @@ const index = ({ serviceStatic, services }) => {
           </div>
         </section>
 
-        <div className=" mt-7">
+        <div className=" mt-7" id="someDiv">
           <ServicesTabs services={services} />
         </div>
-        <section className="md:my-16 mt-16 md:mt-0 md:max-w-5xl md:ml-10 mx-2 md:mx-auto">
+        <section className="md:my-16 mt-16  max-w-5xl xxl:max-w-7xl    mx-auto" >
           <Carousel />
         </section>
-        <section>
+
+        <section className=" mx-16">
           <CaptionComponent
             reviewerName={serviceStatic.reviewerName}
             reviewerTitle={serviceStatic.reviewerTitle}

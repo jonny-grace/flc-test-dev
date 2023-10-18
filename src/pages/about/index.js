@@ -15,7 +15,7 @@ const index = ({ about, values, awards }) => {
         <div className=" mx-4">
           <h1 className="text-4xl font-gothamBold mb-10">{about.title}</h1>
           <p className=" xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70">{about.descriptionOne}</p>
-           </div>
+        </div>
         <div>
           <Image
             src={about?.image?.data.attributes.url}
@@ -28,16 +28,16 @@ const index = ({ about, values, awards }) => {
         <div className="my-8 mb-10 mx-3">
           <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70">{about.descriptionTwo}</p>
           <p className="xl:text-[14px] xxl:text-[22px] xxl:w-[1432px] xl:w-full text-gray-600 font-gothamMedium opacity-70"> <br />
-We have the experience of working with companies such as Huawei, Samsung, Hisense, Acer, P&G, Nestle, Aujan Coca Cola, Mondelez, IFFCO, Etude House, Coty Middle East, Estee Lauder – the list goes on. 
-From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we&apos;ve set the pace.</p>
-       
+            We have the experience of working with companies such as Huawei, Samsung, Hisense, Acer, P&G, Nestle, Aujan Coca Cola, Mondelez, IFFCO, Etude House, Coty Middle East, Estee Lauder – the list goes on.
+            From conceptualization to strategy, from consumer engagement to online and on-ground brilliance, we&apos;ve not just kept up with the ever-changing marketing trends; we&apos;ve set the pace.</p>
+
         </div>
         {/* <AboutUsTimeline about={about} /> */}
         <div className=" md:py-16 sm:py-16 px-2 ">
-        <div className="flex  md:gap-5 my-5 xxl:w-[1425.87px] xl:w-[1240] mx-7 lg:mx-28 justify-center ">
-          <Image src={aboutTree} alt="logos" width={1000} height={1000} />
+          <div className="flex  md:gap-5 my-5 xxl:w-[1425.87px] xl:w-[1240] mx-7 lg:mx-28 justify-center ">
+            <Image src={aboutTree} alt="logos" width={1000} height={1000} />
+          </div>
         </div>
-      </div>
       </div>
       <OurValues title={about.value} values={values} />
       <Awards title={about.award} awards={awards} />
