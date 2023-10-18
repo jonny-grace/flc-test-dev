@@ -9,14 +9,14 @@ const index = ({ serviceStatic, services }) => {
   return (
     <>
       <div className="min-h-screen mt-7 overflow-x-hidden font-inter">
-        <section className="md:h-[75vh]  w-full relative md:mb-10">
+        <section className="md:max-h-[75vh]  w-full relative md:mb-10">
           <Navbar />
           <Image
             width={1000}
             height={1000}
             src={serviceStatic?.background?.data?.attributes?.url}
             alt="banner image"
-            className="md:h-[75vh]    w-full object-top object-cover mt-20"
+            className="md:h-[60vh]     w-full object-top object-cover mt-20"
           />
 
           <div className="absolute bottom-1/4  w-full">
@@ -37,7 +37,7 @@ const index = ({ serviceStatic, services }) => {
         <div className=" mt-7" id="someDiv">
           <ServicesTabs services={services} />
         </div>
-        <section className="md:my-16 mt-16  max-w-5xl xxl:max-w-7xl    mx-auto" >
+        <section className="md:my-16 mt-16  max-w-5xl xxl:max-w-7xl mx-auto" >
           <Carousel />
         </section>
 

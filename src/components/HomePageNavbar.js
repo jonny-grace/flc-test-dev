@@ -33,7 +33,7 @@ const HomePageNavBar = ({ logo }) => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 font-inter font-semibold ${
         isScrolled
-          ? " bg-white ml-[-40px] text-black hover:text-gray-700 mt-0 transition ease-in-out duration-300 transform translate-y-0 px-12"
+          ? " bg-white text-black hover:text-gray-700 mt-0 transition ease-in-out duration-300 transform translate-y-0"
           : "bg-transparent text-white  transition ease-in-out duration-500 transform md:translate-y-8"
       }`}
     >
