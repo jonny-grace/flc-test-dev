@@ -8,10 +8,10 @@ import Carousel from "../../components/BottomCarousel/Carousel";
 
 const Index = ({ caseStudyDetails }) => {
   return (
-    <div className="mb-20 md:mb-0 w-full">
+    <div className="mb-20 md:mb-0 w-full ">
       <div className="overflow-hidden ">
         <Navbar />
-        <div className="w-screen  relative bg-gray-50">
+        <div className="w-screen xxl:max-w-7px relative bg-gray-50">
           <div className="absolute inset-0 bg-gray-200">
             <div className="w-screen relative">
               <div className="md:absolute absolute  mx-auto inset-0 md:mx-32 mt-28  h-full">
@@ -61,7 +61,7 @@ const Index = ({ caseStudyDetails }) => {
             </h2>
           </div>
         </div>
-        <div className="mt-28 w-full mb-10">
+        <div className="mx-auto mt-28 w-full mb-10">
           <Carousel />
         </div>
       </div>
