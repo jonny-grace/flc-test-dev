@@ -15,7 +15,9 @@ const inter = Inter({
 });
 const GaleryTab = ({ caseStudy }) => {
   const contentRef = useRef(null);
+  const [opacityChecker,setOpacityChecker]= useState(false);
   const tabsItems = [
+
     "Integrated",
     "FMCG",
     "Electronics",
@@ -145,16 +147,16 @@ const GaleryTab = ({ caseStudy }) => {
       </section>
       <div className="flex justify-end xxl:mx-24 xll:mx-40 gap-3 mt-5">
         <button
-          className="flex justify-center items-center  h-9 w-9 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
+          className="flex justify-center items-center opacity-50 hover:opacity-100  h-9 w-9 border-[2px] rounded-full hover:border-2 hover:border-gray-600"
           onClick={() => handleLeft(tabs)}
         >
           <span className="text-gray-600">
             {/* <LeftArrow /> */}
-            <Image src={leftArrow} width={1000} height={1000} className="w-7 h-7 font-bold" />
+            <Image src={leftArrow} width={1000} height={1000} className={` w-7 h-7`} />
           </span>
         </button>
         <button
-          className="flex justify-center items-center h-9 w-9 border-[1px] rounded-full hover:border-2 hover:border-gray-600"
+          className="flex justify-center items-center opacity-50 hover:opacity-100 h-9 w-9 border-[2px] rounded-full hover:border-2 hover:border-gray-600"
           onClick={() => handleRight(tabs)}
         >
           <span className="text-gray-600">

@@ -27,7 +27,7 @@ const BoxComponent = () => {
                     featured // events
                   </p>
                   <h2 className="text-4xl xl:w-[450px] xxl:w-[510px] xxl:text-[45px] font-bold mt-7 px-4">
-                    Honor <br/> Magic Pro Launch
+                    Honor <br /> Magic Pro Launch
                   </h2>
                   <p className="mt-6 xxl:w-[420px] xxl:text-[18px] md:w-[380px] font-small  opacity-75 text-sm ml-5  mr-10">
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
@@ -66,7 +66,18 @@ const BoxComponent = () => {
                     <h2 className="text-4xl font-bold mt-[-300px] w-48 px-10 pt-5 text-white">
                       Undiz Influencers
                     </h2>
-                    
+                    <p className=" w-96 px-10 pt-5">
+                      Duis autem vel eum iriure dolor in
+                      hendrerit in vulputate velit esse
+                      molestie consequat, vel illum dolore eu
+                      feugiat nulla
+                    </p>
+                    <Link href="#">
+                      <span className=" w-96 px-10 hover:cursor-pointer  ">
+                        Learn More
+                      </span>{" "}
+                    </Link>
+
                   </div>
                 </div>
               </div>
@@ -128,8 +139,18 @@ const BoxComponent = () => {
                       <h2 className=" font-bold text-4xl  ">
                         Undiz Influencers
                       </h2>
+                      <p className=" w-72 px-2 pt-5">
+                      Duis autem vel eum iriure dolor in
+                      hendrerit in vulputate velit esse
+                      molestie consequat, vel illum dolore eu
+                      feugiat nulla
+                    </p>
+                    <Link href="#">
+                      <span className=" w-72 mt-6 underline px-2 hover:cursor-pointer  ">
+                        Learn More
+                      </span>{" "}
+                    </Link>
 
-                      
                     </div>
                   </div>
                 </div>
@@ -147,7 +168,7 @@ const BoxComponent = () => {
                         vulputate velit esse molestie consequat, vel illum
                         dolore eu feugiat nulla
                       </p>
-                      <span className=" hover:cursor-pointer opacity-75  mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
+                      <span className=" underline hover:cursor-pointer opacity-75  mt-2 inline-flex items-center gap-x-1.5 text-sm text-white decoration-2 group-hover:underline font-medium">
                         Learn more
                       </span>
                     </div>
@@ -167,9 +188,9 @@ const BoxComponent = () => {
               </div>
             </div>
           </div>
-          
+
         </div>
-       
+
       </div>
     </div>
   );

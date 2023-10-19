@@ -6,6 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 
 const index = ({ serviceStatic, services }) => {
+  
   return (
     <>
       <div className="min-h-screen mt-7 overflow-x-hidden font-inter">
@@ -37,11 +38,11 @@ const index = ({ serviceStatic, services }) => {
         <div className=" mt-7" id="someDiv">
           <ServicesTabs services={services} />
         </div>
-        <section className="md:my-16 mt-16  max-w-5xl xxl:max-w-7xl mx-auto" >
+        <section className="md:my-16 mt-16 mx-2  max-w-5xl xxl:max-w-7xl md:mx-auto" >
           <Carousel />
         </section>
 
-        <section className=" mx-16">
+        <section className=" xxl:mx-16">
           <CaptionComponent
             reviewerName={serviceStatic.reviewerName}
             reviewerTitle={serviceStatic.reviewerTitle}

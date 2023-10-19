@@ -3,7 +3,7 @@ import React from "react";
 const CaptionComponent = ({ reviewerName, reviewerTitle, reviewerMessage }) => {
   return (
     <div className=" mt-28 font-gothamMedium" style={{background:'#E6E6E6'}}>
-      <div className="mx-32  py-16">
+      <div className=" mx-9 xxl:mx-32  py-16">
         <div className="bg-white p-8 rounded-lg md:mx-16 pt-9 mt-[-130px] border border-spacing-1 ">
           <div className="flex items-center mb-4 md:mx-8 md:my-5">
             <div>

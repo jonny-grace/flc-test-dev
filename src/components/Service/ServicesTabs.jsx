@@ -6,7 +6,6 @@ import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
 
 const ServicesTabs = ({ services }) => {
-  // console.log('details sssssssssssssss of services',services)
   const contentRef = useRef(null);
   var marketing = {};
   var event = {};
@@ -39,8 +38,6 @@ const ServicesTabs = ({ services }) => {
       }
     });
 
-  console.log('event tab data ',digitalMarketing)
-
   const handleChange =(name)=>{
     setTab(name);
     contentRef.current.scrollIntoView({ behavior: "smooth" });
@@ -53,7 +50,7 @@ const ServicesTabs = ({ services }) => {
       const handleScroll = (e) => {
         const secondNav = document.getElementById('someDiv');
         const distanceToTop = secondNav.getBoundingClientRect().top;
-        setIsToped(distanceToTop <= 105)
+        setIsToped(distanceToTop <= 96)
         console.log(distanceToTop)
       }
       addEventListener('scroll', handleScroll)
@@ -62,9 +59,9 @@ const ServicesTabs = ({ services }) => {
       }
   },[])
   return (
-    <div >
+    <div ref={contentRef}>
     
-      <div className={`${isToped && 'fixed bg-white top-[96px] z-10 '} w-full mx-auto   font-gothamBold `}   >
+      <div className={`${isToped && 'fixed bg-white top-[102px] z-10 '} w-full mx-auto   font-gothamBold `}   >
         
         <div  className={`flex justify-between items-center gap-2 max-w-5xl xxl:max-w-7xl mx-auto w-full px-5 `}>
           <button
@@ -133,7 +130,7 @@ const ServicesTabs = ({ services }) => {
         </div>
         <hr className="border-t-1 border-gray-800 "></hr>
       </div>
-      <section ref={contentRef} className="max-w-5xl xxl:max-w-[1300px] mx-4 md:mx-auto px-8">
+      <section  className={`${isToped && 'mt-32'} max-w-5xl xxl:max-w-[1300px] mx-4 md:mx-auto px-8`}>
         <div>
           {tabs === "marketing" ? <Marketing marketing={marketing} /> : null}
         </div>
