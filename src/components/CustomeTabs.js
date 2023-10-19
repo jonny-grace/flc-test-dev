@@ -5,15 +5,21 @@ const inter = Inter({
   weight: ["400"],
 });
 
-const CustomeTabs2 = () => {
-  const [tabs, setTab] = useState("integrated");
 
+const CustomeTabs2 = ({tabs,setTab}) => {
+  // const [tabs, setTab] = useState("integrated");
+
+
+  const handleClick=(name)=>{
+    setTab(name)
+    
+  }
   return (
     <>
       <div className="w-full mx-auto font-inter">
         <div className="flex justify-around items-center gap-2 flex-wrap max-w-2xl lg:flex-nowrap mx-auto lg:whitespace-nowrap">
           <button
-            onClick={() => setTab("integrated")}
+            onClick={() => handleClick("integrated")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <span
@@ -28,7 +34,7 @@ const CustomeTabs2 = () => {
           </button>
           <span>|</span>
           <button
-            onClick={() => setTab("markating")}
+            onClick={() => handleClick("markating")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <span
@@ -43,7 +49,7 @@ const CustomeTabs2 = () => {
           </button>
           <span>|</span>
           <button
-            onClick={() => setTab("events")}
+            onClick={() => handleClick("events")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <span
@@ -59,7 +65,7 @@ const CustomeTabs2 = () => {
           <span>|</span>
 
           <button
-            onClick={() => setTab("digital")}
+            onClick={() => handleClick("digital")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <span
@@ -75,7 +81,7 @@ const CustomeTabs2 = () => {
           <span>|</span>
 
           <button
-            onClick={() => setTab("contentProduction")}
+            onClick={() => handleClick("contentProduction")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <span
