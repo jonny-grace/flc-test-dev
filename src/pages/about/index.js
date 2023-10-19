@@ -33,9 +33,9 @@ const index = ({ about, values, awards }) => {
 
         </div>
         {/* <AboutUsTimeline about={about} /> */}
-        <div className=" md:py-16 sm:py-16 px-2 ">
-          <div className="flex  md:gap-5 my-5 xxl:w-[1425.87px] xl:w-[1240] mx-7 lg:mx-28 justify-center ">
-            <Image src={aboutTree} alt="logos" width={1000} height={1000} />
+        <div className=" sm:py-10 px-2 ">
+          <div className="flex  md:gap-5 xxl:w-[1425.87px] xl:w-[840] mx-7 lg:mx-28 justify-center ">
+            <Image src={aboutTree} alt="logos" width={1000} height={1000} className=" xl:w-[655px] xxl:w-[1025px]" />
           </div>
         </div>
       </div>
