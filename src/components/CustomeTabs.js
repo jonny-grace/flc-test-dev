@@ -4,10 +4,6 @@ const inter = Inter({
   subsets: ["cyrillic"],
   weight: ["400"],
 });
-// const interBold = Inter({
-//   subsets: ["cyrillic"],
-//   weight: ["500"],
-// });
 
 const CustomeTabs2 = () => {
   const [tabs, setTab] = useState("integrated");

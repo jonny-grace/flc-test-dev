@@ -37,3 +37,7 @@
 .active {
   text-decoration: underline;
 }
+
+.inter{
+  font-weight: Inter;
+}
