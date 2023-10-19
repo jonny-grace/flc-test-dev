@@ -152,7 +152,7 @@ const GaleryTab = ({ caseStudy }) => {
         >
           <span className="text-gray-600">
             {/* <LeftArrow /> */}
-            <Image src={leftArrow} width={1000} height={1000} className={` w-7 h-7`} />
+            <Image  alt='' src={leftArrow} width={1000} height={1000} className={` w-7 h-7`} />
           </span>
         </button>
         <button
@@ -160,7 +160,7 @@ const GaleryTab = ({ caseStudy }) => {
           onClick={() => handleRight(tabs)}
         >
           <span className="text-gray-600">
-          <Image src={rightArrow} width={1000} height={1000} className="w-6 h-7" />
+          <Image alt="" src={rightArrow} width={1000} height={1000} className="w-6 h-7" />
             {/* <RightArrow /> */}
           </span>
         </button>

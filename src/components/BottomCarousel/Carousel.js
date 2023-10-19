@@ -35,7 +35,7 @@ function Carousel() {
 
         <div className="text-3xl absolute top-0 left-0 mt-[-50px] ml-0 h-10 w-10 border-[2px] hover:border-2 flex justify-center items-center hover:border-gray-600  rounded-full" >
 
-          <Image src={leftArrow} width={1000} height={1000} className="w-7 h-7 opacity-40 hover:opacity-100" />
+          <Image alt="" src={leftArrow} width={1000} height={1000} className="w-7 h-7 opacity-40 hover:opacity-100" />
           {/* <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M10.05 16.94v-4h8.92l.03-2.01h-8.95V6.94l-5 5Z"></path></svg>  */}
         </div>
       </div>
@@ -47,7 +47,7 @@ function Carousel() {
     return (
       <div onClick={onClick}>
         <div className="text-3xl absolute top-0 left-0 mt-[-50px] ml-11 h-10 w-10 border-[2px] hover:border-2   flex justify-center items-center hover:border-gray-600  rounded-full" >
-          <Image src={rightArrow} width={1000} height={1000} className="w-6 h-7 opacity-40 hover:opacity-100" />
+          <Image alt="" src={rightArrow} width={1000} height={1000} className="w-6 h-7 opacity-40 hover:opacity-100" />
 
           {/* <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"></path></svg> */}
         </div>
