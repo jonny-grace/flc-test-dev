@@ -4,7 +4,6 @@ import DigitalMarketing from "./Tabs/DigitalMarketing";
 import EventsAndExhibitions from "./Tabs/EventsAndExhibitions";
 import ContentProduction from "./Tabs/ContentProduction";
 import Marketing from "./Tabs/Marketing";
-import CaptionComponent from "../CaptionBox";
 
 const ServicesTabs = ({ services }) => {
   // console.log('details sssssssssssssss of services',services)
@@ -40,7 +39,7 @@ const ServicesTabs = ({ services }) => {
       }
     });
 
-  // console.log('event tab data ',digitalMarketing)
+  console.log('event tab data ',digitalMarketing)
 
   const handleChange =(name)=>{
     setTab(name);
@@ -54,7 +53,8 @@ const ServicesTabs = ({ services }) => {
       const handleScroll = (e) => {
         const secondNav = document.getElementById('someDiv');
         const distanceToTop = secondNav.getBoundingClientRect().top;
-        setIsToped(distanceToTop <= 94)
+        setIsToped(distanceToTop <= 105)
+        console.log(distanceToTop)
       }
       addEventListener('scroll', handleScroll)
       return () => {
@@ -62,13 +62,14 @@ const ServicesTabs = ({ services }) => {
       }
   },[])
   return (
-    <>
+    <div >
     
-      <div className={`${isToped && 'fixed bg-white top-[96px] z-10'} w-full mx-auto   font-gothamBold `} ref={contentRef}>
-        <div className="flex justify-between items-center gap-2 max-w-5xl xxl:max-w-7xl mx-auto w-full px-5">
+      <div className={`${isToped && 'fixed bg-white top-[96px] z-10 '} w-full mx-auto   font-gothamBold `}   >
+        
+        <div  className={`flex justify-between items-center gap-2 max-w-5xl xxl:max-w-7xl mx-auto w-full px-5 `}>
           <button
             onClick={() => handleChange("marketing")}
-            className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
+            className="flex  md:items-center md:justify-center flex-col md:flex-row gap-2"
           >
             <small className="text-sm -mt-7 text-gray-500">01</small>
             <span
@@ -132,7 +133,7 @@ const ServicesTabs = ({ services }) => {
         </div>
         <hr className="border-t-1 border-gray-800 "></hr>
       </div>
-      <section className="max-w-5xl xxl:max-w-[1300px] mx-4 md:mx-auto px-8">
+      <section ref={contentRef} className="max-w-5xl xxl:max-w-[1300px] mx-4 md:mx-auto px-8">
         <div>
           {tabs === "marketing" ? <Marketing marketing={marketing} /> : null}
         </div>
@@ -150,7 +151,7 @@ const ServicesTabs = ({ services }) => {
           ) : null}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
