@@ -61,7 +61,7 @@ const ServicesTabs = ({ services }) => {
   return (
     <div ref={contentRef}>
     
-      <div className={`${isToped && 'fixed bg-white top-[102px] z-10 '} w-full mx-auto   font-gothamBold `}   >
+      <div className={`${isToped && 'fixed bg-white top-[96px] z-10 '} w-full mx-auto   font-gothamBold `}   >
         
         <div  className={`flex justify-between items-center gap-2 max-w-5xl xxl:max-w-7xl mx-auto w-full px-5 `}>
           <button
