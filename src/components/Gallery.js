@@ -53,9 +53,9 @@ const GaleryTab = ({ caseStudy }) => {
   };
 
   return (
-    <div className=" flex flex-col  mx-5 md:mx-16  font-inter" ref={contentRef}>
+    <div className=" flex flex-col   mx-16 font-inter" ref={contentRef}>
       <div className="w-full mx-auto ">
-        <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-2xl mx-auto lg:flex-nowrap">
+        <div className="flex justify-evenly items-center gap-2 flex-wrap max-w-3xl mx-auto lg:flex-nowrap">
           <button
             onClick={() => setTab("Integrated")}
             className="flex md:items-center md:justify-center flex-col md:flex-row gap-2"
@@ -145,7 +145,7 @@ const GaleryTab = ({ caseStudy }) => {
           {tabs === "Food & Beverage" ? <IntegratedTabContent /> : null}
         </div>
       </section>
-      <div className="flex justify-end xxl:mx-24 xll:mx-40 gap-3 mt-5">
+      <div className="flex justify-end xxl:mx-24  gap-3 mt-5">
         <button
           className="flex justify-center items-center opacity-50 hover:opacity-100  h-9 w-9 border-[2px] rounded-full hover:border-2 hover:border-gray-600"
           onClick={() => handleLeft(tabs)}

@@ -5,7 +5,7 @@ import Link from "next/link";
 const Blog = ({ blogSectionTop, blogs }) => {
   return (
     <div
-      className="   py-8 sm:px-6 lg:px-20 lg:py-14 mx-auto md:mx-10 mb-14 font-inter"
+      className="   py-8 sm:px-6 lg:px-20 lg:py-14 mx-auto md:mx-16 mb-14 font-inter"
       style={{ backgroundColor: "#E6E6E6" }}
     >
       <div className=" mx-auto text-left ml-10 mb-10 lg:mb-14 xxl:w-[908px] ">
