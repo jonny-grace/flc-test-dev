@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 
 function CaseStudyPageComponent({ caseStudyStatic, caseStudies }) {
     const [tabs, setTab] = useState("integrated");
-
+console.log('caseStudies',caseStudies)
     return (
         <div className=" w-full overflow-x-hidden mb-16">
             <Navbar />
@@ -44,10 +44,9 @@ function CaseStudyPageComponent({ caseStudyStatic, caseStudies }) {
             {tabs === "contentProduction" ? <CaseStudyCards caseStudies={caseStudies} /> : null}
 
             
-                {/* <CaseStudyCards caseStudies={caseStudies} /> */}
             </div>
             <div className="mt-8">
-                <h1 className="text-center hover:cursor-pointer font-bold  underline text-xl">load more</h1>
+                {/* <h1 className="text-center hover:cursor-pointer font-bold  underline text-xl">load more</h1> */}
             </div>
         </div>
 

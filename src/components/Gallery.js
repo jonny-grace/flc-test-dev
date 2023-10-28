@@ -13,7 +13,37 @@ const inter = Inter({
   subsets: ["cyrillic"],
   weight: ["400"],
 });
-const GaleryTab = ({ caseStudy }) => {
+const GaleryTab = ({ caseStudy,products }) => {
+  let Integrated=[]
+  let FMCG=[]
+  let FandB=[]
+  let Electronics=[]
+  let FashionandStyle=[]
+  let enabledProducts=[]
+  products.map((pr)=>{
+    const productType=pr.attributes.product_type.data.attributes.name;
+    
+
+    if(pr.attributes.showInHomePage){
+      enabledProducts.push(pr)
+      if(productType=='Integrated'){
+        Integrated.push(pr)
+      } else if(productType=='FMCG'){
+        FMCG.push(pr)
+      }
+      else if(productType=='F&B'){
+        FandB.push(pr)
+      }
+      else if(productType=='Electronics'){
+        Electronics.push(pr)
+      }
+      else if(productType=='Fashion and style'){
+        FashionandStyle.push(pr)
+      }
+    }
+   
+  })
+  
   const contentRef = useRef(null);
   const [opacityChecker,setOpacityChecker]= useState(false);
   const tabsItems = [
@@ -135,14 +165,14 @@ const GaleryTab = ({ caseStudy }) => {
         </div>
       </div>
       <section className="w-full mt-8 " ref={contentRef}>
-        <div>{tabs === "Integrated" ? <IntegratedTabContent /> : null}</div>
-        <div>{tabs === "FMCG" ? <IntegratedTabContent /> : null}</div>
-        <div>{tabs === "Electronics" ? <IntegratedTabContent /> : null}</div>
+        <div>{tabs === "Integrated" ? <IntegratedTabContent products={Integrated} /> : null}</div>
+        <div>{tabs === "FMCG" ? <IntegratedTabContent products={FMCG} /> : null}</div>
+        <div>{tabs === "Electronics" ? <IntegratedTabContent products={Electronics} /> : null}</div>
         <div>
-          {tabs === "Fashn & Lifestyle" ? <IntegratedTabContent /> : null}
+          {tabs === "Fashn & Lifestyle" ? <IntegratedTabContent products={FashionandStyle} /> : null}
         </div>
         <div>
-          {tabs === "Food & Beverage" ? <IntegratedTabContent /> : null}
+          {tabs === "Food & Beverage" ? <IntegratedTabContent products={FandB} /> : null}
         </div>
       </section>
       <div className="flex justify-end xxl:mx-24  gap-3 mt-5">

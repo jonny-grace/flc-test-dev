@@ -1,12 +1,10 @@
 "use client";
-import { Fragment, React, useState } from "react";
-import Navbar from "../../components/Navbar";
+import {  React } from "react";
 
 import axios from "axios";
-import CaseStudyCards from "../../components/CaseStudyCards";
 
 import "react-tabs/style/react-tabs.css";
-import CustomeTabs from "../../components/CustomeTabs";
+
 import CaseStudyPageComponent from "../../components/CaseStudyPageComponent";
 
 const index = ({ caseStudyStatic, caseStudies }) => {

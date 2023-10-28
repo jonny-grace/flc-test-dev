@@ -7,7 +7,7 @@ import HomePageNavBar from "../components/HomePageNavbar";
 import Service from "../components/Service";
 
 
-export default function HomePage({homepageContent,services,clients,blogs}) {
+export default function HomePage({homepageContent,services,clients,blogs,products}) {
   // console.log(services)
 
   const servicesData= services?.data;
@@ -55,7 +55,7 @@ const serviceSection={
       <div><HomePageNavBar logo={logo}/></div>
      <div className=" md:mx-7 md:my-7"><Hero hero={hero} /></div> 
       <Service serviceSection={serviceSection} services={servicesData}/>
-      <Gallery  caseStudy={caseStudy}/>
+      <Gallery products={products}  caseStudy={caseStudy}/>
       <Client clientsDetail={clientsDetail}/>
       <Blog blogSectionTop={blogSectionTop} blogs={blogs}/> 
     </div>
