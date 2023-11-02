@@ -73,11 +73,13 @@ export default Index;
 
 export async function getServerSideProps(context) {
   const { caseStudyId } = context.query;
-
+  const apiUrl = process.env.APIURL;
   var caseStudyDetails = {};
 
   await axios
-    .get(`https://flc-cms.onrender.com/api/products/${caseStudyId}?populate=*`)
+  .get(`${apiUrl}/products/${caseStudyId}?populate=*`)
+
+    
     .then((res) => {
       caseStudyDetails = res.data.data.attributes;
     })

@@ -98,9 +98,9 @@ export default index;
 export async function getStaticProps() {
   var contact = {};
   var footer = {};
-  
+  const apiUrl = process.env.APIURL;
   await axios
-    .get("https://flc-cms.onrender.com/api/contact?populate=*")
+  .get(`${apiUrl}/contact?populate=*`)
     .then((res) => {
       contact = res.data.data.attributes;
     })
@@ -109,7 +109,8 @@ export async function getStaticProps() {
     });
 
     await axios
-    .get("https://flc-cms.onrender.com/api/footer?populate=*")
+    .get(`${apiUrl}/footer?populate=*`)
+
     .then((res) => {
       footer = res.data;
     })

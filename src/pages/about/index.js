@@ -51,8 +51,10 @@ export async function getStaticProps() {
   var about = {};
   var values = {};
   var awards = {};
+  const apiUrl = process.env.APIURL;
   await axios
-    .get("https://flc-cms.onrender.com/api/about?populate=*")
+  .get(`${apiUrl}/about?populate=*`)
+
     .then((res) => {
       about = res.data.data.attributes;
     })
@@ -62,7 +64,7 @@ export async function getStaticProps() {
 
   //   our values
   await axios
-    .get("https://flc-cms.onrender.com/api/values?populate=*")
+  .get(`${apiUrl}/values?populate=*`)
     .then((res) => {
       values = res.data.data;
     })
@@ -72,7 +74,7 @@ export async function getStaticProps() {
 
   // awards
   await axios
-    .get("https://flc-cms.onrender.com/api/awards?populate=*")
+  .get(`${apiUrl}/awards?populate=*`)
     .then((res) => {
       awards = res.data.data;
     })

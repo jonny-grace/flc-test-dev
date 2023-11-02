@@ -54,11 +54,12 @@ export default index;
 export async function getStaticProps() {
   var joinTeam = {};
   var teams = {};
+  const apiUrl=process.env.APIURL;
   // var caseStudies={}
 
   // home page data api 
   await axios
-    .get("https://flc-cms.onrender.com/api/join-team?populate=*")
+  .get(`${apiUrl}/join-team?populate=*`)
     .then((res) => {
       
       joinTeam = res.data.data.attributes;
@@ -68,7 +69,7 @@ export async function getStaticProps() {
     });
 
     await axios
-    .get("https://flc-cms.onrender.com/api/teams?populate=*")
+    .get(`${apiUrl}/teams?populate=*`)
     .then((res) => {
      
       teams = res.data.data;

@@ -59,8 +59,10 @@ export default index;
 export async function getStaticProps() {
   var serviceStatic = {};
   var services = {};
+  const apiUrl = process.env.APIURL;
   await axios
-    .get("https://flc-cms.onrender.com/api/service-static?populate=*")
+  .get(`${apiUrl}/service-static?populate=*`)
+
     .then((res) => {
       serviceStatic = res.data.data.attributes;
     })
@@ -69,7 +71,8 @@ export async function getStaticProps() {
     });
 
   await axios
-    .get("https://flc-cms.onrender.com/api/services?populate=*")
+  .get(`${apiUrl}/services?populate=*`)
+
     .then((res) => {
       services = res.data.data;
     })

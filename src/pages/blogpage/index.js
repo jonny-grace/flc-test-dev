@@ -128,9 +128,10 @@ export default Index;
 
 export async function getStaticProps() {
   var blogs = {};
+  const apiUrl = process.env.APIURL;
   // var footer = {};
   await axios
-    .get("https://flc-cms.onrender.com/api/blogs?populate=*")
+  .get(`${apiUrl}/blogs?populate=*`)
     .then((res) => {
       blogs = res.data.data;
     })

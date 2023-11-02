@@ -21,11 +21,12 @@ export async function getStaticProps() {
   let clients={}
   let blogs={}
   let products={}
+  const apiUrl = process.env.APIURL;
   // var caseStudies={}
 
   // home page data api 
   await axios
-    .get("https://flc-cms.onrender.com/api/header?populate=*")
+  .get(`${apiUrl}/header?populate=*`)
     .then((res) => {
       homepageContent = res.data.data;
     })
@@ -35,7 +36,7 @@ export async function getStaticProps() {
 
     // services list api 
     await axios
-    .get("https://flc-cms.onrender.com/api/service-homes?populate=*")
+    .get(`${apiUrl}/service-homes?populate=*`)
     .then((res) => {
       services=res.data
     })
@@ -45,7 +46,8 @@ export async function getStaticProps() {
 
     // clients and logo list api 
     await axios
-    .get("https://flc-cms.onrender.com/api/client?populate=*")
+    .get(`${apiUrl}/client?populate=*`)
+
     .then((res) => {
       
       clients=res.data
@@ -57,7 +59,8 @@ export async function getStaticProps() {
 
     // blogs data api 
     await axios
-    .get("https://flc-cms.onrender.com/api/blogs?populate=*")
+    .get(`${apiUrl}/blogs?populate=*`)
+
     .then((res) => {
      
       blogs = res.data.data;
@@ -67,7 +70,8 @@ export async function getStaticProps() {
     });
 
     await axios
-    .get("https://flc-cms.onrender.com/api/products?populate=*")
+    .get(`${apiUrl}/products?populate=*`)
+
     .then((res) => {
     //  console.log('products detail file on home page',res.data.data)
       products = res.data.data;

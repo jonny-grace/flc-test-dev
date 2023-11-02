@@ -20,7 +20,7 @@ const GaleryTab = ({ caseStudy,products }) => {
   let Electronics=[]
   let FashionandStyle=[]
   let enabledProducts=[]
-  products.map((pr)=>{
+  products && products.map((pr)=>{
     const productType=pr.attributes.product_type.data.attributes.name;
     
 

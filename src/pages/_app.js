@@ -7,8 +7,10 @@ import { useEffect, useState } from "react";
 
 
 function MyApp({ Component, pageProps }) {
-  const [footerData, setFooterData] = useState(null);
 
+  const [footerData, setFooterData] = useState(null);
+  const apiUrl = process.env.APIURL;
+  console.log(apiUrl)
   useEffect(() => {
     async function fetchData() {
       // Fetch the data from the API

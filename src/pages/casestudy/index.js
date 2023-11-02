@@ -8,7 +8,8 @@ import "react-tabs/style/react-tabs.css";
 import CaseStudyPageComponent from "../../components/CaseStudyPageComponent";
 
 const index = ({ caseStudyStatic, caseStudies }) => {
-
+  const apiUrl = process.env.APIURL;
+  console.log('casestudy',apiUrl)
   
   return (
     <CaseStudyPageComponent caseStudies={caseStudies} caseStudyStatic={caseStudyStatic} />
@@ -18,13 +19,15 @@ const index = ({ caseStudyStatic, caseStudies }) => {
 export default index;
 
 export async function getStaticProps() {
+  const apiUrl = process.env.APIURL;
+  console.log(apiUrl)
   var caseStudyStatic = {};
 
   var caseStudies = {};
 
   // case study static data
   await axios
-    .get("https://flc-cms.onrender.com/api/case-study?populate=*")
+  .get(`${apiUrl}/case-study?populate=*`)
     .then((res) => {
       caseStudyStatic = res.data.data.attributes;
     })
@@ -34,7 +37,7 @@ export async function getStaticProps() {
 
   // case studies detail from api
   await axios
-    .get("https://flc-cms.onrender.com/api/products?populate=*")
+  .get(`${apiUrl}/products?populate=*`)
     .then((res) => {
       caseStudies = res.data.data;
     })

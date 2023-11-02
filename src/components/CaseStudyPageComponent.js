@@ -7,7 +7,29 @@ import Navbar from './Navbar';
 
 function CaseStudyPageComponent({ caseStudyStatic, caseStudies }) {
     const [tabs, setTab] = useState("integrated");
-console.log('caseStudies',caseStudies)
+    let integrated=[]
+    let marketing=[]
+    let events=[]
+    let digital=[]
+    let contentProduction=[]
+    caseStudies.map((casestudy)=>{
+        if(casestudy.attributes.tab=='Integrated'){
+            integrated.push(casestudy)
+        } else  if(casestudy.attributes.tab=='Marketing'){
+            marketing.push(casestudy)
+        }
+        else  if(casestudy.attributes.tab=='Events & Exhbitions'){
+            events.push(casestudy)
+        }
+        else  if(casestudy.attributes.tab=='Digital'){
+            digital.push(casestudy)
+        }
+        else  if(casestudy.attributes.tab=='Content Production'){
+            contentProduction.push(casestudy)
+        }
+        
+    })
+
     return (
         <div className=" w-full overflow-x-hidden mb-16">
             <Navbar />
@@ -37,11 +59,11 @@ console.log('caseStudies',caseStudies)
                 </div>
             </div>
             <div className=" md:mx-44">
-            {tabs === "integrated" ? <CaseStudyCards caseStudies={caseStudies} /> : null}
-            {tabs === "markating" ? <CaseStudyCards caseStudies={caseStudies} /> : null}
-            {tabs === "events" ? <CaseStudyCards caseStudies={caseStudies} /> : null}
-            {tabs === "digital" ? <CaseStudyCards caseStudies={caseStudies} /> : null}
-            {tabs === "contentProduction" ? <CaseStudyCards caseStudies={caseStudies} /> : null}
+            {tabs === "integrated" ? <CaseStudyCards caseStudies={integrated} /> : null}
+            {tabs === "markating" ? <CaseStudyCards caseStudies={marketing} /> : null}
+            {tabs === "events" ? <CaseStudyCards caseStudies={events} /> : null}
+            {tabs === "digital" ? <CaseStudyCards caseStudies={digital} /> : null}
+            {tabs === "contentProduction" ? <CaseStudyCards caseStudies={contentProduction} /> : null}
 
             
             </div>
