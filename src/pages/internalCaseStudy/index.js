@@ -3,9 +3,7 @@ import Navbar from "../../components/Navbar";
 // import Carousel from "../../components/BottomCarousel/Carousel";
 import { useRouter } from "next/router";
 import axios from "axios";
-import Image from "next/image";
 import Carousel from "../../components/BottomCarousel/Carousel";
-import YouTubeBanner from "../../components/VideoComponent";
 import VideoComponent from "../../components/VideoComponent";
 
 const Index = ({ caseStudyDetails }) => {
