@@ -25,12 +25,12 @@ const BannerSlider = ({banner,hero}) => {
   return (
     <div className="-mt-4 overflow-hidden h-[70vw] md:h-[42vw] ">
       <Slider {...settings}>
-       {banner?.map((bn) => {
+       {banner?.map((bn,index) => {
 
         if(bn.attributes.ext==='.mp4'){
           console.log('video link',bn.attributes.url)
           return(
-        <div className=' h-full w-screen overflow-hidden '>
+        <div key={index} className=' h-full w-screen overflow-hidden '>
          <div >
           <div className="h-full relative">
             <div className="md:h-[47vw]  w-full">
