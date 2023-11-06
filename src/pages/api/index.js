@@ -6,7 +6,7 @@ export async function fetchFooterData() {
     
     const response = await axios.
 
-    get('https://flc-cms.onrender.com/api/footer?populate=*');
+    get('https://admin.webhostconcept.com//api/footer?populate=*');
     
     return response.data;
     
@@ -19,7 +19,7 @@ export async function fetchFooterData() {
 export async function getallProducts() {
   
   try {
-    const response = await axios.get(`${apiUrl}/products?populate=*`)
+    const response = await axios.get(`https://admin.webhostconcept.com//api/products?populate=*`)
     // const response = await axios.get('https://flc-cms.onrender.com/api/products?populate=*');
     
     return response.data;

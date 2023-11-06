@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar";
 // import Carousel from "../../components/BottomCarousel/Carousel";
 import { useRouter } from "next/router";
 import axios from "axios";
 import Image from "next/image";
 import Carousel from "../../components/BottomCarousel/Carousel";
+import YouTubeBanner from "../../components/VideoComponent";
+import VideoComponent from "../../components/VideoComponent";
 
 const Index = ({ caseStudyDetails }) => {
+  console.log(caseStudyDetails)
+  const youtubeUrl= caseStudyDetails.thumbnailUrl;
+  
   return (
     <div className="mb-20  md:mb-0 w-full ">
       <div className="overflow-hidden ">
@@ -18,20 +23,13 @@ const Index = ({ caseStudyDetails }) => {
                 <h1 className=" md:text-[33px] md:mb-5 ml-3  md:ml-0 font-gothamBold">
                   {caseStudyDetails?.name}
                 </h1>
-                <div>
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={caseStudyDetails?.thumbnail?.data?.attributes?.url}
-                    alt="Hisense"
-                    className="w-full "
-                  />
-                </div>
+                  <div className=" flex justify-center"><VideoComponent youtubeUrl={youtubeUrl} /></div>
+
               </div>
             </div>
           </div>
 
-          <div className="relative mx-auto max-w-screen-xl px-4 py-48  sm:px-6 lg:flex lg:justify-center md:mb-[400px] xl:mb-[680px] xxl:mb-[800px] lg:items-center lg:px-3"></div>
+          <div className="relative mx-auto max-w-screen-xl px-4 py-48 md:py-40 xl:py-5  sm:px-6 lg:flex lg:justify-center md:mb-[400px] xl:mb-[680px] xxl:mb-[800px] lg:items-center lg:px-3"></div>
         </div>
       </div>
       <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 mb-20 md:mb-0">

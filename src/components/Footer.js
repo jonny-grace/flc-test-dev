@@ -103,12 +103,12 @@ const Footer = ({ footerData }) => {
               {footerData.links}
             </h2>
             <div className="text-start md:text-start">
-              <Link href="/link1" className="block mt-2">
+              <Link href="/about" className="block mt-2">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                   {footerData.linkAbout}
                 </p>
               </Link>
-              <Link href="/link2" className="block ">
+              <Link href="/services" className="block ">
                 <p className="text-white hover:text-gray-300 transition duration-300">
                   {footerData.linkServices}
                 </p>

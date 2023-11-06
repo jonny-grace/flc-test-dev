@@ -12,7 +12,7 @@ function CaseStudyPageComponent({ caseStudyStatic, caseStudies }) {
     let events=[]
     let digital=[]
     let contentProduction=[]
-    caseStudies.map((casestudy)=>{
+    caseStudies && caseStudies.map((casestudy)=>{
         if(casestudy.attributes.tab=='Integrated'){
             integrated.push(casestudy)
         } else  if(casestudy.attributes.tab=='Marketing'){

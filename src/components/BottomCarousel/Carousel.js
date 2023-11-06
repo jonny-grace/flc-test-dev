@@ -108,7 +108,7 @@ function Carousel() {
                       alt=""
                       height={1000}
                       width={1000}
-                      className="h-64 xl:h-96 w-full object-cover"
+                      className="h-64 xl:h-72 w-full object-cover"
                     />
                     <div className="absolute  top-4 w-full">
                       <div className="grid pl-5">

@@ -2,13 +2,13 @@
 import Blog from "../components/Blog";
 import Client from "../components/Client";
 import Gallery from "../components/Gallery";
-import Hero from "../components/Hero";
 import HomePageNavBar from "../components/HomePageNavbar";
 import Service from "../components/Service";
+import BannerSlider from "../components/bannerSlider";
 
 
 export default function HomePage({homepageContent,services,clients,blogs,products}) {
-  // console.log(services)
+  
 
   const servicesData= services?.data;
 const logo= {
@@ -53,7 +53,7 @@ const serviceSection={
   return (
     <div className="w-full overflow-x-hidden ">
       <div><HomePageNavBar logo={logo}/></div>
-     <div className=" md:mx-7 md:my-7"><Hero hero={hero} /></div> 
+     <div className=" md:mx-7 md:my-7"><BannerSlider hero={hero} banner={homepageContent?.background?.data} /></div> 
       <Service serviceSection={serviceSection} services={servicesData}/>
       <Gallery products={products}  caseStudy={caseStudy}/>
       <Client clientsDetail={clientsDetail}/>
